@@ -1,5 +1,30 @@
 # High Level Design Document
 
+Project Title: Become Pacman (Fake)
+
+Document version: 0
+
+Printing date: 26 Jan 2023
+
+Group ID:
+
+Group Member
+
+    Terrance
+    Department of Philosophy, The Chinese University of Hong Kong
+
+    woo pok
+    Department of Physics, The Chinese University of Hong Kong
+
+    Thomas
+    Department of Computer Science and Engineering, The Chinese University of Hong Kong
+
+    Jay
+    Department of Computer Science and Engineering, The Chinese University of Hong Kong
+
+    1155143569 Mok Owen
+    Department of Mathematics, The Chinese University of Hong Kong
+
 Table of content
 1. [Introduction](#introduction)
     - [Project Overview](#project-overview)
@@ -15,7 +40,7 @@ Table of content
 
 ### Project Overview
 
-This project is to create a Pacman game through Unity game engine. The project will be divided into 
+This project is to create a Pacman game through Unity game engine. The infamous Pacman game is one side an arcade game to escape from the chasing of ghosts, but one side has the potential to become a dungeon-like horror game, such as dark deception. We aim at producing a brand new Pacman game inheriting the idea of traditional Pacman, but enhancing the experience by introducing horror features. The project will be built under the guidance of software development, and be evaluated by aspects of software engineering taught in the course CSCI3100 Software Engineering.
 
 ### System Feature
 
@@ -36,6 +61,11 @@ The system will feature:
 ## System Architecture
 
 ### Technologies
+
+This project will be produced using the following technologies:
+- Game engine: Unity (Programming language: C#)
+- Documentation: Markdown, Microsoft Word
+- Database: Firebase
 
 ### Architecture Diagram
 
