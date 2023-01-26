@@ -162,7 +162,7 @@ Table of content
 
 
 
-### Features
+### Features (Excluded from main document)
 
 - similar to dark deception
 
