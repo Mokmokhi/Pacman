@@ -10,16 +10,16 @@ Group ID:
 
 Group Member
 
-    Terrance
+    <SID> Terrance
     Department of Philosophy, The Chinese University of Hong Kong
 
-    woo pok
+    <SID> woo pok
     Department of Physics, The Chinese University of Hong Kong
 
-    Thomas
+    <SID> Thomas
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
-    Jay
+    <SID> Jay
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
     1155143569 Mok Owen
@@ -124,7 +124,17 @@ Table of content
 ### System Components
 
 #### **Game Flow**  
-> \<to be written>
+> By executing the application, users will be directed to a **Login/Sign-up screen**. Users are free to leave the application, sign-up an account or login to the **title screen page**. In the title screen, users could perform the following action:
+
+> - Accessing the **setting**: Users could here customize the environment of the gaming, or other attributes provided.
+> - Accessing the **shop**: Users could here buy characters or items provided.
+> - Retrieving **records**: All gaming histories are recorded with time and score in this page.
+> - Accessing **level selection**: Users could start the game by choosing a suitable level here.
+> - **Leaving the application**: Close the window and leave.
+
+> During the level selection procedure, users could still turn back to the title screen for other possible actions. Once level is selected and confirmed by users, the **game process** will be started. From here, users are not allowed to leave or they should **pause the game** to return to the title page, or until the game process is ended.
+
+> The game can be ended in two situations, either the user **won the game** or **lose the game**. If users won the game, the current game process will be over and users will be directed to the title screen; if users lose the game, there will be a procedure asking for **restarting the game process**. By choosing restart, users could return to the game process for another trial, otherwise users will be directed to title screen and wait for other actions.
 
 #### **Basic Game Loop**
 > \<to be written>
