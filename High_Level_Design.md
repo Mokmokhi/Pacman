@@ -16,7 +16,7 @@ Group Member
     <SID> woo pok
     Department of Physics, The Chinese University of Hong Kong
 
-    <SID> Thomas
+    1155157839 Thomas
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
     <SID> Jay
@@ -35,6 +35,8 @@ Table of content
     - [Architecture Diagram](#architecture-diagram)
       - [**Game Flow**](#game-flow)
       - [**Basic Game Loop**](#basic-game-loop)
+      - [**UML Diagram of Singleton Class**](#uml-diagram-of-singleton-class)
+      - [**Global Event Bus System**](#global-event-bus-system)
       - [**Global Data Flow**](#global-data-flow)
       - [**Character States**](#character-states)
       - [**Character Class**](#character-class)
@@ -52,7 +54,7 @@ Table of content
       - [**Ghost Class**](#ghost-class-1)
       - [**Character-Ghost Relationship**](#character-ghost-relationship-1)
       - [**Props Class**](#props-class-1)
-    - [Features](#features)
+    - [Note (Excluded from main document)](#note-excluded-from-main-document)
 
 ---
 
@@ -99,8 +101,18 @@ Table of content
 
 > Note: Features are not included in the basic game loop.
 
+#### **UML Diagram of Singleton Class**
+
+<img src="Pictures\UML-Class-Singleton.png" alt="picture" width="400"/>  
+
+> Note: All classes with "Manager" name will inherit from Singleton Class.
+
+#### **Global Event Bus System**
+
+> \<to be drew by Thomas>  
+
 #### **Global Data Flow**
-> \<need further discusion>
+> \<need further discussion>
 
 #### **Character States**  
 > \<to be drew by Thomas>  
@@ -118,6 +130,9 @@ Table of content
 > \<to be drew by Thomas>  
 
 #### **Props Class**  
+
+<img src="Pictures\Props-Class.png" alt="picture" width="400"/>  
+
 > \<to be drew by Thomas>  
 
 
@@ -161,8 +176,9 @@ Table of content
 > \<to be written>  
 
 
+---
 
-### Features (Excluded from main document)
+### Note (Excluded from main document)
 
 - similar to dark deception
 
