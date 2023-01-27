@@ -10,16 +10,16 @@ Group ID:
 
 Group Member
 
-    <SID> Terrance
+    <SID> <Full name> Terrance
     Department of Philosophy, The Chinese University of Hong Kong
 
-    <SID> woo pok
+    <SID> <Full name> woo pok
     Department of Physics, The Chinese University of Hong Kong
 
-    1155157839 Thomas
+    1155157839 <Full name> Thomas
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
-    <SID> Jay
+    <SID> <Full name> Jay
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
     1155143569 Mok Owen
@@ -66,7 +66,7 @@ Table of content
 
 ### System Feature
 
-> The system will feature:  
+> The system features:  
 > 1. 3-D constructions: Apart from traditional Pacman games, this project will introduce a 3-D maze with 3-D objects for advanced experience of Pacman. 
 > 2. Props: Pacman will interact with props inside the maze. When Pacman eats special props, there will be buffs or debuffs according to the function of that prop. Usual beans will be placed as main props.
 > 3. Third-person camera: The sight of player will no longer be a god view, but focusing on the surrounding of the Pacman. Players will eventually experience the feeling of being a Pacman.
@@ -181,8 +181,7 @@ Table of content
 #### **Props Class**  
 > A **PropsManager** class will be derived from the singleton class with *private* objects *PropsList* for carrying a list of Props type objects, and *SpawnedPropsList* for carrying a list of existing props in the scene. There will be functions for controlling props, including *Instantiate(Props)* for getting the instance of corresponding props, and *Destroy(props)* for destroying any props.\<to be append>  
 
-> An *abstract* **PropsBase** class will be inherited from *ScriptableObject* which is able to be controlled by scripts. Each prop created under the specification of PropsBase will consist of *public* object *name*, *propsType* and *propsState*. propsType is of *PropsType* class, an *enum* class with 4 values: *SpeedUp*, *SpeedDown*, *Engulf* and *ScareGhost*; propsState is of *PropsState* class, an *enum* class with 4 values: *Unspawned*, *Spawned*, *Using* and *Used*. The PropsBase consists of a function *Use()* for changing PropsState from null to Using or Used, depends on object characteristics.
-
+> An *abstract* **PropsBase** class will be inherited from *ScriptableObject* which is able to be controlled by scripts. Each prop created under the specification of PropsBase will consist of *public* object *name*, *propsType* and *propsState*. propsType is of *PropsType* class, an *enum* class with 4 values: *SpeedUp*, *SpeedDown*, *Engulf* and *ScareGhost*; propsState is of *PropsState* class, an *enum* class with 4 values: *Unspawned*, *Spawned*, *Using* and *Used*. The PropsBase consists of a function *Use()* for changing PropsState from null to Using or Used, depends on object characteristics.\<to be append> 
 
 ---
 
