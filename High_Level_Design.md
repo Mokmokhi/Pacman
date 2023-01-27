@@ -10,7 +10,7 @@ Group ID:
 
 Group Member
 
-    <SID> <Full name> Terrance
+    1155127434 HO Chun Lung Terrance
     Department of Philosophy, The Chinese University of Hong Kong
 
     <SID> <Full name> woo pok
