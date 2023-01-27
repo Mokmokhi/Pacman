@@ -155,7 +155,13 @@ Table of content
 > When the **game process** is started, the application will begin to read user input. If *esc* button is clicked, then the game will enter the **pause** section, and it is possible to resume by clicking *esc* once again. By reading user input, there will be an *update function* scripted to **update character attributes**. The function will check whether the character collides with ghosts. If there is a **collision with ghost**, then **the lives will be decreased by 1**. Once the **number of lives goes 0**, the game ends and player is announced to be **losing the game**. If there is more than 0 lives, the play continues. After checking collision with ghost, it **checks the dots remaining** in the maze. If there is no dots left and the character still alive, then player is claimed to be winning the game; otherwise the game continues until there is a determination on player's winning state.
 
 #### **Global Data Flow**
-> \<to be written>
+> Throughout the whole system, a **singleton** class is derived from **MonoBehaviour**, with a *private static instance* and *public static instance* of type T. 3 Manager classes are then inherited from the singleton class.
+
+> A **UIManager** class will be derived with *private* objects *_canvas* for UI creation, *_mapCamera* for player vision and *_panels* a queue of type T for detecting different maps, as well as *public* function *SwitchPanel()* for changing panels; 
+
+> A **GameManager** class will be derived with a *private* object *_timeElapse* as timer and a *public* object *score* for recording game score, as well as *public* functions *GameStart()* for calling game process, *GamePause()* for pausing the game process, *GameResume()* for resuming from pause action, *GameLose()* for prompting lose effect, *GameNext()* for calling next game and *GameDone()* for ending a game.
+
+> An **AudioManager** class will be derived with public object *sound[]* as a list of sound effects and a *public* function *Play(String)* for calling sound effects.
 
 #### **Character States**  
 > \<to be written>  
@@ -173,7 +179,9 @@ Table of content
 > \<to be written>  
 
 #### **Props Class**  
-> \<to be written>  
+> A **PropsManager** class will be derived from the singleton class with *private* objects *PropsList* for carrying a list of Props type objects, and *SpawnedPropsList* for carrying a list of existing props in the scene. There will be functions for controlling props, including *Instantiate(Props)* for getting the instance of corresponding props, and *Destroy(props)* for destroying any props.\<to be append>  
+
+> An *abstract* **PropsBase** class will be inherited from *ScriptableObject* which is able to be controlled by scripts. Each prop created under the specification of PropsBase will consist of *public* object *name*, *propsType* and *propsState*. propsType is of *PropsType* class, an *enum* class with 4 values: *SpeedUp*, *SpeedDown*, *Engulf* and *ScareGhost*; propsState is of *PropsState* class, an *enum* class with 4 values: *Unspawned*, *Spawned*, *Using* and *Used*. The PropsBase consists of a function *Use()* for changing PropsState from null to Using or Used, depends on object characteristics.
 
 
 ---
