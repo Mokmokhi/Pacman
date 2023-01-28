@@ -107,7 +107,8 @@ Table of content
 > \<need further discussion>
 
 #### **Character States**  
-> \<to be drew by Thomas>  
+
+<img src="Pictures\Character-State.png" alt="picture" width="400"/>  
 
 #### **Ghost States**
 
@@ -117,7 +118,6 @@ Table of content
 
 <img src="Pictures\Props-Class.png" alt="picture" width="400"/>  
 
-> \<to be drew by Thomas>  
 
 
 ### System Components
@@ -136,7 +136,7 @@ Table of content
 > The game can be ended in two situations, either the user **won the game** or **lose the game**. If users won the game, the current game process will be over and users will be directed to the title screen; if users lose the game, there will be a procedure asking for **restarting the game process**. By choosing restart, users could return to the game process for another trial, otherwise users will be directed to title screen and wait for other actions.
 
 #### **Basic Game Loop**
-> When the **game process** is started, the application will begin to read user input. If *esc* button is clicked, then the game will enter the **pause** section, and it is possible to resume by clicking *esc* once again. By reading user input, there will be an *update function* scripted to **update character attributes**. The function will check whether the character collides with ghosts. If there is a **collision with ghost**, then **the lives will be decreased by 1**. Once the **number of lives goes 0**, the game ends and player is announced to be **losing the game**. If there is more than 0 lives, the play continues. After checking collision with ghost, it **checks the dots remaining** in the maze. If there is no dots left and the character still alive, then player is claimed to be winning the game; otherwise the game continues until there is a determination on player's winning state.
+> When the **game process** is started, the application will begin to read user input. If *esc* button is clicked, then the game will enter the **pause** section, and it is possible to resume by clicking *esc* once again. By reading user input, there will be an *update function* scripted to **update character attributes**. The function will check whether the character collides with ghosts. If there is a **collision with ghost**, then **the lives will be decreased by 1 **. Once the **number of lives goes 0**, the game ends and player is announced to be **losing the game**. If there is more than 0 lives, the play continues. After checking collision with ghost, it **checks the dots remaining** in the maze. If there is no dots left and the character still alive, then player is claimed to be winning the game; otherwise the game continues until there is a determination on player's winning state.
 
 #### **UML Diagram of Singleton Class**
 > A singleton pattern guarantee the class will **only have one instance**. It is useful to manage a system that needs to be **globally accessible**. Although a singleton pattern is not good for unit testing and could create dependency between singleton objects, our game, Pacman, is relatively small in scale and we will also adopt other design pattern to avoid strong coupling.
@@ -156,9 +156,10 @@ Table of content
 > For instance, when the UIManager is publish an Pause event, the GameManager will be notified if he is subscibed to Pause event. After that, the GameManager can choose what to do under his classes. Neither the publisher nor other subscriber know what will GameManager do next.
 
 #### **Global Data Flow**
+> \<to be further discussed>  
 
 #### **Character States**  
-> \<to be written>  
+> There are 4 states for the pacman. *Idle state* refers to before the game is started and the level is loading. Player should have no control to the pacman. In *move state*, pacman are controllable by player. For any buff or debuff, the pacman will keep in move state. The *hurt state* is entered when it is collided with a ghost without any special status. During *hurt state*, pacman will be unattackable and all ghost should run away from pacman until it transform back to *move state*. In *die state*, the game ends and player should have no control to pacman.
 
 #### **Ghost States**
 > Every ghost has basically **6 states**. When a level is loading and not started yet, it will be at *idle* state. When game starts, a ghost will decide where to go and it is at *decide turn* state. After that, it turns to *move* state and keep moving until 1. a corner is met 2. the player uses a props. In case 1, it goes back to *decide turn*. In case 2, it turns into *terrified* state. When the ghost is terrified, it will either be engulfed (*engulf* state) or go back to *move* state, which is determined by whether a player "eat" the ghost. If the ghost is ate, it turns into *die* state and will head back to "home", which is a ghost box directly. After that, it will turn into *Locked* state and wait unitl it is released and turn to *decide turn* state.
