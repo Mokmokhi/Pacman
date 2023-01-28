@@ -16,7 +16,7 @@ Group Member
     <SID> <Full name> woo pok
     Department of Physics, The Chinese University of Hong Kong
 
-    1155157839 <Full name> Thomas
+    1155157839 NG Yu Chun Thomas
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
     <SID> <Full name> Jay
@@ -47,6 +47,8 @@ Table of content
     - [System Components](#system-components)
       - [**Game Flow**](#game-flow-1)
       - [**Basic Game Loop**](#basic-game-loop-1)
+      - [**UML Diagram of Singleton Class**](#uml-diagram-of-singleton-class-1)
+      - [**Global Event Bus System**](#global-event-bus-system-1)
       - [**Global Data Flow**](#global-data-flow-1)
       - [**Character States**](#character-states-1)
       - [**Character Class**](#character-class-1)
@@ -154,14 +156,24 @@ Table of content
 #### **Basic Game Loop**
 > When the **game process** is started, the application will begin to read user input. If *esc* button is clicked, then the game will enter the **pause** section, and it is possible to resume by clicking *esc* once again. By reading user input, there will be an *update function* scripted to **update character attributes**. The function will check whether the character collides with ghosts. If there is a **collision with ghost**, then **the lives will be decreased by 1**. Once the **number of lives goes 0**, the game ends and player is announced to be **losing the game**. If there is more than 0 lives, the play continues. After checking collision with ghost, it **checks the dots remaining** in the maze. If there is no dots left and the character still alive, then player is claimed to be winning the game; otherwise the game continues until there is a determination on player's winning state.
 
-#### **Global Data Flow**
-> Throughout the whole system, a **singleton** class is derived from **MonoBehaviour**, with a *private static instance* and *public static instance* of type T. 3 Manager classes are then inherited from the singleton class.
+#### **UML Diagram of Singleton Class**
+> A singleton pattern guarantee the class will **only have one instance**. It is useful to manage a system that needs to be **globally accessible**. Although a singleton pattern is not good for unit testing and could create dependency between singleton objects, our game, Pacman, is relatively small in scale and we will also adopt other design pattern to avoid strong coupling.
+
+> Throughout the whole system, a **singleton** class is derived from **MonoBehaviour**, with a *private static instance* and *public static instance* of type T. 3 Manager classes are then inherited from the singleton class. In our projects, all classes with a suffix of "Manager" in their name inherit from Singleton class. The following are a few examples.
 
 > A **UIManager** class will be derived with *private* objects *_canvas* for UI creation, *_mapCamera* for player vision and *_panels* a queue of type T for detecting different maps, as well as *public* function *SwitchPanel()* for changing panels; 
 
 > A **GameManager** class will be derived with a *private* object *_timeElapse* as timer and a *public* object *score* for recording game score, as well as *public* functions *GameStart()* for calling game process, *GamePause()* for pausing the game process, *GameResume()* for resuming from pause action, *GameLose()* for prompting lose effect, *GameNext()* for calling next game and *GameDone()* for ending a game.
 
 > An **AudioManager** class will be derived with public object *sound[]* as a list of sound effects and a *public* function *Play(String)* for calling sound effects.
+
+#### **Global Event Bus System**
+
+> In order to manage global event efficienly and avoid strong coupling between objects, a event bus system is used. When an event is raised by a publisher, it sends out a signal to its subscribers. In the event system, **only subscribers listening to the specific event that published by a publisher will be notified and choose how to handle it.** In our design, the global events that allows to subscribe are different game states, such as Login, Pause, Win, etc.
+
+> For instance, when the UIManager is publish an Pause event, the GameManager will be notified if he is subscibed to Pause event. After that, the GameManager can choose what to do under his classes. Neither the publisher nor other subscriber know what will GameManager do next.
+
+#### **Global Data Flow**
 
 #### **Character States**  
 > \<to be written>  
