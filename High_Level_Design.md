@@ -19,7 +19,7 @@ Group Member
     1155157839 NG Yu Chun Thomas
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
-    <SID> <Full name> Jay
+    1155157719 Leung Kit Lun Jay
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
     1155143569 Mok Owen
