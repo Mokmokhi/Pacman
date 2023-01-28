@@ -39,10 +39,7 @@ Table of content
       - [**Global Event Bus System**](#global-event-bus-system)
       - [**Global Data Flow**](#global-data-flow)
       - [**Character States**](#character-states)
-      - [**Character Class**](#character-class)
       - [**Ghost States**](#ghost-states)
-      - [**Ghost Class**](#ghost-class)
-      - [**Character-Ghost Relationship**](#character-ghost-relationship)
       - [**Props Class**](#props-class)
     - [System Components](#system-components)
       - [**Game Flow**](#game-flow-1)
@@ -51,10 +48,7 @@ Table of content
       - [**Global Event Bus System**](#global-event-bus-system-1)
       - [**Global Data Flow**](#global-data-flow-1)
       - [**Character States**](#character-states-1)
-      - [**Character Class**](#character-class-1)
       - [**Ghost States**](#ghost-states-1)
-      - [**Ghost Class**](#ghost-class-1)
-      - [**Character-Ghost Relationship**](#character-ghost-relationship-1)
       - [**Props Class**](#props-class-1)
     - [Note (Excluded from main document)](#note-excluded-from-main-document)
 
@@ -101,17 +95,13 @@ Table of content
 
 <img src="Pictures\GameProcess.png" alt="picture" width="400"/>
 
-> Note: Features are not included in the basic game loop.
-
 #### **UML Diagram of Singleton Class**
 
 <img src="Pictures\UML-Class-Singleton.png" alt="picture" width="400"/>  
 
-> Note: All classes with "Manager" name will inherit from Singleton Class.
-
 #### **Global Event Bus System**
 
-> \<to be drew by Thomas>  
+<img src="Pictures\Event-Bus-System.png" alt="picture" width="400"/>  
 
 #### **Global Data Flow**
 > \<need further discussion>
@@ -119,17 +109,9 @@ Table of content
 #### **Character States**  
 > \<to be drew by Thomas>  
 
-#### **Character Class**  
-> \<to be drew by Thomas>  
-
 #### **Ghost States**
-> \<to be drew by Thomas>  
 
-#### **Ghost Class**
-> \<to be drew by Thomas>  
-
-#### **Character-Ghost Relationship**
-> \<to be drew by Thomas>  
+<img src="Pictures\Ghost-State.png" alt="picture" width="400"/> 
 
 #### **Props Class**  
 
@@ -178,17 +160,8 @@ Table of content
 #### **Character States**  
 > \<to be written>  
 
-#### **Character Class**  
-> \<to be written>  
-
 #### **Ghost States**
-> \<to be written>  
-
-#### **Ghost Class**
-> \<to be written>  
-
-#### **Character-Ghost Relationship**
-> \<to be written>  
+> Every ghost has basically **6 states**. When a level is loading and not started yet, it will be at *idle* state. When game starts, a ghost will decide where to go and it is at *decide turn* state. After that, it turns to *move* state and keep moving until 1. a corner is met 2. the player uses a props. In case 1, it goes back to *decide turn*. In case 2, it turns into *terrified* state. When the ghost is terrified, it will either be engulfed (*engulf* state) or go back to *move* state, which is determined by whether a player "eat" the ghost. If the ghost is ate, it turns into *die* state and will head back to "home", which is a ghost box directly. After that, it will turn into *Locked* state and wait unitl it is released and turn to *decide turn* state.
 
 #### **Props Class**  
 > A **PropsManager** class will be derived from the singleton class with *private* objects *PropsList* for carrying a list of Props type objects, and *SpawnedPropsList* for carrying a list of existing props in the scene. There will be functions for controlling props, including *Instantiate(Props)* for getting the instance of corresponding props, and *Destroy(props)* for destroying any props.\<to be append>  
