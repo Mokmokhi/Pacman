@@ -13,7 +13,7 @@ Group Member
     1155127434 HO Chun Lung Terrance
     Department of Philosophy, The Chinese University of Hong Kong
 
-    <SID> <Full name> woo pok
+    1155143519 WOO Pok
     Department of Physics, The Chinese University of Hong Kong
 
     1155157839 NG Yu Chun Thomas
