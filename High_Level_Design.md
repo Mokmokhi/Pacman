@@ -189,6 +189,6 @@ Group Member
 4. a mini-map is showed in the top-right corner (show ghosts for 2 seconds (skill or props))
 5. Timer
 6. different (physical) levels - by adding teleports
-7. 戰爭迷霧 (limited vision) (difficulities)
+7. 戰爭迷霧 (limited vision) (difficulties)
 8. Advanced Ghost movements (record player past movements) instead of random
 9. Buy Character
