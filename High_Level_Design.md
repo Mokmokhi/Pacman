@@ -19,10 +19,10 @@ Group Member
     1155157839 NG Yu Chun Thomas
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
-    1155157719 Leung Kit Lun Jay
+    1155157719 LEUNG Kit Lun Jay
     Department of Computer Science and Engineering, The Chinese University of Hong Kong
 
-    1155143569 Mok Owen
+    1155143569 MOK Owen
     Department of Mathematics, The Chinese University of Hong Kong
 
 ***Table of content***
