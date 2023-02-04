@@ -685,6 +685,13 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
 OUTPUT HLD.pdf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT ..\Pictures\\ArchitectureDiagram.png
+INPUT ..\Pictures\\ArchitectureDiagram.png
+INPUT ..\Pictures\\ArchitectureDiagram.png
+INPUT ..\Pictures\\ArchitectureDiagram.png
+INPUT ..\Pictures\\ArchitectureDiagram.png
+INPUT ..\Pictures\\ArchitectureDiagram.png
+INPUT ..\Pictures\\ArchitectureDiagram.png
 INPUT HLD.aux
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi632\tcrm1000.pk
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi632\tcrm1000.pk
