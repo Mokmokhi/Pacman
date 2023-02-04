@@ -684,7 +684,6 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
 OUTPUT HLD.pdf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT HLD.aux
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi632\tcrm1000.pk
@@ -699,5 +698,3 @@ INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb
