@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  4 FEB 2023 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  4 FEB 2023 22:51
 entering extended mode
 **"c:/Users/Owenm/Documents/GitHub/Pacman/HLD LaTeX/HLD.tex"
 (c:/Users/Owenm/Documents/GitHub/Pacman/HLD LaTeX/HLD.tex
@@ -536,17 +536,17 @@ File: ctex-zhmap-windows.tex 2021/06/20 v2.5.7 Windows font map loader for pdfTe
 
 ] [2] [3] (HLD.aux) ) 
 Here is how much of TeX's memory you used:
- 8485 strings out of 478864
- 132106 string characters out of 2855690
- 476883 words of memory out of 3000000
- 26176 multiletter control sequences out of 15000+600000
- 415072 words of font info for 68 fonts, out of 8000000 for 9000
+ 8480 strings out of 478864
+ 132032 string characters out of 2855690
+ 476885 words of memory out of 3000000
+ 26172 multiletter control sequences out of 15000+600000
+ 414719 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,11n,82p,766b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Owenm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi632\tcrm1000.pk><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on HLD.pdf (3 pages, 102601 bytes).
+ 76i,6n,82p,766b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\Owenm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi632\tcrm1000.pk><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on HLD.pdf (3 pages, 90222 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
