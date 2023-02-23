@@ -1,21 +1,6 @@
-\babel@toc {english}{}
-\contentsline {section}{\numberline {1}High-Level Context Diagram}{3}{}%
-\contentsline {section}{\numberline {2}Feature Diagrams}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Login Sign-up Function}{3}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Description}{3}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}DFD}{3}{}%
-\contentsline {subsection}{\numberline {2.2}Game procedure with level selection}{3}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Description}{3}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}DFD}{3}{}%
-\contentsline {subsection}{\numberline {2.3}Setting}{4}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Description}{4}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}DFD}{4}{}%
-\contentsline {subsection}{\numberline {2.4}Shop}{4}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}Description}{4}{}%
-\contentsline {subsubsection}{\numberline {2.4.2}DFD}{4}{}%
-\contentsline {subsection}{\numberline {2.5}Record updater}{4}{}%
-\contentsline {subsubsection}{\numberline {2.5.1}Description}{4}{}%
-\contentsline {subsubsection}{\numberline {2.5.2}DFD}{5}{}%
-\contentsline {subsection}{\numberline {2.6}Show record}{5}{}%
-\contentsline {subsubsection}{\numberline {2.6.1}Description}{5}{}%
-\contentsline {subsubsection}{\numberline {2.6.2}DFD}{5}{}%
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}High-Level Context Diagram}{2}{}%
+\contentsline {section}{\numberline {2}Feature Diagrams}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Login Sign-up Function}{2}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Description}{2}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}DFD}{2}{}%

@@ -27,38 +27,18 @@ Group Member
 
 ## High Level Context Diagram
 ## Feature Diagrams
-### Login/Sign-up
+### Game Flow
 
-<img src="Pictures\Login_Signup_DFD.png" alt="picture" width="400"/>
+<img src="Pictures\gameflow_DFD.png" alt="picture" width="400"/>
 
 > The Sign-up function is to create a new datafile for new users of the game, while the Login function is to identify who is accessing the application and provide security check for the user datafile.
 
-### Game procedure with level selection
-
-<img src="Pictures\Game_procedure_DFD.png" alt="picture" width="400"/>
-
 > The game procedure is to integrate the gameplay from level selection and game setting for each user.
-
-### Setting
-
-<img src="Pictures\Setting_DFD.png" alt="picture" width="400"/>
 
 > The setting overwrite function is to manage the in-game experience for users.
 
-### Shop
-
-<img src="Pictures\Shop_DFD.png" alt="picture" width="400"/>
-
 > The shop function is to manage items of a user.
 
-### Record update
-
-<img src="Pictures\Record_update_DFD.png" alt="picture" width="400"/>
-
 > The record update function is to update the game record to the database after each gameplay.
-
-### Show record
-
-<img src="Pictures\Show_record_DFD.png" alt="picture" width="400"/>
 
 > The show record function is to display statistics of users and the whole game.
