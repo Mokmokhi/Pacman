@@ -9,7 +9,7 @@
 \usepackage{physics}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
 
-\graphicspath{ {../Pictures/} }
+\graphicspath{ {../Pictures/DFD/} }
 
 \pagestyle{plain}
 \fancyhf[CF]{\thepage}
@@ -29,14 +29,48 @@ Department of Mathematics, The Chinese University of Hong Kong}
 \newpage
 
 \section{High-Level Context Diagram}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.5]{HLCDFD.jpg}
+\end{figure}
 \section{Feature Diagrams}
-\subsection{Game Flow}
+\subsection{Game Rendering}
 \subsubsection{Description}
-\par The Sign-up function is to create a new datafile for new users of the game, while the Login function is to identify who is accessing the application and provide security check for the user datafile. The game procedure is to integrate the gameplay from level selection and game setting for each user. The setting overwrite function is to manage the in-game experience for users. The shop function is to manage items of a user. The record update function is to update the game record to the database after each gameplay. The show record function is to display statistics of users and the whole game.
+
 \subsubsection{DFD}
 \begin{figure}[H]
     \centering
-    \includegraphics*[scale=0.4]{gameflow_DFD.png}
+    \includegraphics*[scale=0.4]{Master_DFD.png}
+\end{figure}
+\subsection{Game Flow}
+\subsubsection{Description}
+\par There is a Sign-up function is to create a new user file for new users of the game, which collect user info from user input, and pass the inputted user info to compare function. The compare function will validate the user input, and update the user profile list. The Login function is to identify who is accessing the application and provide security check for the user file, it will pass user input to compare function to validate input. The game procedure is to integrate the gameplay from level selection and game setting for each user. The content will be introduced in coming sections, but it will collect game information from level selection function, game state list and game setting list. The setting overwrite function is to manage the in-game experience for users, by updating the game setting list. The shop function is to manage items of a user, by extracting information from game item list, and pushing data into user profile list. The record update function is to update the game record to the database after each gameplay, by getting latest result from game process and updating the record list. The show record function is to display statistics of users and the whole game.
+\subsubsection{DFD}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.3]{gameflow_DFD.png}
+\end{figure}
+
+\subsection{Player Control}
+\subsubsection{Description}
+
+\subsubsection{DFD}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{PlayerControl_DFD.png}
+\end{figure}
+
+\subsection{Enemy AI}
+\subsubsection{Description}
+
+\subsubsection{DFD}
+
+\subsection{Game UI}
+\subsubsection{Description}
+
+\subsubsection{DFD}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{UI_DFD.png}
 \end{figure}
 \end{document}

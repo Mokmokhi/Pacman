@@ -1,6 +1,18 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}High-Level Context Diagram}{2}{}%
-\contentsline {section}{\numberline {2}Feature Diagrams}{2}{}%
-\contentsline {subsection}{\numberline {2.1}Game Flow}{2}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Description}{2}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}DFD}{2}{}%
+\contentsline {section}{\numberline {1}High-Level Context Diagram}{3}{}%
+\contentsline {section}{\numberline {2}Feature Diagrams}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Game Rendering}{4}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Description}{4}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}DFD}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Game Flow}{4}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Description}{4}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}DFD}{5}{}%
+\contentsline {subsection}{\numberline {2.3}Player Control}{5}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Description}{5}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}DFD}{5}{}%
+\contentsline {subsection}{\numberline {2.4}Enemy AI}{6}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Description}{6}{}%
+\contentsline {subsubsection}{\numberline {2.4.2}DFD}{6}{}%
+\contentsline {subsection}{\numberline {2.5}Game UI}{6}{}%
+\contentsline {subsubsection}{\numberline {2.5.1}Description}{6}{}%
+\contentsline {subsubsection}{\numberline {2.5.2}DFD}{6}{}%
