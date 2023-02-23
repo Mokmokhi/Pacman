@@ -42,3 +42,6 @@ Group Member
 > The record update function is to update the game record to the database after each gameplay.
 
 > The show record function is to display statistics of users and the whole game.
+
+### Player Control
+> For the data flow of the player control, the game will receive signals from the user's input device and perform different actions. The player state (transform, "isPowered", remaining pellets, etc.) will be saved and output to the engine.
