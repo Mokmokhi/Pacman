@@ -1,685 +1,686 @@
-PWD c:\GitHub\Pacman\DFD specification
+PWD c:\Users\Owenm\Documents\GitHub\Pacman\DFD specification
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\GitHub\Pacman\DFD specification\DFD.tex
+INPUT c:\Users\Owenm\Documents\GitHub\Pacman\DFD specification\DFD.tex
 OUTPUT DFD.log
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\engine\ctex-engine-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexhook.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexpatch.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fix-cm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1enc.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1enc.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1enc.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1enc.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\config\ctexopts.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\config\ctexopts.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\engine\ctex-engine-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\engine\ctex-engine-pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKutf8.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJK.enc
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.spa
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.spa
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.spa
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjkpunct\CJKpunct.spa
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\CJKspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexspa.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctexspa.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber-utf8.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber-utf8.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\zhnumber\zhnumber-utf8.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\scheme\ctex-scheme-chinese.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\scheme\ctex-scheme-chinese.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\config\ctex-name-utf8.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\config\ctex-name-utf8.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex-c5size.clo
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\ctex-c5size.clo
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr7.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\fontset\ctex-fontset-windows.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\fontset\ctex-fontset-windows.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\config\ctex.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\ctex\config\ctex.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.bdg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.bdg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\size10.clo
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\size10.clo
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\size10.clo
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\engine\ctex-engine-pdftex.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexhook.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexpatch.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fix-cm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\ts1enc.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\ts1enc.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\ts1enc.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\ts1enc.def
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\config\ctexopts.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\config\ctexopts.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\engine\ctex-engine-pdftex.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\engine\ctex-engine-pdftex.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKutf8.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\inputenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJK.enc
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.spa
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.spa
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.spa
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjkpunct\CJKpunct.spa
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\CJKspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexspa.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctexspa.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber-utf8.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber-utf8.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\zhnumber\zhnumber-utf8.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\scheme\ctex-scheme-chinese.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\scheme\ctex-scheme-chinese.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\config\ctex-name-utf8.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\config\ctex-name-utf8.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex-c5size.clo
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\ctex-c5size.clo
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr7.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\fontset\ctex-fontset-windows.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\fontset\ctex-fontset-windows.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\config\ctex.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\config\ctex.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\babel.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\babel\txtbabel.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\tools\xspace.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\trig.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\physics\physics.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.bdg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.bdg
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
 INPUT .\DFD.aux
 INPUT DFD.aux
 INPUT DFD.aux
 OUTPUT DFD.aux
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\DFD.toc
 INPUT DFD.toc
 INPUT DFD.toc
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\pdftex\config\pdftex.map
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
 OUTPUT DFD.pdf
 OUTPUT DFD.toc
 INPUT ..\Pictures\DFD\\HLCDFD.jpg
@@ -689,7 +690,7 @@ INPUT ..\Pictures\DFD\\HLCDFD.jpg
 INPUT ..\Pictures\DFD\\HLCDFD.jpg
 INPUT ..\Pictures\DFD\\HLCDFD.jpg
 INPUT ..\Pictures\DFD\\HLCDFD.jpg
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT ..\Pictures\DFD\\Master_DFD.png
 INPUT ..\Pictures\DFD\\Master_DFD.png
 INPUT ..\Pictures\DFD\\Master_DFD.png
@@ -711,6 +712,13 @@ INPUT ..\Pictures\DFD\\PlayerControl_DFD.png
 INPUT ..\Pictures\DFD\\PlayerControl_DFD.png
 INPUT ..\Pictures\DFD\\PlayerControl_DFD.png
 INPUT ..\Pictures\DFD\\PlayerControl_DFD.png
+INPUT ..\Pictures\DFD\\GhostAI_DFD.png
+INPUT ..\Pictures\DFD\\GhostAI_DFD.png
+INPUT ..\Pictures\DFD\\GhostAI_DFD.png
+INPUT ..\Pictures\DFD\\GhostAI_DFD.png
+INPUT ..\Pictures\DFD\\GhostAI_DFD.png
+INPUT ..\Pictures\DFD\\GhostAI_DFD.png
+INPUT ..\Pictures\DFD\\GhostAI_DFD.png
 INPUT ..\Pictures\DFD\\UI_DFD.png
 INPUT ..\Pictures\DFD\\UI_DFD.png
 INPUT ..\Pictures\DFD\\UI_DFD.png
@@ -719,13 +727,13 @@ INPUT ..\Pictures\DFD\\UI_DFD.png
 INPUT ..\Pictures\DFD\\UI_DFD.png
 INPUT ..\Pictures\DFD\\UI_DFD.png
 INPUT DFD.aux
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
