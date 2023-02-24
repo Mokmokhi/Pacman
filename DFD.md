@@ -63,7 +63,11 @@ Everytime when the game is started, it will fetch the player game setting and th
 
 ### In-game UI
 
-During game, a game event, such as game pause and game end, can be called by different systems, like UI Manager and Player Controller. For instance, a game end event can be invoked by the UI Manager when a player clicked the end button in pause panel or by the Player Controller when a player health is below 0. UI Manager handles all the game events in game and ...
+During game, a game event, such as game pause and game end, can be called by different systems, like UI Manager and Player Controller. For instance, a game end event can be invoked by the UI Manager when a player clicked the end button in pause panel or by the Player Controller when a player health is below 0. UI Manager handles all the game events in game and react according to it. 
+
+When game is running normally, there are also data needed to be rendered, such as player health and scores. Those data will be fetched from Game State and Player State and keep updating. 
+
+If a player would like to change setting in game after pausing, the new game setting data will be passed to the change game setting function and it would update the Game Setting List Database. When the game resumes, it will first update the game setting and then continue the game.
 
 ### Player Control
 
