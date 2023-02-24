@@ -64,3 +64,7 @@ Everytime when the game is started, it will fetch the player game setting and th
 ### In-game UI
 
 During game, a game event, such as game pause and game end, can be called by different systems, like UI Manager and Player Controller. For instance, a game end event can be invoked by the UI Manager when a player clicked the end button in pause panel or by the Player Controller when a player health is below 0. UI Manager handles all the game events in game and ...
+
+### Player Control
+
+For the data flow of the player control, the game will receive signals from the user's input device and perform different actions. For example, the user can move Pacman and change its vision using a keyboard and mouse, also one can pause the game by pressing the "Esc" key. On moving, the game checks for any collisions to update the player's state. The player state (transform, "isPowered", remaining pellets, etc.) will be saved and output to the engine.
