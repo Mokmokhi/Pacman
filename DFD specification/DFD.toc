@@ -10,9 +10,9 @@
 \contentsline {subsection}{\numberline {2.3}Player Control}{6}{}%
 \contentsline {subsubsection}{\numberline {2.3.1}Description}{6}{}%
 \contentsline {subsubsection}{\numberline {2.3.2}DFD}{6}{}%
-\contentsline {subsection}{\numberline {2.4}Enemy AI}{7}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}Description}{7}{}%
+\contentsline {subsection}{\numberline {2.4}Enemy AI}{6}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Description}{6}{}%
 \contentsline {subsubsection}{\numberline {2.4.2}DFD}{7}{}%
 \contentsline {subsection}{\numberline {2.5}Game UI}{7}{}%
 \contentsline {subsubsection}{\numberline {2.5.1}Description}{7}{}%
-\contentsline {subsubsection}{\numberline {2.5.2}DFD}{8}{}%
+\contentsline {subsubsection}{\numberline {2.5.2}DFD}{9}{}%
