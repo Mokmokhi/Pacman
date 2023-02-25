@@ -29,7 +29,7 @@ Group Member
 ## Feature Diagrams
 ### Game Flow
 
-<img src="Pictures\gameflow_DFD.png" alt="picture" width="400"/>
+<img src="Pictures\DFD\gameflow_DFD.png" alt="picture" width="400"/>
 
 > The Sign-up function is to create a new datafile for new users of the game, while the Login function is to identify who is accessing the application and provide security check for the user datafile.
 
@@ -69,6 +69,6 @@ When game is running normally, there are also data needed to be rendered, such a
 
 If a player would like to change setting in game after pausing, the new game setting data will be passed to the change game setting function and it would update the Game Setting List Database. When the game resumes, it will first update the game setting and then continue the game.
 
-### Player Control
+## Player Control
 
 For the data flow of the player control, the game will receive signals from the user's input device and perform different actions. For example, the user can move Pacman and change its vision using a keyboard and mouse, also one can pause the game by pressing the "Esc" key. On moving, the game checks for any collisions to update the player's state, such as collisions with ghosts will decrease lives, collisions with power pellets will enter the powered state, and collisions with walls refuse the player to move along the direction. The player state (transform, "isPowered", remaining pellets, etc.) will be saved and output to the engine.
