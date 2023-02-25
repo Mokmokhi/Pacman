@@ -26,6 +26,15 @@ Group Member
     Department of Mathematics, The Chinese University of Hong Kong
 
 ## High Level Context Diagram
+
+> Our game data has the flow of above:
+
+> At first, the users need to input their username and password into the login procedure, and the input data will be matched with the Game Database to authorize the user. After that, the authorized user will be directed to the UI Manager. The details will be described at UI DFD later. The UI Manager receives user's input and data from Game Database and Game Local Files, and output user's activities to Game Flow to run the game. The details of Game Flow will be described later as well. The functions mentioned above will all output graphic data to Rendering in the Unity engine and output as visible graphic to the Game Window for users to view.
+
+### User - Software interaction Diagram
+
+> The above diagram describe the general interaction between the user's input and the software. The user's input will be converted to game variables by the scripts stored in the Game Assets, and stored to the local memory. The memory has data exchange between the Game Local Files and the Game Database. While the scripts in the Game Assets are running, they receive and also write game data to the memory, which can also be sednt to the Game Local Files and the Game Database. Running scripts will send game data to the Unity engine, and media files in the Game Assets like images, videos or animations, will be loaded to the engine too. These variables will be converted to render variables and output as graphic data to the renderer to do rendering. Lastly, the actual graphic will be shown on the Game Window to the user.
+
 ## Feature Diagrams
 ### Game Flow
 
