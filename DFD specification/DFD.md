@@ -38,7 +38,7 @@ Group Member
 ## Feature Diagrams
 ### Game Flow
 
-<img src="Pictures\gameflow_DFD.png" alt="picture" width="400"/>
+<img src="Pictures\DFD\gameflow_DFD.png" alt="picture" width="400"/>
 
 > The Sign-up function is to create a new datafile for new users of the game, while the Login function is to identify who is accessing the application and provide security check for the user datafile.
 
@@ -78,6 +78,12 @@ When game is running normally, there are also data needed to be rendered, such a
 
 If a player would like to change setting in game after pausing, the new game setting data will be passed to the change game setting function and it would update the Game Setting List Database. When the game resumes, it will first update the game setting and then continue the game.
 
-### Player Control
+## Player Control
 
 For the data flow of the player control, the game will receive signals from the user's input device and perform different actions. For example, the user can move Pacman and change its vision using a keyboard and mouse, also one can pause the game by pressing the "Esc" key. On moving, the game checks for any collisions to update the player's state, such as collisions with ghosts will decrease lives, collisions with power pellets will enter the powered state, and collisions with walls refuse the player to move along the direction. The player state (transform, "isPowered", remaining pellets, etc.) will be saved and output to the engine.
+
+## Ghost AI
+
+During the game, for each ghost object, it will perform all of its action based on a central function "Ghost decision maker". This function will take data from two storages: First, it will take the coordinates, Ghost ID, and ghost state (alive or dead, or other states) from the data store "Ghost object", which should be created for each ghost by each match; Secondly, it will take the game difficulty from "difficulty setting" to consider ghost action complexity.
+
+With the above data, the Ghost Decision Maker will anticipate any input events received by the ghost object, including: Wall collision, Crossroad encounter, Player sighted, and Player collision. From each of the five event inputs, the Decision Maker will output its action based on the data from Ghost object and Difficulty Setting, and output the movement, Ghost ID, and Ghost state of the ghost object into a ghost action. It can also ouput a damage value as the Player Damage (such as when colliding with a non-powered player). For each output of the Decision maker, it will also output an Update that will update the data store of Ghost Object. As for when encoutering a Powered player Collision event, this will directly update the Ghost state of the object from "alive" into "dead" as a way to kill the ghost, the Decision maker will then output Ghost actions based on this new state (such as stopping and playing death animation.)
