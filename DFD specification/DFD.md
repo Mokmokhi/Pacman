@@ -27,8 +27,6 @@ Group Member
 
 ## High Level Context Diagram
 
-> Our game data has the flow of above:
-
 > At first, the users need to input their username and password into the login procedure, and the input data will be matched with the Game Database to authorize the user. After that, the authorized user will be directed to the UI Manager. The details will be described at UI DFD later. The UI Manager receives user's input and data from Game Database and Game Local Files, and output user's activities to Game Flow to run the game. The details of Game Flow will be described later as well. The functions mentioned above will all output graphic data to Rendering in the Unity engine and output as visible graphic to the Game Window for users to view.
 
 ### User - Software interaction Diagram
