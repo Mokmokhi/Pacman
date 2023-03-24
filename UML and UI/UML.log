@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  25 MAR 2023 01:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  25 MAR 2023 01:05
 entering extended mode
 **"c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex"
 (c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex
@@ -598,10 +598,10 @@ File: ctex-zhmap-windows.tex 2021/06/20 v2.5.7 Windows font map loader for pdfTe
 \openout3 = `UML.toc'.
 
  [2]
-<../Pictures//UML-Class-Singleton.png, id=10, 571.13374pt x 495.8525pt>
-File: ../Pictures//UML-Class-Singleton.png Graphic file (type png)
-<use ../Pictures//UML-Class-Singleton.png>
-Package pdftex.def Info: ../Pictures//UML-Class-Singleton.png  used on input line 41.
+<../Pictures/UML//UML-Class-Singleton.png, id=10, 571.13374pt x 495.8525pt>
+File: ../Pictures/UML//UML-Class-Singleton.png Graphic file (type png)
+<use ../Pictures/UML//UML-Class-Singleton.png>
+Package pdftex.def Info: ../Pictures/UML//UML-Class-Singleton.png  used on input line 41.
 (pdftex.def)             Requested size: 228.44945pt x 198.33748pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--42
@@ -613,34 +613,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<../Pictures//Props-Class.png, id=13, 548.0475pt x 413.545pt>
-File: ../Pictures//Props-Class.png Graphic file (type png)
-<use ../Pictures//Props-Class.png>
-Package pdftex.def Info: ../Pictures//Props-Class.png  used on input line 54.
+<../Pictures/UML//Props_use-case.png, id=13, 448.67625pt x 432.61626pt>
+File: ../Pictures/UML//Props_use-case.png Graphic file (type png)
+<use ../Pictures/UML//Props_use-case.png>
+Package pdftex.def Info: ../Pictures/UML//Props_use-case.png  used on input line 53.
+(pdftex.def)             Requested size: 179.46732pt x 173.04343pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
+
+ []
+
+[3 <../Pictures/UML//UML-Class-Singleton.png>]
+<../Pictures/UML//Props-Class.png, id=20, 548.0475pt x 413.545pt>
+File: ../Pictures/UML//Props-Class.png Graphic file (type png)
+<use ../Pictures/UML//Props-Class.png>
+Package pdftex.def Info: ../Pictures/UML//Props-Class.png  used on input line 58.
 (pdftex.def)             Requested size: 219.2151pt x 165.41505pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
 
  []
 
-[3 <../Pictures//UML-Class-Singleton.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+<../Pictures/UML//Props_sequence.png, id=22, 512.91624pt x 480.79625pt>
+File: ../Pictures/UML//Props_sequence.png Graphic file (type png)
+<use ../Pictures/UML//Props_sequence.png>
+Package pdftex.def Info: ../Pictures/UML//Props_sequence.png  used on input line 63.
+(pdftex.def)             Requested size: 205.16286pt x 192.31508pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
 
  []
 
-[4 <../Pictures//Props-Class.png>] (UML.aux) ) 
+[4 <../Pictures/UML//Props_use-case.png> <../Pictures/UML//Props-Class.png> <../Pictures/UML//Props_sequence.png>] [5] (UML.aux) ) 
 Here is how much of TeX's memory you used:
- 8655 strings out of 478864
- 135119 string characters out of 2855690
- 480524 words of memory out of 3000000
- 26327 multiletter control sequences out of 15000+600000
+ 8671 strings out of 478864
+ 135749 string characters out of 2855690
+ 480528 words of memory out of 3000000
+ 26341 multiletter control sequences out of 15000+600000
  442606 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,8n,82p,761b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {D:/Program Files (x86)/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on UML.pdf (4 pages, 62990 bytes).
+Output written on UML.pdf (5 pages, 84111 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

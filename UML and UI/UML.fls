@@ -751,22 +751,36 @@ INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 OUTPUT UML.toc
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT ..\Pictures\\UML-Class-Singleton.png
-INPUT ..\Pictures\\UML-Class-Singleton.png
-INPUT ..\Pictures\\UML-Class-Singleton.png
-INPUT ..\Pictures\\UML-Class-Singleton.png
-INPUT ..\Pictures\\UML-Class-Singleton.png
-INPUT ..\Pictures\\UML-Class-Singleton.png
-INPUT ..\Pictures\\UML-Class-Singleton.png
-INPUT ..\Pictures\\Props-Class.png
-INPUT ..\Pictures\\Props-Class.png
-INPUT ..\Pictures\\Props-Class.png
-INPUT ..\Pictures\\Props-Class.png
-INPUT ..\Pictures\\Props-Class.png
-INPUT ..\Pictures\\Props-Class.png
-INPUT ..\Pictures\\Props-Class.png
+INPUT ..\Pictures\UML\\UML-Class-Singleton.png
+INPUT ..\Pictures\UML\\UML-Class-Singleton.png
+INPUT ..\Pictures\UML\\UML-Class-Singleton.png
+INPUT ..\Pictures\UML\\UML-Class-Singleton.png
+INPUT ..\Pictures\UML\\UML-Class-Singleton.png
+INPUT ..\Pictures\UML\\UML-Class-Singleton.png
+INPUT ..\Pictures\UML\\UML-Class-Singleton.png
+INPUT ..\Pictures\UML\\Props_use-case.png
+INPUT ..\Pictures\UML\\Props_use-case.png
+INPUT ..\Pictures\UML\\Props_use-case.png
+INPUT ..\Pictures\UML\\Props_use-case.png
+INPUT ..\Pictures\UML\\Props_use-case.png
+INPUT ..\Pictures\UML\\Props_use-case.png
+INPUT ..\Pictures\UML\\Props_use-case.png
 INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT ..\Pictures\UML\\Props-Class.png
+INPUT ..\Pictures\UML\\Props-Class.png
+INPUT ..\Pictures\UML\\Props-Class.png
+INPUT ..\Pictures\UML\\Props-Class.png
+INPUT ..\Pictures\UML\\Props-Class.png
+INPUT ..\Pictures\UML\\Props-Class.png
+INPUT ..\Pictures\UML\\Props-Class.png
+INPUT ..\Pictures\UML\\Props_sequence.png
+INPUT ..\Pictures\UML\\Props_sequence.png
+INPUT ..\Pictures\UML\\Props_sequence.png
+INPUT ..\Pictures\UML\\Props_sequence.png
+INPUT ..\Pictures\UML\\Props_sequence.png
+INPUT ..\Pictures\UML\\Props_sequence.png
+INPUT ..\Pictures\UML\\Props_sequence.png
 INPUT UML.aux
 INPUT D:\Program Files (x86)\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
