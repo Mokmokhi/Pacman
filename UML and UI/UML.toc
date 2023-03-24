@@ -26,5 +26,4 @@
 \contentsline {subsection}{\numberline {2.3}Shop UI}{7}{}%
 \contentsline {subsection}{\numberline {2.4}Setting UI}{7}{}%
 \contentsline {subsection}{\numberline {2.5}Main Game}{7}{}%
-\contentsline {subsubsection}{\numberline {2.5.1}Ghost mechanism}{7}{}%
-\contentsline {subsection}{\numberline {2.6}Record page}{9}{}%
+\contentsline {subsection}{\numberline {2.6}Record page}{7}{}%
