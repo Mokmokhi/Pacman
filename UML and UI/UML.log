@@ -582,23 +582,16 @@ Overfull \hbox (12.74059pt too wide) in paragraph at lines 29--29
  [][] 
  []
 
-(UML.toc
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- (C:\Users\Owenm\AppData\Roaming\MiKTeX\tex/generic/ctex/zhmap\ctex-zhmap-windows.tex
-File: ctex-zhmap-windows.tex 2021/06/20 v2.5.7 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
-{C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
-
-])
+No file UML.toc.
 \tf@toc=\write3
 \openout3 = `UML.toc'.
 
- [2]
-<../Pictures/UML//UML-Class-Singleton.png, id=10, 571.13374pt x 495.8525pt>
+(C:\Users\Owenm\AppData\Roaming\MiKTeX\tex/generic/ctex/zhmap\ctex-zhmap-windows.tex
+File: ctex-zhmap-windows.tex 2021/06/20 v2.5.7 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
+{C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
+
+]
+<../Pictures/UML//UML-Class-Singleton.png, id=7, 571.13374pt x 495.8525pt>
 File: ../Pictures/UML//UML-Class-Singleton.png Graphic file (type png)
 <use ../Pictures/UML//UML-Class-Singleton.png>
 Package pdftex.def Info: ../Pictures/UML//UML-Class-Singleton.png  used on input line 41.
@@ -613,7 +606,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<../Pictures/UML//Props_use-case.png, id=13, 448.67625pt x 432.61626pt>
+<../Pictures/UML//Props_use-case.png, id=10, 448.67625pt x 432.61626pt>
 File: ../Pictures/UML//Props_use-case.png Graphic file (type png)
 <use ../Pictures/UML//Props_use-case.png>
 Package pdftex.def Info: ../Pictures/UML//Props_use-case.png  used on input line 53.
@@ -623,8 +616,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--54
 
  []
 
-[3 <../Pictures/UML//UML-Class-Singleton.png>]
-<../Pictures/UML//Props-Class.png, id=20, 548.0475pt x 413.545pt>
+[2 <../Pictures/UML//UML-Class-Singleton.png>]
+<../Pictures/UML//Props-Class.png, id=17, 548.0475pt x 413.545pt>
 File: ../Pictures/UML//Props-Class.png Graphic file (type png)
 <use ../Pictures/UML//Props-Class.png>
 Package pdftex.def Info: ../Pictures/UML//Props-Class.png  used on input line 58.
@@ -634,7 +627,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--59
 
  []
 
-<../Pictures/UML//Props_sequence.png, id=22, 512.91624pt x 480.79625pt>
+<../Pictures/UML//Props_sequence.png, id=19, 512.91624pt x 480.79625pt>
 File: ../Pictures/UML//Props_sequence.png Graphic file (type png)
 <use ../Pictures/UML//Props_sequence.png>
 Package pdftex.def Info: ../Pictures/UML//Props_sequence.png  used on input line 63.
@@ -644,19 +637,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--64
 
  []
 
-[4 <../Pictures/UML//Props_use-case.png> <../Pictures/UML//Props-Class.png> <../Pictures/UML//Props_sequence.png>] [5] (UML.aux) ) 
+[3 <../Pictures/UML//Props_use-case.png> <../Pictures/UML//Props-Class.png> <../Pictures/UML//Props_sequence.png>]
+
+LaTeX Warning: File `Ghost_Class.png' not found on input line 95.
+
+
+c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex:95: Package pdftex.def Error: File `Ghost_Class.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ...cludegraphics*[scale=0.4]{Ghost_Class.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Ghost_Sequence.png' not found on input line 102.
+
+
+c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex:102: Package pdftex.def Error: File `Ghost_Sequence.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 ...egraphics*[scale=0.4]{Ghost_Sequence.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4]
+
+LaTeX Warning: File `Ghost_Activity.png' not found on input line 111.
+
+
+c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex:111: Package pdftex.def Error: File `Ghost_Activity.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...egraphics*[scale=0.4]{Ghost_Activity.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[5] (UML.aux) ) 
 Here is how much of TeX's memory you used:
- 8671 strings out of 478864
- 135749 string characters out of 2855690
- 480528 words of memory out of 3000000
- 26341 multiletter control sequences out of 15000+600000
- 442606 words of font info for 93 fonts, out of 8000000 for 9000
+ 8755 strings out of 478864
+ 137907 string characters out of 2855690
+ 474528 words of memory out of 3000000
+ 26409 multiletter control sequences out of 15000+600000
+ 433565 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,8n,82p,761b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
-{D:/Program Files (x86)/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on UML.pdf (5 pages, 84111 bytes).
+ 76i,8n,82p,892b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\Owenm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi657\ectt1000.pk>{D:/Program Files (x86)/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on UML.pdf (5 pages, 94096 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
