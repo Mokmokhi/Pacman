@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  25 MAR 2023 02:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  25 MAR 2023 02:18
 entering extended mode
 **"c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex"
 (c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex
@@ -685,10 +685,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--101
 
  []
 
-[6 <../Pictures/UML//Ghost_Class.png (PNG copy)> <../Pictures/UML//Ghost_Activity.png (PNG copy)>] [7 <../Pictures/UML//Ghost_Sequence.png (PNG copy)>]
-Overfull \vbox (32.5964pt too high) has occurred while \output is active []
-
- [8] (UML.aux) ) 
+[6 <../Pictures/UML//Ghost_Class.png (PNG copy)> <../Pictures/UML//Ghost_Activity.png (PNG copy)>] [7 <../Pictures/UML//Ghost_Sequence.png (PNG copy)>] [8] (UML.aux) ) 
 Here is how much of TeX's memory you used:
  8695 strings out of 478864
  136592 string characters out of 2855690
@@ -698,7 +695,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  76i,8n,82p,761b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {D:/Program Files (x86)/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on UML.pdf (8 pages, 235297 bytes).
+Output written on UML.pdf (8 pages, 235704 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
