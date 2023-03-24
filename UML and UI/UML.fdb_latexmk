@@ -1,7 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1679677428 "c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex" "UML.pdf" "UML" 1679677430
-  "../Pictures//Props-Class.png" 1679677424 26763 2b795c1480442983e58626e72441bfdd ""
-  "../Pictures//UML-Class-Singleton.png" 1679677424 32194 85baba8a82c324dfdc5e12df4f017163 ""
+["pdflatex"] 1679677516 "c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex" "UML.pdf" "UML" 1679677519
+  "../Pictures/UML//Props-Class.png" 1679677513 26763 2b795c1480442983e58626e72441bfdd ""
+  "../Pictures/UML//Props_sequence.png" 1679677513 18929 00ca8d6ef983f107832dfda6ebf54d79 ""
+  "../Pictures/UML//Props_use-case.png" 1679677513 27069 931c3a08767b463edc7ed921e372869e ""
+  "../Pictures/UML//UML-Class-Singleton.png" 1679677513 32194 85baba8a82c324dfdc5e12df4f017163 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1677243002 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -106,10 +108,10 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/l3packages/xparse/xparse.sty" 1622536900 6469 d540b48269b71f2a890483b206419e32 ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
-  "UML.aux" 1679677429 2286 d836b8a0761a5068f3ca755af1dca332 "pdflatex"
-  "UML.tex" 1679677424 2095 869324bd6522072a257bd79a409af684 ""
-  "UML.toc" 1679677429 1377 a88ef4f66f24de219d532b7ac842a171 "pdflatex"
-  "c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex" 1679677424 2095 869324bd6522072a257bd79a409af684 ""
+  "UML.aux" 1679677519 2279 d4394779d3a76872eb01a087ca54ddb8 "pdflatex"
+  "UML.tex" 1679677513 2756 cfa7379c6523ac2f01dc45d673997c14 ""
+  "UML.toc" 1679677519 1370 89ebdc7bf96dd3c1730aca3c27304837 "pdflatex"
+  "c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex" 1679677513 2756 cfa7379c6523ac2f01dc45d673997c14 ""
   (generated)
   "UML.aux"
   "UML.log"

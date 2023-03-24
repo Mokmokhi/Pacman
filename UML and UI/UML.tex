@@ -11,12 +11,12 @@
 \usepackage{physics}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
 
-\graphicspath{ {../Pictures/} }
+\graphicspath{ {../Pictures/UML/} }
 
 \pagestyle{plain}
 \fancyhf[CF]{\thepage}
 
-\title{High Level Design Document\\Become Pac-Man\\version: 1}
+\title{UML and UI Design Document\\Become Pac-Man\\version: 1}
 \author{Group F8\\1155127434 HO Chun Lung Terrance\\
 Department of Philosophy, The Chinese University of Hong Kong\\1155143519 WOO Pok\\
 Department of Physics, The Chinese University of Hong Kong\\1155157839 NG Yu Chun Thomas\\
@@ -48,16 +48,30 @@ Department of Mathematics, The Chinese University of Hong Kong}
 \subsubsection{Structural Diagram}
 \subsubsection{UMLs}
 \textbf{use-case diagram}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Props_use-case.png}
+\end{figure}
 \textbf{class diagram}\\
 \begin{figure}[H]
     \centering
     \includegraphics*[scale=0.4]{Props-Class.png}
 \end{figure}
 \textbf{sequence diagram}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Props_sequence.png}
+\end{figure}
 \subsubsection{Component Functionality}
+The props class is to provide the bases for game objects, such as pellets in the maze for Pacman to achieve scores, or other props that will enhence in-game experience.
 \subsubsection{Major Procedure and Functions}
+Use(void): The Use function is to obtain the action of using the prop, by destroying the prop from the maze.
 
-\subsection{Character Class}
+Instantiate(Props): The instantiate function is to create the props for each game.
+
+Destroy(Props): The destroy function is to destroy the prop from the maze for each game.
+
+\subsection{Database}
 
 \subsection{Ghost Class}
 
