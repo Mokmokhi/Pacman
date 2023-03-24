@@ -6,6 +6,7 @@ public class Pellet : MonoBehaviour
 {
     public int points = 10;
 
+    /*
     protected virtual void Eat()
     {
         FindObjectOfType<Pacman>().PelletEaten(this);
@@ -17,4 +18,5 @@ public class Pellet : MonoBehaviour
             Eat();
         }
     }
+    */
 }
