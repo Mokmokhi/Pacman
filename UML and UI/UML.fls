@@ -705,34 +705,7 @@ INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT .\UML.toc
-INPUT UML.toc
-INPUT UML.toc
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7m.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7m.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7m.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7y.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7y.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7y.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7v.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7v.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\zptmcm7v.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+OUTPUT UML.toc
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\pdftex\config\pdftex.map
@@ -745,11 +718,9 @@ INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-OUTPUT UML.toc
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT ..\Pictures\UML\\UML-Class-Singleton.png
 INPUT ..\Pictures\UML\\UML-Class-Singleton.png
@@ -767,6 +738,8 @@ INPUT ..\Pictures\UML\\Props_use-case.png
 INPUT ..\Pictures\UML\\Props_use-case.png
 INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT ..\Pictures\UML\\Props-Class.png
 INPUT ..\Pictures\UML\\Props-Class.png
 INPUT ..\Pictures\UML\\Props-Class.png
@@ -781,7 +754,10 @@ INPUT ..\Pictures\UML\\Props_sequence.png
 INPUT ..\Pictures\UML\\Props_sequence.png
 INPUT ..\Pictures\UML\\Props_sequence.png
 INPUT ..\Pictures\UML\\Props_sequence.png
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\jknappen\ec\ectt1000.tfm
 INPUT UML.aux
+INPUT C:\Users\Owenm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi657\ectt1000.pk
+INPUT C:\Users\Owenm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi657\ectt1000.pk
 INPUT D:\Program Files (x86)\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\urw\times\utmb8a.pfb

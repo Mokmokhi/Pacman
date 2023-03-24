@@ -1,21 +1,22 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}UML DESIGN}{3}{}%
-\contentsline {subsection}{\numberline {1.1}Manager Class}{3}{}%
-\contentsline {subsubsection}{\numberline {1.1.1}Structural Diagram}{3}{}%
-\contentsline {subsubsection}{\numberline {1.1.2}UMLs}{3}{}%
-\contentsline {subsubsection}{\numberline {1.1.3}Component Functionality}{3}{}%
-\contentsline {subsubsection}{\numberline {1.1.4}Major Procedure and Functions}{3}{}%
-\contentsline {subsection}{\numberline {1.2}Props Class}{3}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Structural Diagram}{3}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}UMLs}{3}{}%
-\contentsline {subsubsection}{\numberline {1.2.3}Component Functionality}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.4}Major Procedure and Functions}{5}{}%
-\contentsline {subsection}{\numberline {1.3}Database}{5}{}%
-\contentsline {subsection}{\numberline {1.4}Ghost Class}{5}{}%
-\contentsline {section}{\numberline {2}UI DESIGN}{5}{}%
-\contentsline {subsection}{\numberline {2.1}Login/Sign-up page}{5}{}%
-\contentsline {subsection}{\numberline {2.2}Title Screen}{5}{}%
-\contentsline {subsection}{\numberline {2.3}Shop UI}{5}{}%
-\contentsline {subsection}{\numberline {2.4}Setting UI}{5}{}%
-\contentsline {subsection}{\numberline {2.5}Main Game}{5}{}%
+\contentsline {section}{\numberline {1}UML DESIGN}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Manager Class}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Structural Diagram}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}UMLs}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Component Functionality}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.4}Major Procedure and Functions}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Props Class}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Structural Diagram}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}UMLs}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Component Functionality}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Major Procedure and Functions}{4}{}%
+\contentsline {subsection}{\numberline {1.3}Database}{4}{}%
+\contentsline {subsection}{\numberline {1.4}Ghost Class}{4}{}%
+\contentsline {section}{\numberline {2}UI DESIGN}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Login/Sign-up page}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Title Screen}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Shop UI}{4}{}%
+\contentsline {subsection}{\numberline {2.4}Setting UI}{4}{}%
+\contentsline {subsection}{\numberline {2.5}Main Game}{4}{}%
+\contentsline {subsubsection}{\numberline {2.5.1}Ghost mechanism}{4}{}%
 \contentsline {subsection}{\numberline {2.6}Record page}{5}{}%
