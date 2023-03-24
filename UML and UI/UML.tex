@@ -88,6 +88,33 @@ Destroy(Props): The destroy function is to destroy the prop from the maze for ea
 
 \subsection{Main Game}
 
+\subsubsection{Ghost mechanism}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Ghost_Class.png}
+\end{figure}
+
+The class diagram depicts the Ghost class and its related classes that control the ghost's movement behavior in the game. The Ghost class contains various behaviors, such as GhostHome, GhostScatter, GhostChase, and GhostFrightened, each of which extends the abstract class GhostBehavior. The Movement class is responsible for controlling the Ghost's movement, while the GhostHome class manages the ghost's behavior when it returns to its home position. The GhostScatter class manages the ghost's behavior when in scatter mode, and GhostChase class controls its behavior when chasing Pacman. GhostFrightened class manages the ghost's behavior when it's frightened. The GameManager class controls the overall game, including the Ghost class. The Ghost class uses the Transform class to move the ghost in the game.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Ghost_Sequence.png}
+\end{figure}
+
+This sequence diagram shows the various transitions that can occur between different Ghost behaviors during gameplay. The diagram starts with the GameManager resetting the state of the Ghosts, then the Ghosts disabling their current behavior before transitioning to their next behavior.
+
+The diagram also shows two alternative paths: if Pacman eats a Power Pellet, the Ghosts transition to Frightened Mode and if Pacman collides with a Ghost, the behavior depends on whether or not the Ghost is in Frightened Mode. If the Ghost is in Frightened Mode, it is eaten, but if it is not in Frightened Mode, Pacman is eaten.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Ghost_Activity.png}
+\end{figure}
+
+The activity diagram shows the different actions taken by the ghost in each of its behaviors. In the Chase behavior, the ghost moves towards the player's location, choosing the shortest path. In the Scatter behavior, the ghost selects a random corner of the map and moves towards it, again find the shortest path. In Frightened behavior, the ghost moves randomly, choosing a random direction at each intersection. During this behavior, the ghost also flashes blue and white to indicate its state.
+
+When the ghost is eaten, it transitions to the Home behavior where it returns to its starting position, bounces around inside the ghost home, and then exits in a random direction. Finally, in the Eyes behavior, the ghost moves to a predetermined location offscreen to respawn and start again. These actions are repeated throughout the game as the ghost transitions between behaviors based on game events and timing.
+
 \subsection{Record page}
 
 \end{document}
