@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  25 MAR 2023 21:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  25 MAR 2023 22:12
 entering extended mode
 **"c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex"
 (c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex
@@ -598,12 +598,7 @@ File: ctex-zhmap-windows.tex 2021/06/20 v2.5.7 Windows font map loader for pdfTe
 \openout3 = `UML.toc'.
 
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
 
  []
 
@@ -639,112 +634,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--66
  []
 
 [5 <../Pictures/UML//Props_use-case.png> <../Pictures/UML//Props_sequence.png>]
-<../Pictures/UML//Pacman.png, id=32, 771.88374pt x 531.9875pt>
-File: ../Pictures/UML//Pacman.png Graphic file (type png)
-<use ../Pictures/UML//Pacman.png>
-Package pdftex.def Info: ../Pictures/UML//Pacman.png  used on input line 84.
-(pdftex.def)             Requested size: 192.97046pt x 132.99655pt.
+<../Pictures/UML//Pacman_Class.png, id=32, 771.88374pt x 531.9875pt>
+File: ../Pictures/UML//Pacman_Class.png Graphic file (type png)
+<use ../Pictures/UML//Pacman_Class.png>
+Package pdftex.def Info: ../Pictures/UML//Pacman_Class.png  used on input line 84.
+(pdftex.def)             Requested size: 308.74802pt x 212.79123pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 81--85
 
  []
 
+<../Pictures/UML//Pacman_use-case.png, id=34, 256.96pt x 341.275pt>
+File: ../Pictures/UML//Pacman_use-case.png Graphic file (type png)
+<use ../Pictures/UML//Pacman_use-case.png>
+Package pdftex.def Info: ../Pictures/UML//Pacman_use-case.png  used on input line 89.
+(pdftex.def)             Requested size: 102.78217pt x 136.50757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 86--90
 
  []
 
-[6 <../Pictures/UML//Pacman.png>]
-<../Pictures/UML//Ghost_Class.png, id=39, 1268.74pt x 576.1525pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+[6 <../Pictures/UML//Pacman_Class.png> <../Pictures/UML//Pacman_use-case.png>]
+<../Pictures/UML//Ghost_Class.png, id=43, 1268.74pt x 576.1525pt>
 File: ../Pictures/UML//Ghost_Class.png Graphic file (type png)
 <use ../Pictures/UML//Ghost_Class.png>
-Package pdftex.def Info: ../Pictures/UML//Ghost_Class.png  used on input line 106.
+Package pdftex.def Info: ../Pictures/UML//Ghost_Class.png  used on input line 110.
 (pdftex.def)             Requested size: 317.18422pt x 144.03777pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--107
+Underfull \hbox (badness 10000) in paragraph at lines 107--111
 
  []
 
-<../Pictures/UML//Ghost_Activity.png, id=41, 1053.9375pt x 434.62375pt>
+<../Pictures/UML//Ghost_Activity.png, id=45, 1053.9375pt x 434.62375pt>
 File: ../Pictures/UML//Ghost_Activity.png Graphic file (type png)
 <use ../Pictures/UML//Ghost_Activity.png>
-Package pdftex.def Info: ../Pictures/UML//Ghost_Activity.png  used on input line 112.
+Package pdftex.def Info: ../Pictures/UML//Ghost_Activity.png  used on input line 116.
 (pdftex.def)             Requested size: 316.18369pt x 130.38812pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--113
+Underfull \hbox (badness 10000) in paragraph at lines 113--117
 
  []
 
-<../Pictures/UML//Ghost_Sequence.png, id=43, 660.4675pt x 629.35126pt>
+[7 <../Pictures/UML//Ghost_Class.png (PNG copy)>]
+<../Pictures/UML//Ghost_Sequence.png, id=52, 660.4675pt x 629.35126pt>
 File: ../Pictures/UML//Ghost_Sequence.png Graphic file (type png)
 <use ../Pictures/UML//Ghost_Sequence.png>
-Package pdftex.def Info: ../Pictures/UML//Ghost_Sequence.png  used on input line 117.
+Package pdftex.def Info: ../Pictures/UML//Ghost_Sequence.png  used on input line 121.
 (pdftex.def)             Requested size: 264.18231pt x 251.73604pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
-[7 <../Pictures/UML//Ghost_Class.png (PNG copy)> <../Pictures/UML//Ghost_Activity.png (PNG copy)>]
-<../Pictures/UML//UI0.0Login.png, id=51, 1464.97313pt x 839.38594pt>
+[8 <../Pictures/UML//Ghost_Activity.png (PNG copy)> <../Pictures/UML//Ghost_Sequence.png (PNG copy)>]
+<../Pictures/UML//UI0.0Login.png, id=59, 1464.97313pt x 839.38594pt>
 File: ../Pictures/UML//UI0.0Login.png Graphic file (type png)
 <use ../Pictures/UML//UI0.0Login.png>
-Package pdftex.def Info: ../Pictures/UML//UI0.0Login.png  used on input line 140.
+Package pdftex.def Info: ../Pictures/UML//UI0.0Login.png  used on input line 144.
 (pdftex.def)             Requested size: 292.98944pt x 167.8742pt.
- [8 <../Pictures/UML//Ghost_Sequence.png (PNG copy)>]
-<../Pictures/UML//UI0.1SignUp.png, id=57, 1467.98438pt x 840.89156pt>
+ [9 <../Pictures/UML//UI0.0Login.png>]
+<../Pictures/UML//UI0.1SignUp.png, id=65, 1467.98438pt x 840.89156pt>
 File: ../Pictures/UML//UI0.1SignUp.png Graphic file (type png)
 <use ../Pictures/UML//UI0.1SignUp.png>
-Package pdftex.def Info: ../Pictures/UML//UI0.1SignUp.png  used on input line 155.
+Package pdftex.def Info: ../Pictures/UML//UI0.1SignUp.png  used on input line 159.
 (pdftex.def)             Requested size: 293.59167pt x 168.17532pt.
- [9 <../Pictures/UML//UI0.0Login.png>]
-<../Pictures/UML//UI1.0Main.png, id=63, 1476.26532pt x 834.86906pt>
+<../Pictures/UML//UI1.0Main.png, id=67, 1476.26532pt x 834.86906pt>
 File: ../Pictures/UML//UI1.0Main.png Graphic file (type png)
 <use ../Pictures/UML//UI1.0Main.png>
-Package pdftex.def Info: ../Pictures/UML//UI1.0Main.png  used on input line 170.
+Package pdftex.def Info: ../Pictures/UML//UI1.0Main.png  used on input line 174.
 (pdftex.def)             Requested size: 295.24783pt x 166.97086pt.
  [10 <../Pictures/UML//UI0.1SignUp.png>]
-<../Pictures/UML//UI1.1Settings.png, id=69, 1475.5125pt x 836.3747pt>
+<../Pictures/UML//UI1.1Settings.png, id=73, 1475.5125pt x 836.3747pt>
 File: ../Pictures/UML//UI1.1Settings.png Graphic file (type png)
 <use ../Pictures/UML//UI1.1Settings.png>
-Package pdftex.def Info: ../Pictures/UML//UI1.1Settings.png  used on input line 182.
+Package pdftex.def Info: ../Pictures/UML//UI1.1Settings.png  used on input line 186.
 (pdftex.def)             Requested size: 295.09727pt x 167.27197pt.
  [11 <../Pictures/UML//UI1.0Main.png> <../Pictures/UML//UI1.1Settings.png>]
-<../Pictures/UML//UI2.0InGame.png, id=76, 1475.5125pt x 834.11626pt>
+<../Pictures/UML//UI2.0InGame.png, id=80, 1475.5125pt x 834.11626pt>
 File: ../Pictures/UML//UI2.0InGame.png Graphic file (type png)
 <use ../Pictures/UML//UI2.0InGame.png>
-Package pdftex.def Info: ../Pictures/UML//UI2.0InGame.png  used on input line 193.
+Package pdftex.def Info: ../Pictures/UML//UI2.0InGame.png  used on input line 197.
 (pdftex.def)             Requested size: 295.09727pt x 166.8203pt.
  [12 <../Pictures/UML//UI2.0InGame.png>]
-<../Pictures/UML//UI2.1PauseMenu.png, id=82, 1476.26532pt x 834.86906pt>
+<../Pictures/UML//UI2.1PauseMenu.png, id=86, 1476.26532pt x 834.86906pt>
 File: ../Pictures/UML//UI2.1PauseMenu.png Graphic file (type png)
 <use ../Pictures/UML//UI2.1PauseMenu.png>
-Package pdftex.def Info: ../Pictures/UML//UI2.1PauseMenu.png  used on input line 208.
+Package pdftex.def Info: ../Pictures/UML//UI2.1PauseMenu.png  used on input line 212.
 (pdftex.def)             Requested size: 295.24783pt x 166.97086pt.
-<../Pictures/UML//UI2.2GameOver.png, id=84, 1474.00688pt x 832.61063pt>
+<../Pictures/UML//UI2.2GameOver.png, id=88, 1474.00688pt x 832.61063pt>
 File: ../Pictures/UML//UI2.2GameOver.png Graphic file (type png)
 <use ../Pictures/UML//UI2.2GameOver.png>
-Package pdftex.def Info: ../Pictures/UML//UI2.2GameOver.png  used on input line 218.
+Package pdftex.def Info: ../Pictures/UML//UI2.2GameOver.png  used on input line 222.
 (pdftex.def)             Requested size: 294.79616pt x 166.51917pt.
  [13 <../Pictures/UML//UI2.1PauseMenu.png>]
-<../Pictures/UML//UI2.3GameSuccess.png, id=91, 1488.31032pt x 827.34094pt>
+<../Pictures/UML//UI2.3GameSuccess.png, id=95, 1488.31032pt x 827.34094pt>
 File: ../Pictures/UML//UI2.3GameSuccess.png Graphic file (type png)
 <use ../Pictures/UML//UI2.3GameSuccess.png>
-Package pdftex.def Info: ../Pictures/UML//UI2.3GameSuccess.png  used on input line 228.
+Package pdftex.def Info: ../Pictures/UML//UI2.3GameSuccess.png  used on input line 232.
 (pdftex.def)             Requested size: 297.65678pt x 165.46526pt.
  [14 <../Pictures/UML//UI2.2GameOver.png> <../Pictures/UML//UI2.3GameSuccess.png>] (UML.aux) ) 
 Here is how much of TeX's memory you used:
- 8759 strings out of 478864
- 138680 string characters out of 2855690
+ 8767 strings out of 478864
+ 139025 string characters out of 2855690
  482530 words of memory out of 3000000
- 26418 multiletter control sequences out of 15000+600000
+ 26425 multiletter control sequences out of 15000+600000
  442606 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,8n,82p,761b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {D:/Program Files (x86)/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on UML.pdf (14 pages, 4288486 bytes).
+Output written on UML.pdf (14 pages, 4297641 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
