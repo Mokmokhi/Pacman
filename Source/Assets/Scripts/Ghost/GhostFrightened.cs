@@ -27,14 +27,14 @@ public class GhostFrightened : GhostBehavior
     {
         if (!eaten) {
             // white.GetComponent<AnimatedSprite>().Restart();
-            GetComponent<MeshRenderer>().material.color = Color.white;
+            transform.GetChild(0).GetComponent<MeshRenderer>().material.color = Color.white;
         }
     }
 
     private void OnEnable()
     {
         // blue.GetComponent<AnimatedSprite>().Restart();
-        GetComponent<MeshRenderer>().material.color = Color.blue;
+        transform.GetChild(0).GetComponent<MeshRenderer>().material.color = Color.blue;
         ghost.movement.speedMultiplier = 0.5f;
         eaten = false;
     }
@@ -42,7 +42,7 @@ public class GhostFrightened : GhostBehavior
     private void OnDisable()
     {
         ghost.movement.speedMultiplier = 1f;
-        GetComponent<MeshRenderer>().material.color = ghost.initColor;
+        transform.GetChild(0).GetComponent<MeshRenderer>().material.color = ghost.initColor;
         eaten = false;
     }
 
