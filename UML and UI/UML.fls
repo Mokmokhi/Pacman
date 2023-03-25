@@ -751,6 +751,13 @@ INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 OUTPUT UML.toc
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT ..\Pictures\UML\\Database_struct.png
+INPUT ..\Pictures\UML\\Database_struct.png
+INPUT ..\Pictures\UML\\Database_struct.png
+INPUT ..\Pictures\UML\\Database_struct.png
+INPUT ..\Pictures\UML\\Database_struct.png
+INPUT ..\Pictures\UML\\Database_struct.png
+INPUT ..\Pictures\UML\\Database_struct.png
 INPUT ..\Pictures\UML\\Database_Class.drawio.png
 INPUT ..\Pictures\UML\\Database_Class.drawio.png
 INPUT ..\Pictures\UML\\Database_Class.drawio.png
@@ -765,15 +772,22 @@ INPUT ..\Pictures\UML\\Database_use-case.png
 INPUT ..\Pictures\UML\\Database_use-case.png
 INPUT ..\Pictures\UML\\Database_use-case.png
 INPUT ..\Pictures\UML\\Database_use-case.png
-INPUT ..\Pictures\UML\\Database_Activity.png
-INPUT ..\Pictures\UML\\Database_Activity.png
-INPUT ..\Pictures\UML\\Database_Activity.png
-INPUT ..\Pictures\UML\\Database_Activity.png
-INPUT ..\Pictures\UML\\Database_Activity.png
-INPUT ..\Pictures\UML\\Database_Activity.png
-INPUT ..\Pictures\UML\\Database_Activity.png
 INPUT D:\Program Files (x86)\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT ..\Pictures\UML\\Database_Activity.png
+INPUT ..\Pictures\UML\\Database_Activity.png
+INPUT ..\Pictures\UML\\Database_Activity.png
+INPUT ..\Pictures\UML\\Database_Activity.png
+INPUT ..\Pictures\UML\\Database_Activity.png
+INPUT ..\Pictures\UML\\Database_Activity.png
+INPUT ..\Pictures\UML\\Database_Activity.png
+INPUT ..\Pictures\UML\\Props_struct.png
+INPUT ..\Pictures\UML\\Props_struct.png
+INPUT ..\Pictures\UML\\Props_struct.png
+INPUT ..\Pictures\UML\\Props_struct.png
+INPUT ..\Pictures\UML\\Props_struct.png
+INPUT ..\Pictures\UML\\Props_struct.png
+INPUT ..\Pictures\UML\\Props_struct.png
 INPUT ..\Pictures\UML\\Props-Class.png
 INPUT ..\Pictures\UML\\Props-Class.png
 INPUT ..\Pictures\UML\\Props-Class.png
@@ -795,6 +809,13 @@ INPUT ..\Pictures\UML\\Props_sequence.png
 INPUT ..\Pictures\UML\\Props_sequence.png
 INPUT ..\Pictures\UML\\Props_sequence.png
 INPUT ..\Pictures\UML\\Props_sequence.png
+INPUT ..\Pictures\UML\\Pacman_struct.png
+INPUT ..\Pictures\UML\\Pacman_struct.png
+INPUT ..\Pictures\UML\\Pacman_struct.png
+INPUT ..\Pictures\UML\\Pacman_struct.png
+INPUT ..\Pictures\UML\\Pacman_struct.png
+INPUT ..\Pictures\UML\\Pacman_struct.png
+INPUT ..\Pictures\UML\\Pacman_struct.png
 INPUT ..\Pictures\UML\\Pacman_Class.png
 INPUT ..\Pictures\UML\\Pacman_Class.png
 INPUT ..\Pictures\UML\\Pacman_Class.png
@@ -823,6 +844,13 @@ INPUT ..\Pictures\UML\\Pacman_sequence-turn.png
 INPUT ..\Pictures\UML\\Pacman_sequence-turn.png
 INPUT ..\Pictures\UML\\Pacman_sequence-turn.png
 INPUT ..\Pictures\UML\\Pacman_sequence-turn.png
+INPUT ..\Pictures\UML\\Ghost_Structural.png
+INPUT ..\Pictures\UML\\Ghost_Structural.png
+INPUT ..\Pictures\UML\\Ghost_Structural.png
+INPUT ..\Pictures\UML\\Ghost_Structural.png
+INPUT ..\Pictures\UML\\Ghost_Structural.png
+INPUT ..\Pictures\UML\\Ghost_Structural.png
+INPUT ..\Pictures\UML\\Ghost_Structural.png
 INPUT ..\Pictures\UML\\Ghost_Class.png
 INPUT ..\Pictures\UML\\Ghost_Class.png
 INPUT ..\Pictures\UML\\Ghost_Class.png
