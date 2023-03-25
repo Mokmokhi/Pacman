@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "4251643142",
+    "project_id": "unitypacman-b8e1d",
+    "storage_bucket": "unitypacman-b8e1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4251643142:android:63bd37b5b0785fa0b14287",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.CSCI3100PacMan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4251643142-4ur1hp3krgk8h6a9p6vjhb0s4n8uje4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8j0OWX1B8bWYutLRYNEmrovIJyDDvURA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4251643142-4ur1hp3krgk8h6a9p6vjhb0s4n8uje4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
