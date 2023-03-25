@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     public float speedMultiplier = 1f;
     public Vector3 initialDirection;
 
-    public Rigidbody rigidbody { get; private set; }
+    public new Rigidbody rigidbody { get; private set; }
     public Vector3 direction { get; private set; }
     public Vector3 nextDirection { get; private set; }
     public Vector3 rotation { get; private set; }
