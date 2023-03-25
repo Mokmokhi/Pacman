@@ -35,6 +35,10 @@ Department of Mathematics, The Chinese University of Hong Kong}
 \subsubsection{Structural Diagram}
 \subsubsection{UMLs}
 \textbf{class diagram}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Database_Class.drawio.png}
+\end{figure}
 \textbf{use-case diagram}\\
 \textbf{sequence diagram}\\
 \subsubsection{Component Functionality}
@@ -167,26 +171,56 @@ The user can also go back to the Login screen by pressing the "Go Back" button.
 
 \subsection{Title Screen}
 \subsubsection{Description of view}
-The title screen is with a character view in the maze, with yellow as a background color for UI. A title `Pacman', and 4 buttons including `Start Game', `Settings', `Login Out' and `Quit to Desktop'. 
+The title screen is with a character view in the maze, with yellow as a background color for UI. A title `Pacman', and 5 buttons including `Start Game', `Settings', `Score Board', `Login Out' and `Quit to Desktop'. 
 \subsubsection{Screen Image}
 \begin{figure}[H]
     \centering
     \includegraphics*[scale=0.2]{UI1.0Main.png}
 \end{figure}
 \subsubsection{Objects and actions}
-The button `Start Game' will direct user to the main game, while the button `Setting' will direct user to the setting page. A `Log Out' button will let user to log out from current account and go to the Login screen, while the button `Quit to Desktop' will do the logout and at the same time leave the application directly.
+The button `Start Game' will direct user to the main game, while the button `Setting' will direct user to the setting page. A `Score Board' button allow users to go to the score board page. A `Log Out' button will let user to log out from current account and go to the Login screen, while the button `Quit to Desktop' will do the logout and at the same time leave the application directly.
+
+\subsection{Level Selection Screen}
+\subsubsection{Description of view}
+The level selection screen is with a character view in the maze, with yellow as a background color for UI. A title `Level Selection', and 3 boxes for difficulty selection: `Easy', `Normal', `Hard', and 3 tags for level selection. A `Back to Menu' button is placed at the bottom of the screen.
+\subsubsection{Screen Image}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.2]{UI1.1LevelSelection.png}
+\end{figure}
+\subsubsection{Objects and actions}
+The tick box for difficulty selection considered to be the difficulty of ghost AI. The easy difficulty will have the dumbest AI, while hard difficulty will have the smartest AI, nearly a cheated level.
+
+The tags under the level selection provides level selection. The 3 levels are corresponding to 3 different maps.
+
+The `Back to Menu' button will direct users back to title screen.
 
 
 \subsection{Setting UI}
 \subsubsection{Description of view}
-The Setting page consists of a character view in maze as backgound, a big yellow text `Settings' indicating this is a setting page, with 3 scroll bars, a cancel button and a done button.
+The Setting page consists of a character view in maze as backgound, a big yellow text `Settings' indicating this is a setting page, with a textbox with a `Change' button, 3 scroll bars, a cancel button and a done button.
 \subsubsection{Screen Image}
 \begin{figure}[H]
     \centering
-    \includegraphics*[scale=0.2]{UI1.1Settings.png}
+    \includegraphics*[scale=0.2]{UI1.2Settings.png}
 \end{figure}
 \subsubsection{Objects and actions}
+The textbox is used for inputting a new user name, and when the `Change' button is clicked, it means to confirm the change with the inputted name.
+
 The scroll bars will be available for controlling the master volume, the effect volume, the music volume of the game. For user who want to ignore the changes, pressing the cancel button allows him to return previous page discarding the changes made, or he could press the done button to save the changes.
+
+\subsection{Scoreboard}
+\subsubsection{Description of view}
+The Setting page consists of a character view in maze as backgound, a big yellow text `Leader Board' indicating this is a Leader Board page. A table consisting Rank, User Name, Score. There is a `Go Back' button in the bottom.
+\subsubsection{Screen Image}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.2]{UI1.3ScoreBoard.png}
+\end{figure}
+\subsubsection{Objects and actions}
+The table will show the ranking over users by listing the rank according to the highest score of the users. For each gameplay, the score of the latest gameplay of current user will be highlighted and be placed on the top of the scoreboard.
+
+When the `Go back' button is clicked, user will be directed to title screen.
 
 \subsection{Main Game}
 \subsubsection{Description of view}
