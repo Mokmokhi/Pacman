@@ -31,20 +31,22 @@ Department of Mathematics, The Chinese University of Hong Kong}
 \newpage
 \section{UML DESIGN}
 
-\subsection{Manager Class}
+\subsection{User Management}
 \subsubsection{Structural Diagram}
 \textbf{class diagram}\\
-\begin{figure}[H]
-    \centering
-    \includegraphics*[scale=0.4]{UML-Class-Singleton.png}
-\end{figure}
 \subsubsection{UMLs}
 \textbf{use-case diagram}\\
 \textbf{sequence diagram}\\
 \subsubsection{Component Functionality}
+This component is 
 \subsubsection{Major Procedure and Functions}
+Signup: This function is to create accounts and save them into database.
 
-\subsection{Props Class}
+Login: This function is to verify account information so that users with records are allowed to retrieve past records in the game.
+
+Verification: This function is to verify the validity of user id and password.
+
+\subsection{Props}
 \subsubsection{Structural Diagram}
 \textbf{class diagram}\\
 \begin{figure}[H]
@@ -64,6 +66,8 @@ Department of Mathematics, The Chinese University of Hong Kong}
 \end{figure}
 \subsubsection{Component Functionality}
 The props class is to provide the bases for game objects, such as pellets in the maze for Pacman to achieve scores, or other props that will enhence in-game experience.
+
+The PropsBase component is to provide an abstract template for each prop. And PropsManager is to announce control sequence to each props.
 \subsubsection{Major Procedure and Functions}
 Use(void): The Use function is to obtain the action of using the prop, by destroying the prop from the maze.
 
@@ -71,17 +75,7 @@ Instantiate(Props): The instantiate function is to create the props for each gam
 
 Destroy(Props): The destroy function is to destroy the prop from the maze for each game.
 
-\subsection{Database}
-\subsubsection{Structural Diagram}
-\textbf{class diagram}\\
-\subsubsection{UMLs}
-\textbf{use-case diagram}\\
-\textbf{sequence diagram}\\
-\subsubsection{Component Functionality}
-\subsubsection{Major Procedure and Functions}
-
-
-\subsection{Ghost Class}
+\subsection{Ghost}
 \subsubsection{Structural Diagram}
 \textbf{class diagram}\\
 \begin{figure}[H]
@@ -100,7 +94,15 @@ Destroy(Props): The destroy function is to destroy the prop from the maze for ea
     \includegraphics*[scale=0.4]{Ghost_Sequence.png}
 \end{figure}
 \subsubsection{Component Functionality}
+The Ghost class is to indicate movement for each of all ghosts in the game. It manipulate with ghost behaviour and different status of a ghost.
+
+It consists of a ghost element from GameManager to control the action of the ghost. Ghost behaviour will be uses to indicate the status of the ghost. GhostChase, GhostScatter, GhostHome and GhostFrightened are 4 status of ghost interacting with GhostBehaviour.
 \subsubsection{Major Procedure and Functions}
+Enable() and Disable(): The two functions set in Ghost Behaviour provide the indication of activation of a ghost, i.e. whether the ghost is working.
+
+ResetState(): This function is to reset the status of a ghost to its default status.
+
+ExitTransition(): This function is to end the transition procedure.
 
 
 
