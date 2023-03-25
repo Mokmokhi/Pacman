@@ -75,6 +75,29 @@ Instantiate(Props): The instantiate function is to create the props for each gam
 
 Destroy(Props): The destroy function is to destroy the prop from the maze for each game.
 
+\subsection{Pacman}
+\subsubsection{Structural Diagram}
+\subsubsection{UMLs}
+\textbf{class diagram}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.25]{Pacman.png}
+\end{figure}
+\textbf{activity diagram}\\
+\textbf{sequence diagram}\\
+\subsubsection{Component Functionality}
+The Pacman will be with a Transform component to produce transformation, a RigidBody component to handle gravity motion, and a collider component to handle collisions.
+
+A pacman script and movement script will be handling the attributes and the motion of the pacman respectively.
+
+\subsubsection{Major Procedure and Functions}
+EatPellet(pellet: Pellet): This function handles when a pellet is eaten by the pacman. If it is true, the score will be increased.
+
+EatPowerPellet(powerPellet: Pellet): This function handles when a power pellet is eaten by the pacman. Pacman state will be according to the power pellet eaten.
+
+Eaten(): This function handles the death of Pacman. If a pacman is eaten by a ghost, the lives will be decreased and Pacman will be respawned somewhere.
+
+SetDirection(): This function handles the moving direction of the Pacman. It uses the checkIsBlocked() function to check whether the direction to change is being blocked by some walls. If so, it remains the same direction as before the change.
 \subsection{Ghost}
 \subsubsection{Structural Diagram}
 \textbf{class diagram}\\
