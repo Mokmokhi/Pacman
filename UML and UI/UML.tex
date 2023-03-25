@@ -40,7 +40,15 @@ Department of Mathematics, The Chinese University of Hong Kong}
     \includegraphics*[scale=0.4]{Database_Class.drawio.png}
 \end{figure}
 \textbf{use-case diagram}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Database_use-case.png}
+\end{figure}
 \textbf{activity diagram}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Database_Activity.png}
+\end{figure}
 \subsubsection{Component Functionality}
 This component is to manage all the manager and user information consisting of the database action. The DataBaseManager controls Register, Login, LeaderBoard and UserData Managers. Each of which are related to its corresponding procedure.
 \subsubsection{Major Procedure and Functions}
@@ -92,7 +100,18 @@ Destroy(Props): The destroy function is to destroy the prop from the maze for ea
     \centering
     \includegraphics*[scale=0.4]{Pacman_use-case.png}
 \end{figure}
-\textbf{sequence diagram}\\
+\textbf{sequence diagram}
+
+Eat Ghost:
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Pacman_sequence-eatGhost.png}
+\end{figure}
+Turn:
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.4]{Pacman_sequence-turn.png}
+\end{figure}
 \subsubsection{Component Functionality}
 The Pacman will be with a Transform component to produce transformation, a RigidBody component to handle gravity motion, and a collider component to handle collisions.
 
@@ -108,12 +127,12 @@ Eaten(): This function handles the death of Pacman. If a pacman is eaten by a gh
 SetDirection(): This function handles the moving direction of the Pacman. It uses the checkIsBlocked() function to check whether the direction to change is being blocked by some walls. If so, it remains the same direction as before the change.
 \subsection{Ghost}
 \subsubsection{Structural Diagram}
+\subsubsection{UMLs}
 \textbf{class diagram}\\
 \begin{figure}[H]
     \centering
     \includegraphics*[scale=0.25]{Ghost_Class.png}
 \end{figure}
-\subsubsection{UMLs}
 \textbf{activity diagram}\\
 \begin{figure}[H]
     \centering
