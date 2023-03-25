@@ -152,17 +152,59 @@ The button `Start Game' will direct user to the main game, while the button `Set
 
 \subsection{Setting UI}
 \subsubsection{Description of view}
+The Setting page consists of a character view in maze as backgound, a big yellow text `Settings' indicating this is a setting page, with 3 scroll bars, a cancel button and a done button.
 \subsubsection{Screen Image}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.2]{UI1.1Settings.png}
+\end{figure}
 \subsubsection{Objects and actions}
+The scroll bars will be available for controlling the master volume, the effect volume, the music volume of the game. For user who want to ignore the changes, pressing the cancel button allows him to return previous page discarding the changes made, or he could press the done button to save the changes.
 
 \subsection{Main Game}
 \subsubsection{Description of view}
+In the main gameplay, it will be shown as first person view, with brick walls, pellets and ghosts. There are labels on the top-left corner showing score and lives, and a mini-map in the bottom left corner for a bounded bird-eye view of the maze. 
 \subsubsection{Screen Image}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.2]{UI2.0InGame.png}
+\end{figure}
 \subsubsection{Objects and actions}
+The score label will show the current score of the player dynamically when user eat any pellets or props increasing the scores. The lives label shows the remaining number of lives of the player. Once it goes 0, it will direct to Game Over screen. If player eats all the pellets for scores, then it will direct to the Game success screen.
 
-\subsection{Record page}
+Ghosts in the maze will be spawned by time and chases player. Player should escape from their attacks.
+
+The mini-map shows the current position of player and his surroundings, which helps player to find direction but keeping the first person experience.
+
+\subsection{Game Pause Menu}
 \subsubsection{Description of view}
+The pause screen consists of a character view in maze as background, and yellow text `Paused' indicating this is the pause menu. The menu contains a `resume' button, `Setting' button, `Quit to Menu' button and `Quit to Desktop' button.
 \subsubsection{Screen Image}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.2]{UI2.1PauseMenu.png}
+\end{figure}
 \subsubsection{Objects and actions}
+The Resume button allows player resume the game. The `Settings' button will direct player to the setting page. `Quit to Menu' button will direct player to title page, and `Quit to Desktop' will directly close the application.
+\subsection{Game Over}
+\subsubsection{Description of view}
+The Game over screen consists of a character view in maze as background, and yellow text `Game over' indicating this is the Game over screen. The menu contains a `Back to menu' button.
+\subsubsection{Screen Image}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.2]{UI2.2GameOver.png}
+\end{figure}
+\subsubsection{Objects and actions}
+The `Back to menu' button will direct player to the title screen.
+\subsection{Game Clear}
+\subsubsection{Description of view}
+The Game clear screen consists of a character view in maze as background, and yellow text `You Survived' indicating this is the Game clear screen. The menu contains a `Back to menu' button.
+\subsubsection{Screen Image}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.2]{UI2.3GameSuccess.png}
+\end{figure}
+\subsubsection{Objects and actions}
+The `Back to menu' button will direct player to the title screen.
 
 \end{document}

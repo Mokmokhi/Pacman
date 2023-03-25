@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1679746109 "c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex" "UML.pdf" "UML" 1679746112
+["pdflatex"] 1679749872 "c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex" "UML.pdf" "UML" 1679749877
   "../Pictures/UML//Ghost_Activity.png" 1679677426 25425 ea21709010db50dac06c70b92d2da4bb ""
   "../Pictures/UML//Ghost_Class.png" 1679681202 81215 86c126d33a270086d206e0908aa67a03 ""
   "../Pictures/UML//Ghost_Sequence.png" 1679677426 41400 a292e31397990761c2e2c9b594f7a3f3 ""
@@ -9,6 +9,11 @@
   "../Pictures/UML//UI0.0Login.png" 1679744817 529519 d839563afb8eb9fcff1617317e76a3aa ""
   "../Pictures/UML//UI0.1SignUp.png" 1679744817 537186 c57873b8016a9ac15f11a1393c0fd9a1 ""
   "../Pictures/UML//UI1.0Main.png" 1679744818 537644 3cab25c4685ef25b24e94ea28b0b90e4 ""
+  "../Pictures/UML//UI1.1Settings.png" 1679744818 537315 7cff49f39e0b3b31ef17832d6c43dae6 ""
+  "../Pictures/UML//UI2.0InGame.png" 1679744818 914353 a32de5b963398140f827fefbe6da1374 ""
+  "../Pictures/UML//UI2.1PauseMenu.png" 1679744818 536998 04ed72a6c917661fb6d5e3b8fe51a5cd ""
+  "../Pictures/UML//UI2.2GameOver.png" 1679744818 494577 feb9be11afa805228d4dd0e212f44382 ""
+  "../Pictures/UML//UI2.3GameSuccess.png" 1679744818 245145 395f82a3a44f1314c141e115ad796e0b ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1677243002 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -113,10 +118,10 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/l3packages/xparse/xparse.sty" 1622536900 6469 d540b48269b71f2a890483b206419e32 ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
-  "UML.aux" 1679746112 4699 3f32f0b7d29f66efdb62846b9553f12f "pdflatex"
-  "UML.tex" 1679746108 7216 b04f9d7cbf821a7b3cd9bb95d4c47840 ""
-  "UML.toc" 1679746112 2929 05699df9f0163019f3e40d4bb2050124 "pdflatex"
-  "c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex" 1679746108 7216 b04f9d7cbf821a7b3cd9bb95d4c47840 ""
+  "UML.aux" 1679749877 5619 1fc5b9687c7e74f9e06422f1403544b9 "pdflatex"
+  "UML.tex" 1679749867 10237 7b8ec3d5e352f90cefa7c88af3f7c660 ""
+  "UML.toc" 1679749877 3520 6a72bc84f7c8bb1f9768e140b1c20c28 "pdflatex"
+  "c:/Users/Owenm/Documents/GitHub/Pacman/UML and UI/UML.tex" 1679749867 10237 7b8ec3d5e352f90cefa7c88af3f7c660 ""
   (generated)
   "UML.aux"
   "UML.log"
