@@ -22,7 +22,7 @@ public class Ghost : MonoBehaviour {
         scatter = GetComponent<GhostScatter>();
         chase = GetComponent<GhostChase>();
         frightened = GetComponent<GhostFrightened>();
-        initColor = GetComponent<MeshRenderer>().material.color;
+        initColor = transform.GetChild(0).GetComponent<MeshRenderer>().material.color;
     }
 
     private void Start() {
