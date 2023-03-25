@@ -40,11 +40,11 @@ Department of Mathematics, The Chinese University of Hong Kong}
     \includegraphics*[scale=0.4]{Database_Class.drawio.png}
 \end{figure}
 \textbf{use-case diagram}\\
-\textbf{sequence diagram}\\
+\textbf{activity diagram}\\
 \subsubsection{Component Functionality}
-This component is 
+This component is to manage all the manager and user information consisting of the database action. The DataBaseManager controls Register, Login, LeaderBoard and UserData Managers. Each of which are related to its corresponding procedure.
 \subsubsection{Major Procedure and Functions}
-Signup: This function is to create accounts and save them into database.
+Register: This function is to create accounts and save them into database.
 
 Login: This function is to verify account information so that users with records are allowed to retrieve past records in the game.
 
@@ -52,12 +52,12 @@ Verification: This function is to verify the validity of user id and password.
 
 \subsection{Props}
 \subsubsection{Structural Diagram}
+\subsubsection{UMLs}
 \textbf{class diagram}\\
 \begin{figure}[H]
     \centering
     \includegraphics*[scale=0.4]{Props-Class.png}
 \end{figure}
-\subsubsection{UMLs}
 \textbf{use-case diagram}\\
 \begin{figure}[H]
     \centering
@@ -134,8 +134,6 @@ Enable() and Disable(): The two functions set in Ghost Behaviour provide the ind
 ResetState(): This function is to reset the status of a ghost to its default status.
 
 ExitTransition(): This function is to end the transition procedure.
-
-
 
 \section{UI DESIGN}
 
