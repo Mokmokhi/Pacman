@@ -110,30 +110,44 @@ ExitTransition(): This function is to end the transition procedure.
 
 \subsection{Login page}
 \subsubsection{Description of view}
+The screen is shown with a background of character view of game maze, with a yellow text of game title `Pacman 3D'. There will be 2 textboxes for entering Email and Password of the user, and two buttons for Sign up or Login respectively,
 \subsubsection{Screen Image}
+\begin{figure}[H]
     \centering
-    \includegraphics*[scale=0.4]{UI0.0Login.png}
+    \includegraphics*[scale=0.2]{UI0.0Login.png}
+\end{figure}
 \subsubsection{Objects and actions}
 The screen in view is the Login screen, and will be the first view the user sees when the program starts. 
-Here user can login their account by entering their email and password, and press the "Login" button. Once a user login, they will be brought to the Title Screen
-The user can also create an account by pressing the "Sign Up" button, which will bring the user to the sign up screen as follows.
+
+Here user can login their account by entering their email and password into the provided textboxes, and press the "Login" button. Once user is verified, they will be brought to the Title Screen.
+
+The user can also create a new account by pressing the "Sign Up" button, which will direct the user to the sign up screen as follows.
 
 \subsection{Sign-up page}
 \subsubsection{Description of view}
+In the sign up page, the background is consistently using the character view in the maze, with a yellow text Sign up indicating the page usage. There will be 3 textboxes for entering email, password, and the confirmation password for double entry verification. A go back button and a sign up button will be at the bottom of the screen.
 \subsubsection{Screen Image}
+\begin{figure}[H]
     \centering
-    \includegraphics*[scale=0.4]{UI0.1SignUp.png}
+    \includegraphics*[scale=0.2]{UI0.1SignUp.png}
+\end{figure}
 \subsubsection{Objects and actions}
-The screen in view is the Sign up screen, it will be opened when the user presses the "Sign Up" button in the Login screen. 
-Here user can create an account by inputting their email, password, and confirm passwords, and press the "Sign Up" button.
+The Sign up screen will be opened when the user presses the "Sign Up" button in the Login screen. 
+
+Here user can create an account by inputting their email, password, and confirm passwords, and press the "Sign Up" button for system verification. If Sign up process is failed, there will be a message showing that attempt is unsuccessful.
+
 The user can also go back to the Login screen by pressing the "Go Back" button.
 
 \subsection{Title Screen}
 \subsubsection{Description of view}
+The title screen is with a character view in the maze, with yellow as a background color for UI. A title `Pacman', and 4 buttons including `Start Game', `Settings', `Login Out' and `Quit to Desktop'. 
 \subsubsection{Screen Image}
+\begin{figure}[H]
     \centering
-    \includegraphics*[scale=0.4]{UI1.0Main.png}
+    \includegraphics*[scale=0.2]{UI1.0Main.png}
+\end{figure}
 \subsubsection{Objects and actions}
+The button `Start Game' will direct user to the main game, while the button `Setting' will direct user to the setting page. A `Log Out' button will let user to log out from current account and go to the Login screen, while the button `Quit to Desktop' will do the logout and at the same time leave the application directly.
 
 
 
