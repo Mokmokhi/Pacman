@@ -20,7 +20,10 @@ public class GameManager : Singleton<GameManager> {
     }
 
     private void Start() {
-        pellets = currentLevel.numberOfPellets;
+        // Find number of pellets given that pellets have the tag "Pellet"
+        pellets = GameObject.FindGameObjectsWithTag("Pellet").Length;
+
+
         SetLives(3);
         SetScore(0);
         Time.timeScale = 0;
@@ -33,6 +36,9 @@ public class GameManager : Singleton<GameManager> {
             isLose = false;
             isFinish = true;
             UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameSuccess");
+            // Print game success
+            Debug.Log("Game Success");
+
             EventBus.Publish(GameEvent.STOP);
         }
         if (lives <= 0 && !isFinish) {
@@ -66,7 +72,9 @@ public class GameManager : Singleton<GameManager> {
     private void OnGameStart() {
         EventBus.Unsubscribe(GameEvent.START, OnGameStart);
         Time.timeScale = 1;
-        pellets = currentLevel.numberOfPellets;
+        // Find number of pellets given that pellets have the tag "Pellet"
+        pellets = GameObject.FindGameObjectsWithTag("Pellet").Length;
+
         SetLives(3);
         SetScore(0);
         EventBus.Subscribe(GameEvent.PAUSE, OnGamePause);
