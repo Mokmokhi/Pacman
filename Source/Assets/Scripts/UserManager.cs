@@ -11,6 +11,8 @@ public class UserManager : MonoBehaviour
     [SerializeField]
     TMP_InputField inputEmail;
     [SerializeField]
+    TMP_InputField inputUserName;
+    [SerializeField]
     TMP_InputField inputPassword;
     [SerializeField]
     TMP_InputField inputConfirmPassword;
@@ -23,6 +25,7 @@ public class UserManager : MonoBehaviour
 
     public void Register() {
         firebasemanager.Register(inputEmail.text, inputPassword.text);
+        firebasemanager.SaveData("UserName", inputUserName.text);
     }
 
     public void Login() {
