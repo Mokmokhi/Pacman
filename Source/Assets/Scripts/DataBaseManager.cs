@@ -1,3 +1,4 @@
+using Firebase.Database;
 using UnityEngine;
 
 public class DataBaseManager : MonoBehaviour
@@ -41,6 +42,21 @@ public class DataBaseManager : MonoBehaviour
                 print("Login success");
             }
         });
+    }
+
+    public void SaveData(string slot, string data) {
+        if (user != null) {
+            DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
+            reference.Child(user.UserId).Child(slot).SetValueAsync(data).ContinueWith(task => {
+                if (task.IsCompletedSuccessfully) {
+                    print("Data saved.");
+                }
+            });
+        }
+    }
+
+    public void LoadData() {
+
     }
 
     public void Logout() {
