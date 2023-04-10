@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3640558469199248345}
   - component: {fileID: 1838064501247225748}
   - component: {fileID: 1405132879793279808}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Wall-Cube
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3447463955856672927}
-  m_Material: {fileID: 13400000, guid: 43c75faf7b2f744f98ec4c8d1b7aae4d, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

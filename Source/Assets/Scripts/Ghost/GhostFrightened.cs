@@ -13,6 +13,7 @@ public class GhostFrightened : GhostBehavior
     public override void Disable()
     {
         base.Disable();
+        
     }
 
     private void Eaten()
@@ -36,9 +37,6 @@ public class GhostFrightened : GhostBehavior
         transform.GetChild(0).GetComponent<MeshRenderer>().material.color = Color.blue;
         ghost.movement.speedMultiplier = 0.5f;
         eaten = false;
-
-        // Print "ghost.frightened.enabled" to the console with time stamp
-        //Debug.Log(Time.time + ": " + "ghost.frightened.enabled: " + enabled);
     }
 
     private void OnDisable()
@@ -71,9 +69,6 @@ public class GhostFrightened : GhostBehavior
                     maxDistance = distance;
                 }
             }
-
-            // Print the direction to the console
-            //Debug.Log(Time.time + ": " + "Frightened Direction: " + direction);
 
             ghost.movement.SetDirection(direction);
         }

@@ -73,4 +73,5 @@ public class GhostHome : GhostBehavior
         ghost.movement.rigidbody.isKinematic = false;
         ghost.movement.enabled = true;
     }
+
 }
