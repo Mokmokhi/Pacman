@@ -82,7 +82,7 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private float rayOffset = 0.4f;
+    private float rayOffset = 0.425f;
     public bool isBlocked(Vector3 testDirection) {
         Ray fowardRay = new Ray(transform.position + new Vector3(rayOffset, 0, -1*rayOffset), testDirection);
         Ray leftRay = new Ray(transform.position + new Vector3(rayOffset, 0, rayOffset), testDirection);

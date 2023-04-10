@@ -28,6 +28,9 @@ public class GhostScatter : GhostBehavior
                 }
             }
 
+            // Print the direction to the console
+            Debug.Log(Time.time + ": " + "Scatter Direction: " + node.availableDirections[index]);
+
             ghost.movement.SetDirection(node.availableDirections[index]);
         }
     }

@@ -17,11 +17,18 @@ public class GhostChase : GhostBehavior
             Vector3 direction = Vector3.zero;
             float minDistance = float.MaxValue;
 
-            // Find the available direction that moves closet to pacman
+            // Find the available direction that moves closest to Pac-Man
             foreach (Vector3 availableDirection in node.availableDirections)
             {
+                // Ignore the direction that would make the ghost move back to its previous position
+                if (availableDirection == -ghost.movement.direction)
+                    continue;
+
+                // Print the available direction to the console
+                Debug.Log("Available Direction: " + availableDirection);
+
                 // If the distance in this direction is less than the current
-                // min distance then this direction becomes the new closest
+                // min distance, then this direction becomes the new closest
                 Vector3 newPosition = transform.position + new Vector3(availableDirection.x, 0, availableDirection.z);
                 float distance = (ghost.target.position - newPosition).sqrMagnitude;
 
@@ -32,8 +39,12 @@ public class GhostChase : GhostBehavior
                 }
             }
 
+            // Print the direction to the console
+            Debug.Log(Time.time + ": " + "Chase Direction: " + direction);
+
             ghost.movement.SetDirection(direction);
         }
     }
+
 
 }

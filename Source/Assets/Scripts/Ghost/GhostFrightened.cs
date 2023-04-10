@@ -70,6 +70,9 @@ public class GhostFrightened : GhostBehavior
                 }
             }
 
+            // Print the direction to the console
+            Debug.Log(Time.time + ": " + "Frighted Direction: " + direction);
+
             ghost.movement.SetDirection(direction);
         }
     }
