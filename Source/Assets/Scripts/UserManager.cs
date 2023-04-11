@@ -24,31 +24,42 @@ public class UserManager : MonoBehaviour
     // Update is called once per frame
 
     public void Register() {
-        firebasemanager.Register(inputEmail.text, inputPassword.text);
-        firebasemanager.SaveData("UserName", inputUserName.text);
-    }
 
-    public void Login() {
-        if (checkPasswordConfirmation(inputPassword.text, inputConfirmPassword.text))
-            firebasemanager.Login(inputEmail.text, inputPassword.text);
-        else {
+        if (checkPasswordConfirmation() && VerificationRegister()) {
+            firebasemanager.Register(inputEmail.text, inputPassword.text);
+            firebasemanager.profile.setName(inputUserName.text);
+            firebasemanager.SaveData();
+        } else {
             inputConfirmPassword.text = "";
             Debug.Log("Passwords do not match");
         }
     }
+
+    public void Login() {
+            firebasemanager.Login(inputEmail.text, inputPassword.text);
+            firebasemanager.LoadData();
+    }
     public void Logout()
     {
+        firebasemanager.SaveData();
         firebasemanager.Logout();
+        firebasemanager.profile.resetProfile();
     }
 
     public string GetEmail() {
         return firebasemanager.GetEmail();
     }
 
-    private bool checkPasswordConfirmation(string password, string confirm) {
-        if (string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirm))
+    private bool VerificationRegister() {
+        if (inputUserName.text.Length > 0 && inputPassword.text.Length >= 8) {
+            return true;
+        }
+        else return false;
+    }
+    private bool checkPasswordConfirmation() {
+        if (string.IsNullOrEmpty(inputPassword.text) || string.IsNullOrEmpty(inputConfirmPassword.text))
             return false;
-        if (password != confirm)
+        if (inputPassword.text != inputConfirmPassword.text)
             return false;
         return true;
     }
