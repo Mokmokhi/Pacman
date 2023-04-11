@@ -8,6 +8,8 @@ TagManager:
   - Node
   - Pacman
   - GhostHome
+  - Undefined
+  - Pellet
   layers:
   - Default
   - TransparentFX

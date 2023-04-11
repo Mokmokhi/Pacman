@@ -4,8 +4,10 @@ using UnityEngine.UI;
 public class GameManager : Singleton<GameManager> {
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
+    public int highScore = 0;
     public int lives { get; private set; }
     public int pellets;
+
     
     private Level[] levels;
     public Level currentLevel;
@@ -33,19 +35,10 @@ public class GameManager : Singleton<GameManager> {
 
     private void Update() {
         if (pellets <= 0 && !isFinish) {
-            isLose = false;
-            isFinish = true;
-            UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameSuccess");
-            // Print game success
-            Debug.Log("Game Success");
-
-            EventBus.Publish(GameEvent.STOP);
+            GameSuccess();
         }
         if (lives <= 0 && !isFinish) {
-            isLose = true;
-            isFinish = true;
-            UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameOver");
-            EventBus.Publish(GameEvent.STOP);
+            GameOver();
         }
     }
     
@@ -98,9 +91,31 @@ public class GameManager : Singleton<GameManager> {
         Time.timeScale = 0;
         EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
+
+    private void GameSuccess() {
+        isLose = false;
+        isFinish = true;
+        SaveHighScore();
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameSuccess");
+        EventBus.Publish(GameEvent.STOP);
+    }
+
+    private void GameOver() {
+        isLose = true;
+        isFinish = true;
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameOver");
+        EventBus.Publish(GameEvent.STOP);
+    }
     
     public void StartGame() {
         EventBus.Publish(GameEvent.START);
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("InGame");
+    }
+
+    // After a level is completed, save the high score
+    public void SaveHighScore() {
+        if (score > highScore) {
+            highScore = score;
+        }
     }
 }
