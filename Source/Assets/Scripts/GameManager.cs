@@ -96,20 +96,20 @@ public class GameManager : Singleton<GameManager> {
         isLose = false;
         isFinish = true;
         SaveHighScore();
-        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameSuccess");
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.3-GameSuccess");
         EventBus.Publish(GameEvent.STOP);
     }
 
     private void GameOver() {
         isLose = true;
         isFinish = true;
-        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameOver");
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.2-GameOver");
         EventBus.Publish(GameEvent.STOP);
     }
     
     public void StartGame() {
         EventBus.Publish(GameEvent.START);
-        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("InGame");
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
     }
 
     // After a level is completed, save the high score
