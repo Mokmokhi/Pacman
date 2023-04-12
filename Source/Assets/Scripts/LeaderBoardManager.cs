@@ -9,9 +9,6 @@ public class LeaderBoardManager : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     public DataBaseManager firebasemanager;
-    [SerializeField]
-    public TMP_InputField testinput;
-
     public Board leaderBoard;
     public class Entries {
         public string UserName;
@@ -69,9 +66,6 @@ public class LeaderBoardManager : MonoBehaviour
         return score * lives * param;
     }
 
-    public void TestAdding() {
-        AddScoreToLeaders(int.Parse(testinput.text));
-    }
     public void AddScoreToLeaders(int score) {
 
     firebasemanager.GetReference().Child("LeaderBoard").RunTransaction(mutableData => {

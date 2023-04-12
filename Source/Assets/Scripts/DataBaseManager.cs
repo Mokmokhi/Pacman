@@ -9,6 +9,8 @@ public class DataBaseManager : MonoBehaviour
     public Firebase.Auth.FirebaseAuth auth;
     public Firebase.Auth.FirebaseUser user;
     public PlayerProfile profile;
+    [SerializeField]
+    public UIManager uiManager;
 
     public class PlayerProfile {
     public string UserName;
@@ -62,11 +64,11 @@ public class DataBaseManager : MonoBehaviour
         auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task => {
             if (task.IsFaulted) {
                 print(task.Exception.InnerException.Message);
-           
             }
             if (task.IsCompletedSuccessfully) {
                 print("Login success");
             }
+            password = "";
         });
     }
 
@@ -119,9 +121,12 @@ public class DataBaseManager : MonoBehaviour
     private void authStateChanged(object sender, System.EventArgs e) {
         if (auth.CurrentUser != user) {
             user = auth.CurrentUser;
-            if (user!= null) {
+            if (user != null) {
+                uiManager.GetComponent<PanelSwitcher>().SwitchActivePanelByName("1-Main");
                 print("Current User: " + user.Email);
                 LoadData();
+            } else {
+                uiManager.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
             }
         }
     }
