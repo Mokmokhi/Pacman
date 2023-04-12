@@ -6,7 +6,7 @@ using UnityEngine;
 public class Pellet : MonoBehaviour
 {
     public int points = 10;
-    public bool isEaten { get; private set; } = false;
+    public bool isEaten = false;
 
     private void Start() {
         EventBus.Subscribe(GameEvent.START, OnGameStart);
