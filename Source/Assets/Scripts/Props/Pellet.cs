@@ -12,7 +12,7 @@ public class Pellet : MonoBehaviour
         GameObject.FindWithTag("Pacman").GetComponent<Pacman>().EatPellet(this);
         gameObject.SetActive(false);
         isEaten = true;
-        GameManager.Instance.pellets--;
+        GameManager.Instance.pelletsNum--;
     }
 
     private void OnTriggerEnter(Collider other) {

@@ -31,7 +31,7 @@ public class Pacman : MonoBehaviour {
         enabled = false;
         collider.enabled = false;
         movement.enabled = false;
-        ResetState();
+        //ResetState();
     }
 
     public void EatPellet(Pellet pellet ) {
@@ -44,9 +44,26 @@ public class Pacman : MonoBehaviour {
         EatPellet(powerPellet);
     }
     
+    /*
     public void Eaten() {
         Debug.Log("Pacman Eaten!");
         this.DeathSequence();
         GameManager.Instance.AddLives(-1);
+    }
+    */
+
+    public void Eaten()
+    {
+        Debug.Log("Pacman Eaten!");
+
+        this.DeathSequence();
+
+        GameManager.Instance.AddLives(-1);
+
+        if (GameManager.Instance.lives > 0) {
+            Invoke(nameof(GameManager.Instance.ResetState), 3f);
+        } else {
+            GameManager.Instance.GameOver();
+        }
     }
 }
