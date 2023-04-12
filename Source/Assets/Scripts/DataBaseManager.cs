@@ -3,7 +3,7 @@ using Firebase.Extensions;
 using TMPro;
 using UnityEngine;
 
-public class DataBaseManager : MonoBehaviour
+public class DataBaseManager : Singleton<DataBaseManager>
 {
     // Start is called before the first frame update
     public Firebase.Auth.FirebaseAuth auth;
@@ -15,21 +15,33 @@ public class DataBaseManager : MonoBehaviour
     public class PlayerProfile {
     public string UserName;
     public int HighestScore;
-    public bool HasSkin;
+    public int Coins;
+    public uint HasSkin;
+    public int UsingSkin;
+    public uint PowerLevel;
     public PlayerProfile() {
         UserName = "User";
         HighestScore = 0;
-        HasSkin = false;
+        Coins = 0;
+        HasSkin = 1;
+        UsingSkin = 0;
+        PowerLevel = 0;
     }
     public PlayerProfile(string name) {
         UserName = name;
         HighestScore = 0;
-        HasSkin = false;
+        Coins = 0;
+        HasSkin = 1;
+        UsingSkin = 0;
+        PowerLevel = 0;
     }
     public void resetProfile() {
         UserName = "User";
         HighestScore = 0;
-        HasSkin = false;
+        Coins = 0;
+        HasSkin = 1;
+        UsingSkin = 0;
+        PowerLevel = 0;
     }
 }
     void Start()
@@ -39,11 +51,6 @@ public class DataBaseManager : MonoBehaviour
         auth.StateChanged += authStateChanged;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Register(string name, string email, string password) {
 
         auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task => {

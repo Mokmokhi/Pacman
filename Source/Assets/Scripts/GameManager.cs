@@ -25,7 +25,7 @@ public class GameManager : Singleton<GameManager> {
 
     private void Start() {
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
-       
+        highScore = DataBaseManager.Instance.GetComponent<DataBaseManager>().profile.HighestScore;
         Time.timeScale = 0;
     }
 
@@ -134,12 +134,11 @@ public class GameManager : Singleton<GameManager> {
     }
 
     public void SaveHighScore() {
-        if (score > highScore) {
-            highScore = score;
-        }
+        DataBaseManager.Instance.GetComponent<LeaderBoardManager>().UpdateScore(score);
     }
 
     public void QuitApp(){
+        DataBaseManager.Instance.GetComponent<DataBaseManager>().SaveData();
         Application.Quit();
     }
 

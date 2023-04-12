@@ -5,16 +5,17 @@ using UnityEngine;
 public class LogIOManager : MonoBehaviour
 {
     // Start is called before the first frame update
-   [SerializeField]
     DataBaseManager firebasemanager;
     [SerializeField]
     TMP_InputField inputEmail;
     [SerializeField]
     TMP_InputField inputPassword;
 
-    void Awake()
+    void Start()
     {
+        firebasemanager = DataBaseManager.Instance.GetComponent<DataBaseManager>();
     }
+
 
     // Update is called once per frame
     public void Login() {

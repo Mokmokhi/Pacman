@@ -10,7 +10,7 @@ public class LeaderBoardManager : MonoBehaviour
 {
     // Start is called before the first frame update
     
-    [SerializeField]
+
     public DataBaseManager firebasemanager;
     public Board leaderBoard;
     [SerializeField]
@@ -48,6 +48,8 @@ public class LeaderBoardManager : MonoBehaviour
     }
 
     void Start() {
+
+        firebasemanager = DataBaseManager.Instance.GetComponent<DataBaseManager>();
         leaderBoard = new Board();
     }
 

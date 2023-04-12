@@ -6,7 +6,7 @@ using UnityEngine;
 public class RegisterManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField]
+
     public DataBaseManager firebasemanager;
     [SerializeField]
     public TMP_InputField inputUserName;
@@ -18,14 +18,9 @@ public class RegisterManager : MonoBehaviour
     public TMP_InputField inputConfirmPassword;
     void Start()
     {
-        
+        firebasemanager = DataBaseManager.Instance.GetComponent<DataBaseManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Register() {
 
         if (checkPasswordConfirmation() && VerificationRegister()) {
