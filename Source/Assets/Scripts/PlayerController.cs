@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 
         }
 
-        
+
         if (timer > turnCD) timer = 0f;
         timer += Time.deltaTime;
     }

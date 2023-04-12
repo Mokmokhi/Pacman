@@ -14,17 +14,17 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.23921569, g: 0.14901961, b: 0.14901961, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.4
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.1509434, g: 0.11747953, b: 0.11747953, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17301784, g: 0.21623588, b: 0.29822618, a: 1}
+  m_IndirectSpecularColor: {r: 0.17301862, g: 0.21623696, b: 0.2982277, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -876,6 +876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -967,7 +971,7 @@ Transform:
   - {fileID: 721070672}
   - {fileID: 1667513744}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &30121369 stripped
 Transform:
@@ -2032,6 +2036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -2088,6 +2096,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -2295,6 +2307,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -3011,6 +3027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -3129,6 +3149,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -3325,6 +3349,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -3531,6 +3559,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -3785,6 +3817,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -4814,6 +4850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 138
@@ -4904,7 +4944,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &175966412 stripped
 Transform:
@@ -5092,6 +5132,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -5334,6 +5378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 161
@@ -5413,7 +5461,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &197208618
 MonoBehaviour:
@@ -5473,7 +5521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ed504f9482847ad80457a2519edeb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firebasemanager: {fileID: 197208618}
   inputEmail: {fileID: 13799559}
   inputPassword: {fileID: 351541993}
 --- !u!1001 &198212641
@@ -5486,6 +5533,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
       propertyPath: m_Name
       value: PowerPellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
       propertyPath: m_RootOrder
@@ -5543,6 +5594,203 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2338985285819421553, guid: 1da16832b41578647aacfa1e17202097, type: 3}
   m_PrefabInstance: {fileID: 1063851602}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &206577915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 335368135, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Range
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 335368135, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Color.b
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 335368135, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Color.g
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 335368135, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Color.r
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594136, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594137, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349537208594137, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df059c091752f42e584bd96eb6a6047c, type: 2}
+    - target: {fileID: 2031349537208594142, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 289301614986012343, guid: 28984178f469c482ea663111f77260fe, type: 3}
+    - target: {fileID: 2031349538059247219, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Name
+      value: Ghost-Clyde (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247219, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247220, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 927974400}
+    - target: {fileID: 2031349538059247221, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247225, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247226, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247227, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Size.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247227, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Size.z
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247227, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247227, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031349538059247227, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 43c75faf7b2f744f98ec4c8d1b7aae4d, type: 2}
+    - target: {fileID: 2031349538059247227, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085257517169608375, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: inside
+      value: 
+      objectReference: {fileID: 324012604}
+    - target: {fileID: 4085257517169608375, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: outside
+      value: 
+      objectReference: {fileID: 1507226287}
+    - target: {fileID: 4085257517169608375, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: duration
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456263929816045952, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: initialDirection.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456263929816045952, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: initialDirection.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983161, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983165, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Name
+      value: Ghost-Clyde
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596259940619983167, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 641d968d77699f34595de25f92abc2da, type: 2}
+    - target: {fileID: 6167108876509749247, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 927974400}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
 --- !u!4 &207806982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 470477364116596802, guid: 95ba1d84145a44140b954971c531c4fd, type: 3}
@@ -6868,7 +7116,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &231426688
 MonoBehaviour:
@@ -8372,6 +8620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 195
@@ -8509,6 +8761,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -8770,7 +9026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &276986079
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9606,6 +9862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 114
@@ -9729,6 +9989,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -10241,6 +10505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 147
@@ -10297,6 +10565,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -10402,6 +10674,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -10917,6 +11193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 85
@@ -11395,6 +11675,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -12187,6 +12471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 190
@@ -12300,6 +12588,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -12887,6 +13179,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -13711,6 +14007,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 57151664}
     m_Modifications:
+    - target: {fileID: 1405132879793279808, guid: 1da16832b41578647aacfa1e17202097, type: 3}
+      propertyPath: m_Mass
+      value: 999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405132879793279808, guid: 1da16832b41578647aacfa1e17202097, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405132879793279808, guid: 1da16832b41578647aacfa1e17202097, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2338985285819421553, guid: 1da16832b41578647aacfa1e17202097, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -13777,6 +14085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -13833,6 +14145,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -14846,6 +15162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 109
@@ -15360,6 +15680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -15685,6 +16009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 167
@@ -15804,6 +16132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 141
@@ -15860,6 +16192,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -15932,6 +16268,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -16819,7 +17159,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a6afc2881af44d4dab3a0d8b0e3ab32, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a6afc2881af44d4dab3a0d8b0e3ab32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16864,6 +17204,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5a6afc2881af44d4dab3a0d8b0e3ab32, type: 3}
       propertyPath: m_Name
       value: GhostPrototype
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a6afc2881af44d4dab3a0d8b0e3ab32, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a6afc2881af44d4dab3a0d8b0e3ab32, type: 3}
@@ -17225,6 +17569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -17543,6 +17891,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -18229,6 +18581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -18608,6 +18964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 121
@@ -18741,6 +19101,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -18917,6 +19281,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -19109,6 +19477,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -19604,6 +19976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 116
@@ -19858,6 +20234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -20057,7 +20437,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &654259980 stripped
 Transform:
@@ -20199,6 +20579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 130
@@ -20325,6 +20709,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -20606,6 +20994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 123
@@ -20662,6 +21054,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -20786,6 +21182,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -20963,6 +21363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 104
@@ -21138,6 +21542,10 @@ PrefabInstance:
       value: Pellet
       objectReference: {fileID: 0}
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_TagString
       value: Pellet
       objectReference: {fileID: 0}
@@ -21259,6 +21667,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -21608,8 +22020,57 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 83.67, y: 0, z: 0}
+--- !u!1 &707001492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 707001493}
+  - component: {fileID: 707001494}
+  m_Layer: 0
+  m_Name: RegisterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &707001493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707001492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 446.19037, y: 175.2926, z: 0.22445679}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &707001494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707001492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab18990ca85434740917c0ced5daf200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firebasemanager: {fileID: 197208618}
+  inputUserName: {fileID: 358207576}
+  inputEmail: {fileID: 1946621706}
+  inputPassword: {fileID: 229183514}
+  inputConfirmPassword: {fileID: 977445923}
 --- !u!1001 &707409862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21906,6 +22367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 148
@@ -22010,6 +22475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -22066,6 +22535,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -22449,6 +22922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 100
@@ -22625,6 +23102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -22687,6 +23168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 126
@@ -22733,6 +23218,103 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+--- !u!1 &733330711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733330715}
+  - component: {fileID: 733330714}
+  - component: {fileID: 733330713}
+  - component: {fileID: 733330712}
+  m_Layer: 6
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &733330712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733330711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a27e846e9958074d9d37620d43b1ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!81 &733330713
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733330711}
+  m_Enabled: 1
+--- !u!20 &733330714
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733330711}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &733330715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733330711}
+  m_LocalRotation: {x: 0.35355338, y: -0.35355338, z: 0.1464466, w: 0.8535535}
+  m_LocalPosition: {x: 1.5, y: 2, z: -0.5}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 45, y: -45, z: 0}
 --- !u!4 &733675724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2338985285819421553, guid: 1da16832b41578647aacfa1e17202097, type: 3}
@@ -22753,6 +23335,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -23534,6 +24120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerPellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
       propertyPath: m_RootOrder
       value: 189
@@ -23862,6 +24452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -24111,6 +24705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 101
@@ -24173,6 +24771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 154
@@ -24229,6 +24831,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -24491,6 +25097,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -25157,6 +25767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 108
@@ -25281,6 +25895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -25342,6 +25960,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -25807,6 +26429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 117
@@ -25936,6 +26562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 142
@@ -25992,6 +26622,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -26413,7 +27047,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &847146341
 GameObject:
@@ -26678,7 +27312,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 51d59f46da5750942af06fd6156c5e8e, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51d59f46da5750942af06fd6156c5e8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26723,6 +27357,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 51d59f46da5750942af06fd6156c5e8e, type: 3}
       propertyPath: m_Name
       value: PacmanPrototype
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 51d59f46da5750942af06fd6156c5e8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51d59f46da5750942af06fd6156c5e8e, type: 3}
@@ -27323,6 +27961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -27426,6 +28068,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da16832b41578647aacfa1e17202097, type: 3}
+--- !u!1 &869596630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2031349538059247219, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+  m_PrefabInstance: {fileID: 206577915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &869596631
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869596630}
+  m_Material: {fileID: 13400000, guid: 43c75faf7b2f744f98ec4c8d1b7aae4d, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6666667
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &870221883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 470477364116596802, guid: 95ba1d84145a44140b954971c531c4fd, type: 3}
@@ -27780,6 +28440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -27964,6 +28628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 145
@@ -28020,6 +28688,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -28139,6 +28811,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -28268,6 +28944,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -28499,7 +29179,7 @@ Transform:
   - {fileID: 1273188786}
   - {fileID: 1481621388}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &909422607
 PrefabInstance:
@@ -28511,6 +29191,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -28574,6 +29258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 102
@@ -28630,6 +29318,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -28830,7 +29522,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &921315914 stripped
 Transform:
@@ -28995,7 +29687,7 @@ MonoBehaviour:
   pellets: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
   pelletsNum: 1
   highScore: 0
-  currentLevel: {fileID: 0}
+  currentLevel: {fileID: 979761277}
   isLose: 1
   isFinish: 0
 --- !u!4 &927933752
@@ -29011,7 +29703,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &927974399 stripped
 GameObject:
@@ -29023,19 +29715,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 380288294413728947, guid: a41196ab56f5605469db21590c8784bc, type: 3}
   m_PrefabInstance: {fileID: 380288294661601456}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &927974401
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927974399}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!114 &927974402 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1747396083799038806, guid: a41196ab56f5605469db21590c8784bc, type: 3}
@@ -29361,6 +30040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 165
@@ -29417,6 +30100,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -29842,6 +30529,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -30482,7 +31173,7 @@ Transform:
   m_Children:
   - {fileID: 1780059990}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &979761277
 MonoBehaviour:
@@ -30757,6 +31448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 171
@@ -30813,6 +31508,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -31015,6 +31714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -31148,6 +31851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -31204,6 +31911,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -31266,6 +31977,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -31395,6 +32110,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -31530,6 +32249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 158
@@ -31586,6 +32309,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -31882,6 +32609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 175
@@ -31995,6 +32726,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -32195,6 +32930,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -32789,6 +33528,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -33817,6 +34560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -34228,6 +34975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 95
@@ -34502,6 +35253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 122
@@ -34701,6 +35456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -34762,6 +35521,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -34953,6 +35716,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -35264,6 +36031,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -35616,7 +36387,7 @@ RectTransform:
   - {fileID: 2129040159}
   - {fileID: 1194920544}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -35638,6 +36409,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -35841,6 +36616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 166
@@ -35964,6 +36743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 137
@@ -36035,6 +36818,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -36252,6 +37039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 184
@@ -36308,6 +37099,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -36939,6 +37734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 110
@@ -37053,6 +37852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 113
@@ -37110,6 +37913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 89
@@ -37166,6 +37973,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -37435,6 +38246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 78
@@ -37671,6 +38486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -37824,6 +38643,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -38020,6 +38843,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -38282,6 +39109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 179
@@ -38343,6 +39174,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
       propertyPath: m_Name
       value: PowerPellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
       propertyPath: m_RootOrder
@@ -38476,6 +39311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -38542,6 +39381,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -38662,6 +39505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 183
@@ -38718,6 +39565,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -39616,6 +40467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -39737,6 +40592,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -40200,6 +41059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -40256,6 +41119,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -40554,6 +41421,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -40891,6 +41762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -40957,6 +41832,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -41086,6 +41965,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -41518,6 +42401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -41574,6 +42461,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -42136,7 +43027,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1383191915 stripped
 Transform:
@@ -42420,6 +43311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -42661,6 +43556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -42845,6 +43744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -42958,6 +43861,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -43619,6 +44526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 88
@@ -43747,6 +44658,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -44250,6 +45165,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -46251,7 +47170,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523863089
 GameObject:
@@ -46743,6 +47662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 83
@@ -46836,7 +47759,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1545833775
 PrefabInstance:
@@ -47295,7 +48218,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1560357785 stripped
 Transform:
@@ -47441,6 +48364,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -47695,6 +48622,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -48149,6 +49080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -48462,6 +49397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 81
@@ -48518,6 +49457,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -48770,6 +49713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 162
@@ -48969,6 +49916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 105
@@ -49036,6 +49987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 143
@@ -49098,6 +50053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -49154,6 +50113,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -49336,6 +50299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 136
@@ -49512,6 +50479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 155
@@ -49625,6 +50596,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2338985285819421553, guid: 1da16832b41578647aacfa1e17202097, type: 3}
   m_PrefabInstance: {fileID: 688181352}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1631463150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1631463151}
+  - component: {fileID: 1631463152}
+  m_Layer: 0
+  m_Name: LogIOManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1631463151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631463150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 446.19037, y: 175.2926, z: 0.22445679}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1631463152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631463150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ed504f9482847ad80457a2519edeb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputEmail: {fileID: 13799559}
+  inputPassword: {fileID: 351541993}
 --- !u!1 &1633523615
 GameObject:
   m_ObjectHideFlags: 0
@@ -49802,6 +50819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 157
@@ -49915,6 +50936,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -50380,6 +51405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -50824,6 +51853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 140
@@ -50880,6 +51913,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -51071,6 +52108,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -51348,6 +52389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -51456,6 +52501,107 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da16832b41578647aacfa1e17202097, type: 3}
+--- !u!1 &1691332307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1691332309}
+  - component: {fileID: 1691332308}
+  - component: {fileID: 1691332311}
+  - component: {fileID: 1691332310}
+  m_Layer: 6
+  m_Name: MapCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &1691332308
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691332307}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8400000, guid: d5f4bb06695dad94eb0242d480d3d2b1, type: 2}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1691332309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691332307}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.5, y: 5.5, z: 2}
+  m_LocalScale: {x: 0.5, y: 0.5000001, z: 0.5000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1691332310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691332307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1f7d726d9eb2774a9aa9c2cdc088e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1691332311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691332307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1f7d726d9eb2774a9aa9c2cdc088e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1691921294 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
@@ -51897,6 +53043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 160
@@ -52215,6 +53365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -52333,6 +53487,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -52607,6 +53765,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -53242,6 +54404,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -53909,7 +55075,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1761281600
 PrefabInstance:
@@ -53921,6 +55087,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -54632,6 +55802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 129
@@ -55036,6 +56210,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &1792604610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792604611}
+  - component: {fileID: 1792604612}
+  m_Layer: 0
+  m_Name: LeaderBoardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1792604611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792604610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 446.19037, y: 175.2926, z: 0.22445679}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792604612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792604610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06479f4601a74a409bf902c8fc05722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firebasemanager: {fileID: 197208618}
+  outputScore: {fileID: 0}
+  outputName: {fileID: 0}
+  outputRank: {fileID: 0}
 --- !u!4 &1792791608 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2338985285819421553, guid: 1da16832b41578647aacfa1e17202097, type: 3}
@@ -55056,6 +56278,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -55118,6 +56344,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -55672,6 +56902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 178
@@ -55798,6 +57032,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -55991,6 +57229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 152
@@ -56047,6 +57289,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -56249,6 +57495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -56424,6 +57674,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -57003,6 +58257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 172
@@ -57120,6 +58378,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -57314,6 +58576,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -57785,6 +59051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerPellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
       propertyPath: m_RootOrder
       value: 187
@@ -57981,6 +59251,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -58410,7 +59684,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1912764975
 PrefabInstance:
@@ -58487,6 +59761,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -58664,6 +59942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerPellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: e10a15bcc97190d44823de177cf078d8, type: 3}
       propertyPath: m_RootOrder
       value: 188
@@ -58725,6 +60007,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -59029,6 +60315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -59282,6 +60572,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -60007,6 +61301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -60464,6 +61762,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -61139,6 +62441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 153
@@ -61457,6 +62763,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -61797,6 +63107,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -62217,6 +63531,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -62650,6 +63968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 139
@@ -62780,6 +64102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -62908,6 +64234,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -63479,6 +64809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -63996,6 +65330,10 @@ PrefabInstance:
     - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_Name
       value: Pellet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
@@ -64642,6 +65980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -65182,6 +66524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 146
@@ -65602,6 +66948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 2937075908552829468, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
       propertyPath: m_RootOrder
       value: 192
@@ -65846,29 +67196,77 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 808075259, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 808075261, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 927974406, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_Size.x
-      value: 0.5
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 927974406, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_Size.z
-      value: 0.5
+      value: 1.9
       objectReference: {fileID: 0}
-    - target: {fileID: 927974406, guid: a41196ab56f5605469db21590c8784bc, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 43c75faf7b2f744f98ec4c8d1b7aae4d, type: 2}
-    - target: {fileID: 927974406, guid: a41196ab56f5605469db21590c8784bc, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+    - target: {fileID: 963194225, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 963194225, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090883142, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090883142, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085839342, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085839343, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085839344, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085839344, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085839344, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085839344, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085839344, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 0.337
       objectReference: {fileID: 0}
     - target: {fileID: 380288294413728591, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_Name
       value: Pacman
       objectReference: {fileID: 0}
+    - target: {fileID: 380288294413728591, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 380288294413728947, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 380288294413728947, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65876,7 +67274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 380288294413728947, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 380288294413728947, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65911,8 +67309,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 380288294413728949, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 380288294413728949, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524656393443397333, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410579845718635695, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779309907417984018, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048784491351972193, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41196ab56f5605469db21590c8784bc, type: 3}
@@ -65923,6 +67341,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 196675674, guid: dd694a0e2836b534798b3695c1456b9f, type: 3}
+      propertyPath: m_Range
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 196675674, guid: dd694a0e2836b534798b3695c1456b9f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 196675674, guid: dd694a0e2836b534798b3695c1456b9f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 196675674, guid: dd694a0e2836b534798b3695c1456b9f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.509434
+      objectReference: {fileID: 0}
     - target: {fileID: 592556523889765095, guid: dd694a0e2836b534798b3695c1456b9f, type: 3}
       propertyPath: initialDirection.x
       value: 0
@@ -66052,9 +67486,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 335368135, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Range
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 335368135, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Color.b
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 335368135, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Color.g
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 335368135, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
+      propertyPath: m_Color.r
+      value: 0.509434
+      objectReference: {fileID: 0}
     - target: {fileID: 2031349538059247219, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2031349538059247220, guid: 33ce978e1a953374ab27e2e57f0610ef, type: 3}
       propertyPath: target
@@ -66181,6 +67631,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 726591074, guid: da22d04999a5fa043a8df115fbfa59d1, type: 3}
+      propertyPath: m_Range
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 726591074, guid: da22d04999a5fa043a8df115fbfa59d1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 726591074, guid: da22d04999a5fa043a8df115fbfa59d1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 726591074, guid: da22d04999a5fa043a8df115fbfa59d1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.509434
+      objectReference: {fileID: 0}
     - target: {fileID: 3221281778622426979, guid: da22d04999a5fa043a8df115fbfa59d1, type: 3}
       propertyPath: target
       value: 
@@ -66310,6 +67776,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 112380741, guid: ef35b8d2581c1c14ca96f00067013c94, type: 3}
+      propertyPath: m_Range
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 112380741, guid: ef35b8d2581c1c14ca96f00067013c94, type: 3}
+      propertyPath: m_Color.b
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 112380741, guid: ef35b8d2581c1c14ca96f00067013c94, type: 3}
+      propertyPath: m_Color.g
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 112380741, guid: ef35b8d2581c1c14ca96f00067013c94, type: 3}
+      propertyPath: m_Color.r
+      value: 0.509434
+      objectReference: {fileID: 0}
     - target: {fileID: 166435461454333712, guid: ef35b8d2581c1c14ca96f00067013c94, type: 3}
       propertyPath: m_RootOrder
       value: 13

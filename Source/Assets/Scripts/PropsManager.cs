@@ -7,6 +7,4 @@ public class PropsManager : Singleton<PropsManager>
 {
     //public Props[] PropsList;
     //public Props[] SpawnedPropsList;
-
-    
 }
