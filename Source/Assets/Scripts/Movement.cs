@@ -56,11 +56,15 @@ public class Movement : MonoBehaviour
         // rigidbody.MoveRotation(Quaternion.Euler(rotation));
         
         // Turn the player to face the direction he is moving slowly
+        /*
         if ((transform.eulerAngles - rotation).magnitude > 0.05f) {
             // Debug.Log("euler angle " + transform.eulerAngles);
             // Debug.Log("rotation " + rotation);
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rotation), 0.75f);
-        }
+        }*/
+        
+        // Turn instantly
+        rigidbody.MoveRotation(Quaternion.Euler(rotation));
             
     }
     
