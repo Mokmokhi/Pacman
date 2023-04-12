@@ -13,4 +13,8 @@ public class UIManager : Singleton<UIManager> {
         livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
         highScoreText.text = "High Score:" + GameManager.Instance.highScore.ToString();
     }
+
+    public void QuitApp(){
+        Application.Quit();
+    }
 }

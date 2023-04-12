@@ -133,9 +133,19 @@ public class GameManager : Singleton<GameManager> {
         EventBus.Publish(GameEvent.STOP);
     }
 
+    public void RestartGame(){
+        EventBus.Publish(GameEvent.STOP);
+        StartLevel(0);  //To be modified
+    }
+
     public void SaveHighScore() {
         if (score > highScore) {
             highScore = score;
         }
     }
+
+    public void QuitApp(){
+        Application.Quit();
+    }
+
 }
