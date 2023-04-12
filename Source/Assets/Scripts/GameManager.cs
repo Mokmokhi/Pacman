@@ -138,4 +138,9 @@ public class GameManager : Singleton<GameManager> {
             highScore = score;
         }
     }
+
+    public void QuitApp(){
+        Application.Quit();
+    }
+
 }
