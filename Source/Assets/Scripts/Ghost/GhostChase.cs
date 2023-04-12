@@ -40,7 +40,7 @@ public class GhostChase : GhostBehavior
             }
 
             // Print the direction to the console
-            Debug.Log(Time.time + ": " + "Chase Direction: " + direction);
+            //Debug.Log(Time.time + ": " + "Chase Direction: " + direction);
 
             ghost.movement.SetDirection(direction);
         }

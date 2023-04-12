@@ -27,6 +27,9 @@ public class PanelSwitcher : MonoBehaviour {
         }
         
         for (int i = 0; i < objs.Length; i++) {
+            if (objs[i].name.Length < length) {
+                continue;
+            } 
             if (!isCaseSensity) {
                 if (objs[i].name.Substring(0, length).ToLower().Equals(p_prefix))
                     results.Add(objs[i].gameObject);

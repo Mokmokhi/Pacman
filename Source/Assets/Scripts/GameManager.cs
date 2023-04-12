@@ -2,45 +2,70 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager> {
+    public Ghost[] ghosts;
+    public Pacman pacman;
+    public Transform pellets;
+    public int pelletsNum = 1;
+
     public int ghostMultiplier { get; private set; } = 1;
-    public int score { get; private set; }
-    public int lives { get; private set; }
-    public int pellets;
+    public int score { get; private set; } = 0;
+    public int highScore = 0;
+    public int lives { get; private set; } = 3;
     
     private Level[] levels;
     public Level currentLevel;
 
-    public bool isLose = true;
+    public bool isLose = false;
     public bool isFinish = false;
 
     public override void Awake() {
         base.Awake();
         levels = FindObjectsOfType<Level>();
-        currentLevel = levels[0]; // testing
     }
 
     private void Start() {
-        pellets = currentLevel.numberOfPellets;
-        SetLives(3);
-        SetScore(0);
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
+       
         Time.timeScale = 0;
-        EventBus.Subscribe(GameEvent.START, OnGameStart);
-        // EventBus.Publish(GameEvent.START);
     }
 
     private void Update() {
-        if (pellets <= 0 && !isFinish) {
-            isLose = false;
-            isFinish = true;
-            UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameSuccess");
-            EventBus.Publish(GameEvent.STOP);
+        if (pelletsNum <= 0 && !isFinish) {
+            GameSuccess();
         }
-        if (lives <= 0 && !isFinish) {
-            isLose = true;
-            isFinish = true;
-            UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("GameOver");
-            EventBus.Publish(GameEvent.STOP);
+    }
+
+    public void StartLevel(int level) {
+        currentLevel = levels[level];
+
+        // Find number of pellets given that pellets have the tag "Pellet"
+        pelletsNum = GameObject.FindGameObjectsWithTag("Pellet").Length;
+
+        SetLives(3);
+        SetScore(0);
+        isLose = false;
+        isFinish = false;
+        EventBus.Subscribe(GameEvent.START, OnGameStart);
+        
+        foreach (Transform pellet in pellets) {
+            pellet.gameObject.SetActive(true);
         }
+
+        ResetState();
+        
+        Time.timeScale = 1;
+
+        EventBus.Publish(GameEvent.START);
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
+    }
+
+    public void ResetState()
+    {
+        for (int i = 0; i < ghosts.Length; i++) {
+            ghosts[i].ResetState();
+        }
+
+        pacman.ResetState();
     }
     
     public void SetGhostMultiplier(int ghostMultiplier) {
@@ -66,7 +91,9 @@ public class GameManager : Singleton<GameManager> {
     private void OnGameStart() {
         EventBus.Unsubscribe(GameEvent.START, OnGameStart);
         Time.timeScale = 1;
-        pellets = currentLevel.numberOfPellets;
+        // Find number of pellets given that pellets have the tag "Pellet"
+        pelletsNum = GameObject.FindGameObjectsWithTag("Pellet").Length;
+
         SetLives(3);
         SetScore(0);
         EventBus.Subscribe(GameEvent.PAUSE, OnGamePause);
@@ -90,9 +117,25 @@ public class GameManager : Singleton<GameManager> {
         Time.timeScale = 0;
         EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
-    
-    public void StartGame() {
-        EventBus.Publish(GameEvent.START);
-        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("InGame");
+
+    private void GameSuccess() {
+        isLose = false;
+        isFinish = true;
+        SaveHighScore();
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.3-GameSuccess");
+        EventBus.Publish(GameEvent.STOP);
+    }
+
+    public void GameOver() {
+        isLose = true;
+        isFinish = true;
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.2-GameOver");
+        EventBus.Publish(GameEvent.STOP);
+    }
+
+    public void SaveHighScore() {
+        if (score > highScore) {
+            highScore = score;
+        }
     }
 }
