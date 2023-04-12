@@ -8,7 +8,7 @@ public class Pellet : MonoBehaviour
     public int points = 10;
     public bool isEaten = false;
 
-    private void Start() {
+    protected virtual void Start() {
         EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
     
