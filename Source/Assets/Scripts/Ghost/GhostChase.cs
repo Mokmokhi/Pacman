@@ -25,7 +25,7 @@ public class GhostChase : GhostBehavior
                     continue;
 
                 // Print the available direction to the console
-                Debug.Log("Available Direction: " + availableDirection);
+                // Debug.Log("Available Direction: " + availableDirection);
 
                 // If the distance in this direction is less than the current
                 // min distance, then this direction becomes the new closest

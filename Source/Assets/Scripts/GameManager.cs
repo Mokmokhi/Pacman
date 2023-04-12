@@ -133,8 +133,18 @@ public class GameManager : Singleton<GameManager> {
         EventBus.Publish(GameEvent.STOP);
     }
 
+    public void RestartGame(){
+        EventBus.Publish(GameEvent.STOP);
+        StartLevel(0);  //To be modified
+    }
+
     public void SaveHighScore() {
         DataBaseManager.Instance.GetComponent<LeaderBoardManager>().UpdateScore(score);
+    }
+
+    public void ResumeGame(){
+        EventBus.Publish(GameEvent.RESUME);
+        FindObjectOfType<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
     }
 
     public void QuitApp(){

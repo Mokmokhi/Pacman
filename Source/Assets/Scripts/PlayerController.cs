@@ -26,6 +26,12 @@ public class PlayerController : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
             movement.SetDirection(pacman.transform.right);
         }
+        else if(Input.GetKeyDown(KeyCode.Space)) {
+
+            EventBus.Publish(GameEvent.PAUSE);
+            FindObjectOfType<PanelSwitcher>().SwitchActivePanelByName("2.1-PauseMenu");
+
+        }
 
         
         if (timer > turnCD) timer = 0f;

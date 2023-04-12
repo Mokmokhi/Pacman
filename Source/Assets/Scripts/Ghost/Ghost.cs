@@ -33,6 +33,13 @@ public class Ghost : MonoBehaviour {
     
     private void OnGameStart() {
         EventBus.Unsubscribe(GameEvent.START, OnGameStart);
+        EventBus.Subscribe(GameEvent.STOP, OnGameStop);
+        ResetState();
+    }
+    
+    private void OnGameStop() {
+        EventBus.Unsubscribe(GameEvent.STOP, OnGameStop);
+        EventBus.Subscribe(GameEvent.START, OnGameStart);
         ResetState();
     }
 
