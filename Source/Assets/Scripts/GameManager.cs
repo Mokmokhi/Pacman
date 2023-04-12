@@ -33,6 +33,9 @@ public class GameManager : Singleton<GameManager> {
         if (pelletsNum <= 0 && !isFinish) {
             GameSuccess();
         }
+        if (score >= highScore) {
+            highScore = score;
+        }
     }
 
     public void StartLevel(int level) {
