@@ -9,6 +9,11 @@ public class PowerPellet : Pellet {
     // level would be changed by shop function
     // duration would be updated when level is changed
 
+    override void start{
+        EventBus.Subscribe(GameEvent.START, OnGameStart);
+        // get level from database
+    }
+
     protected override void Eaten() {
         GameObject.FindWithTag("Pacman").GetComponent<Movement>().speedMultiplier=1f+level*0.1f;
         GameObject.FindWithTag("Pacman").GetComponent<Pacman>().EatPowerPellet(this);
