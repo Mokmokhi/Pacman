@@ -144,6 +144,11 @@ public class GameManager : Singleton<GameManager> {
         }
     }
 
+    public void ResumeGame(){
+        EventBus.Publish(GameEvent.RESUME);
+        FindObjectOfType<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
+    }
+
     public void QuitApp(){
         Application.Quit();
     }
