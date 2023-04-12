@@ -1,55 +1,45 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class UserManager : MonoBehaviour
+public class RegisterManager : MonoBehaviour
 {
     // Start is called before the first frame update
-   
     [SerializeField]
-    DataBaseManager firebasemanager;
+    public DataBaseManager firebasemanager;
     [SerializeField]
-    TMP_InputField inputEmail;
+    public TMP_InputField inputUserName;
     [SerializeField]
-    TMP_InputField inputUserName;
+    public TMP_InputField inputEmail;
     [SerializeField]
-    TMP_InputField inputPassword;
+    public TMP_InputField inputPassword;
     [SerializeField]
-    TMP_InputField inputConfirmPassword;
-    void Awake()
+    public TMP_InputField inputConfirmPassword;
+    void Start()
     {
-        firebasemanager.auth.StateChanged += authStateChanged;
+        
     }
 
     // Update is called once per frame
-
+    void Update()
+    {
+        
+    }
     public void Register() {
 
         if (checkPasswordConfirmation() && VerificationRegister()) {
-            firebasemanager.Register(inputEmail.text, inputPassword.text);
-            firebasemanager.profile.setName(inputUserName.text);
-            firebasemanager.SaveData();
+            firebasemanager.Register(inputUserName.text, inputEmail.text, inputPassword.text);
+            inputUserName.text = "";
+            inputEmail.text = "";
+            inputPassword.text = "";
+            inputConfirmPassword.text = "";
+
         } else {
             inputConfirmPassword.text = "";
             Debug.Log("Passwords do not match");
         }
     }
-
-    public void Login() {
-            firebasemanager.Login(inputEmail.text, inputPassword.text);
-            firebasemanager.LoadData();
-    }
-    public void Logout()
-    {
-        firebasemanager.SaveData();
-        firebasemanager.Logout();
-        firebasemanager.profile.resetProfile();
-    }
-
-    public string GetEmail() {
-        return firebasemanager.GetEmail();
-    }
-
     private bool VerificationRegister() {
         if (inputUserName.text.Length > 0 && inputPassword.text.Length >= 8) {
             return true;

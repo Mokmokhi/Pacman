@@ -1,4 +1,6 @@
 using Firebase.Database;
+using Firebase.Extensions;
+using TMPro;
 using UnityEngine;
 
 public class DataBaseManager : MonoBehaviour
@@ -7,104 +9,11 @@ public class DataBaseManager : MonoBehaviour
     public Firebase.Auth.FirebaseAuth auth;
     public Firebase.Auth.FirebaseUser user;
     public PlayerProfile profile;
-    void Start()
-    {
-        auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
-        auth.StateChanged += authStateChanged;
-        profile = new PlayerProfile();
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void Register(string email, string password) {
-        auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
-            if (task.IsCanceled) {
-                return;
-            }
-            if (task.IsFaulted) {
-                print(task.Exception.InnerException.Message);
-                return;
-            }
-            if (task.IsCompletedSuccessfully) {
-                print("Register success");
-            }
-        });
-    }
-
-    public void Login(string email, string password) {
-        auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
-            if (task.IsFaulted) {
-                print(task.Exception.InnerException.Message);
-                return;
-            }
-            if (task.IsCompletedSuccessfully) {
-                print("Login success");
-            }
-        });
-    }
-
-    public void SaveData() {
-        if (user != null) {
-            var record = JsonUtility.ToJson(profile);
-            GetUserReference().Push().SetRawJsonValueAsync(record).ContinueWith(task => {
-                if (task.IsCompletedSuccessfully) {
-                    print("Save Success.");
-                }
-            });
-        } else {
-            print("Save Failure.");
-        }
-    }
-
-
-
-    public void LoadData() {
-        if (user != null) {
-            GetUserReference().GetValueAsync().ContinueWith(task => {
-                if (task.IsCompletedSuccessfully) {
-                    var val = task.Result.GetRawJsonValue();
-                    profile = JsonUtility.FromJson<PlayerProfile>(val);
-                    print("Data loaded."); 
-                }
-            });
-        }
-    }
-
-    public void Logout() {
-        auth.SignOut();
-    }
-
-    public string GetEmail() {
-        return user.Email;
-    }
-
-    private void authStateChanged(object sender, System.EventArgs e) {
-        if (auth.CurrentUser != user) {
-            user = auth.CurrentUser;
-            if (user!= null) {
-                print("Current User: " + user.Email);
-            }
-        }
-    }
-
-    private void onDestroy() {
-        auth.StateChanged -= authStateChanged;
-    }
-
-    private DatabaseReference GetUserReference() {
-        DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
-        return reference.Child(user.UserId);
-    }
-}
-
-public class PlayerProfile {
-    private string UserName;
-    private int HighestScore;
-    private bool HasSkin;
+    public class PlayerProfile {
+    public string UserName;
+    public int HighestScore;
+    public bool HasSkin;
     public PlayerProfile() {
         UserName = "User";
         HighestScore = 0;
@@ -115,31 +24,111 @@ public class PlayerProfile {
         HighestScore = 0;
         HasSkin = false;
     }
-
-    public string getName() {
-        return UserName;
-    }
-    public void setName(string name) {
-        UserName = name;
-    }
-
-    public int getScore() {
-        return HighestScore;
-    }
-    public void setScore(int score) {
-        HighestScore = score;
-    }
-
-    public bool hasSkin() {
-        return HasSkin;
-    }
-    public void setSkin() {
-        HasSkin = true;
-    }
-
     public void resetProfile() {
         UserName = "User";
         HighestScore = 0;
         HasSkin = false;
     }
 }
+    void Start()
+    {
+        profile = new PlayerProfile();
+        auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
+        auth.StateChanged += authStateChanged;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void Register(string name, string email, string password) {
+
+        auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task => {
+            if (task.IsFaulted) {
+                print(task.Exception.InnerException.Message);
+            }
+            if (task.IsCompletedSuccessfully) {
+                
+                profile.UserName = name;
+                print("Register success: " + profile.UserName);
+                SaveData();
+            }
+        });
+    }
+
+    public void Login(string email, string password) {
+
+        auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task => {
+            if (task.IsFaulted) {
+                print(task.Exception.InnerException.Message);
+           
+            }
+            if (task.IsCompletedSuccessfully) {
+                print("Login success");
+            }
+        });
+    }
+
+    public void SaveData() {
+        if (user != null) {
+            var record = JsonUtility.ToJson(profile);
+            GetReference().Child(user.UserId).SetRawJsonValueAsync(record).ContinueWithOnMainThread(task => {
+                if (task.IsCompletedSuccessfully) {
+                    print("Save Success.");
+                }
+            });
+        } else {
+            print("Save Failure.");
+        }
+    }
+
+    public void LoadData() {
+        if (user != null) {
+            GetReference().Child(user.UserId).GetValueAsync().ContinueWithOnMainThread(task => {
+                if (task.IsCompletedSuccessfully) {
+                    var val = task.Result.GetRawJsonValue();
+                    profile = JsonUtility.FromJson<PlayerProfile>(val);
+                    print("Data loaded."); 
+                    printInfo();
+                } else {
+                    print("Load Failure.");
+       
+                }
+            });
+        } else print("No user.");
+
+    }
+
+    public void Logout() {
+        auth.SignOut();
+    }
+
+    public string GetEmail() {
+        return user.Email;
+    }
+
+    public void printInfo() {
+        print("User: " + profile.UserName);
+    }
+    public DatabaseReference GetReference() {
+        DatabaseReference reference = FirebaseDatabase.GetInstance("https://unitypacman-b8e1d-default-rtdb.asia-southeast1.firebasedatabase.app/").RootReference;
+        return reference;
+    }
+
+    private void authStateChanged(object sender, System.EventArgs e) {
+        if (auth.CurrentUser != user) {
+            user = auth.CurrentUser;
+            if (user!= null) {
+                print("Current User: " + user.Email);
+                LoadData();
+            }
+        }
+    }
+
+    private void onDestroy() {
+        auth.StateChanged -= authStateChanged;
+    }
+    
+}
+
