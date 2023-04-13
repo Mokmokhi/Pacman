@@ -97,6 +97,7 @@ public class GameManager : Singleton<GameManager> {
 
     public void AddScore(int p_score) {
         this.score += p_score;
+        
     }
     
     public void SetDifficulty(Difficulty difficulty) {
