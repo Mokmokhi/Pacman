@@ -38,6 +38,10 @@ public class GameManager : Singleton<GameManager> {
         highScore = DataBaseManager.Instance.GetComponent<DataBaseManager>().profile.HighestScore;
         playercontroller.gameObject.SetActive(false);
         Time.timeScale = 0;
+        
+        AudioManager.Instance.PlayMusic("bgm1");
+        var audioClip = Resources.Load<AudioClip>("Audio/bgm1");
+        Debug.Log("LOAD TEST" + audioClip.name);
     }
 
     private void Update() {

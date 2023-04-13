@@ -19,6 +19,7 @@ public class UIManager : Singleton<UIManager> {
         difficultyToggles[0].onValueChanged.AddListener(delegate { OnDifficultyToggleChanged(0); });
         difficultyToggles[1].onValueChanged.AddListener(delegate { OnDifficultyToggleChanged(1); });
         difficultyToggles[2].onValueChanged.AddListener(delegate { OnDifficultyToggleChanged(2); });
+        AddSFXToAllButtons();
     }
 
     private void Update() {
@@ -70,4 +71,10 @@ public class UIManager : Singleton<UIManager> {
     private void AddDot() {
         panelSwitcher.GetPanelByName("2.4-Respawning").transform.GetChild(1).GetComponent<TMP_Text>().text += ".";
     }
+    
+    private void AddSFXToAllButtons() {
+        foreach (var button in Resources.FindObjectsOfTypeAll<Button>()) {
+            button.onClick.AddListener(() => AudioManager.Instance.PlaySfx("button1SFX"));
+        }
+    }   
 }

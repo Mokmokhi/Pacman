@@ -6,33 +6,33 @@ using UnityEngine;
 
 public class AudioManager : Singleton<AudioManager>
 {
-	private AudioSource musicSource;
-	private AudioSource sfxSource;
+	[SerializeField] private AudioSource musicSource;
+	[SerializeField] private AudioSource sfxSource;
 	
 	private float musicVolume = 1.0f;
 	private float sfxVolume = 1.0f;
 
 	public void PlayMusic(string clipName, bool loop=true) {
-		musicSource.clip = Resources.Load<AudioClip>("Sound/"+clipName);
+		musicSource.clip = Resources.Load<AudioClip>("Audio/"+clipName);
 		musicSource.volume = musicVolume;
         musicSource.loop = loop;
 		musicSource.Play();
     }
     public void PlayMusic(string clipName) {
-	    musicSource.clip = Resources.Load<AudioClip>("Sound/"+clipName);
+	    musicSource.clip = Resources.Load<AudioClip>("Audio/"+clipName);
 	    musicSource.volume = musicVolume;
 	    musicSource.loop = true;
 	    musicSource.Play();
     }
     
 	public void PlaySfx(string clipName, float pitch=1.0f) {
-		sfxSource.clip =  Resources.Load<AudioClip>("Sound/"+clipName);
+		sfxSource.clip =  Resources.Load<AudioClip>("Audio/"+clipName);
         sfxSource.volume = sfxVolume;
         sfxSource.pitch = pitch;
 		sfxSource.Play();
 	}
 	public void PlaySfx(string clipName) {
-		sfxSource.clip =  Resources.Load<AudioClip>("Sound/"+clipName);
+		sfxSource.clip =  Resources.Load<AudioClip>("Audio/"+clipName);
 		sfxSource.volume = sfxVolume;
 		sfxSource.pitch = 1.0f;
 		sfxSource.Play();
