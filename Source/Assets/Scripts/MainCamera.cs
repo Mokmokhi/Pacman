@@ -12,7 +12,16 @@ public class MainCamera : MonoBehaviour {
         offset = pacman.position - pacmanInitPosition;
     }
 
+    private float timer;
     void Update() {
         transform.position = pacman.position - offset + new Vector3(1,1.5f,-1);
+        
+        // vibrate position.y linearly slowly irregularly
+        timer += Time.deltaTime;
+        timer += Random.Range(-0.005f, 0.005f);
+        transform.position = new Vector3(transform.position.x, transform.position.y + Mathf.Sin(timer * 4) * 0.02f, transform.position.z);
+        
+        // reset Timer
+        if (timer > 2 * Mathf.PI) timer = 0;
     }
 }

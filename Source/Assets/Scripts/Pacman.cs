@@ -14,7 +14,7 @@ public class Pacman : MonoBehaviour {
     
     public AnimationState animationState { get; private set; }
     
-    private bool isEaten = false;
+    public bool isEaten = false;
 
     private void Awake() {
         collider = GetComponent<Collider>();
@@ -61,7 +61,7 @@ public class Pacman : MonoBehaviour {
 
     private void DeathSequence() {
         enabled = false;
-        // collider.enabled = false;
+        collider.enabled = false;
         movement.enabled = false;
         //ResetState();
         animationState = AnimationState.DIE;

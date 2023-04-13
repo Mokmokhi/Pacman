@@ -23435,6 +23435,7 @@ GameObject:
   - component: {fileID: 733330714}
   - component: {fileID: 733330713}
   - component: {fileID: 733330712}
+  - component: {fileID: 733330716}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -23520,6 +23521,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 45, y: -45, z: 0}
+--- !u!114 &733330716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733330711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34b29c0ca6dca24492d8c5e5d8e59d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.5
+  shakeAmount: 0.7
+  decreaseFactor: 1
+  originalPos: {x: 0, y: 0, z: 0}
+  shakeTime: 0
+  isShaking: 0
 --- !u!4 &733675724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2338985285819421553, guid: 1da16832b41578647aacfa1e17202097, type: 3}
@@ -67635,11 +67654,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 927974406, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_Size.x
-      value: 0.96
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 927974406, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_Size.z
-      value: 0.83
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 927974406, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_Center.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 963194225, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_Layer
@@ -67735,6 +67758,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 380288294413728947, guid: a41196ab56f5605469db21590c8784bc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 380288294413728949, guid: a41196ab56f5605469db21590c8784bc, type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 380288294413728949, guid: a41196ab56f5605469db21590c8784bc, type: 3}

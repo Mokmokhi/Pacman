@@ -27,10 +27,9 @@ public class PlayerController : MonoBehaviour {
             movement.SetDirection(pacman.transform.right);
         }
         else if(Input.GetKeyDown(KeyCode.Space)) {
-
+            if (FindObjectOfType<Pacman>().isEaten) return;
             EventBus.Publish(GameEvent.PAUSE);
             FindObjectOfType<PanelSwitcher>().SwitchActivePanelByName("2.1-PauseMenu");
-
         }
 
 

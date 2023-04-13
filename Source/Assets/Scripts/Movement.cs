@@ -51,6 +51,8 @@ public class Movement : MonoBehaviour
     private void FixedUpdate() {
         Vector3 position = rigidbody.position;
         Vector3 translation = direction * speed * speedMultiplier * Time.fixedDeltaTime;
+        // vibrate position.y linearly slowly irregularly
+        translation.y += Mathf.Sin(Time.time * 4) * 0.005f;
         //Vector3 translation = transform.forward.normalized * (speed * speedMultiplier * Time.deltaTime);
         rigidbody.MovePosition(position + translation);
         // rigidbody.MoveRotation(Quaternion.Euler(rotation));
@@ -65,7 +67,6 @@ public class Movement : MonoBehaviour
         
         // Turn instantly
         rigidbody.MoveRotation(Quaternion.Euler(rotation));
-            
     }
     
 
