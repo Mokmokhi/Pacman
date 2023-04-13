@@ -9,7 +9,8 @@ using UnityEngine.UI;
 public class UIManager : Singleton<UIManager> {
     private PanelSwitcher panelSwitcher;
     public TMP_Text scoreText;
-    public TMP_Text livesText;
+    // public TMP_Text livesText;
+    public GameObject livesHearts;
     public TMP_Text highScoreText;
     public Toggle[] difficultyToggles;
 
@@ -21,9 +22,18 @@ public class UIManager : Singleton<UIManager> {
     }
 
     private void Update() {
-        scoreText.text = "Score:" + GameManager.Instance.score.ToString();
-        livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
-        highScoreText.text = "High Score:" + GameManager.Instance.highScore.ToString();
+        scoreText.text = "" + GameManager.Instance.score.ToString();
+        // livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
+        highScoreText.text = "Record: " + GameManager.Instance.highScore.ToString();
+        if (GameManager.Instance.lives == 2) livesHearts.transform.GetChild(2).GetComponent<Image>().enabled = false;
+        if (GameManager.Instance.lives == 1) livesHearts.transform.GetChild(1).GetComponent<Image>().enabled = false;
+        if (GameManager.Instance.lives == 0) livesHearts.transform.GetChild(0).GetComponent<Image>().enabled = false;
+    }
+
+    public void ResetInGameUI() {
+        for (int i = 0; i < livesHearts.transform.childCount; i++) {
+            livesHearts.transform.GetChild(i).GetComponent<Image>().enabled = true;
+        }
     }
     
     public void OnDifficultyToggleChanged(int index) {

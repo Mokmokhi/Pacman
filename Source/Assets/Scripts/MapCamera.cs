@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MapCamera : MonoBehaviour {
     private Transform pacman;
-    private Vector3 offset = new Vector3(0, 10, 3);
+    private Vector3 offset = new Vector3(0, 10, 1);
     void Start() {
         pacman = GameObject.FindWithTag("Pacman").transform;
     }

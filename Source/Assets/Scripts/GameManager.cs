@@ -111,6 +111,7 @@ public class GameManager : Singleton<GameManager> {
         pelletsNum = GameObject.FindGameObjectsWithTag("Pellet").Length;
         SetLives(3);
         SetScore(0);
+        UIManager.Instance.ResetInGameUI();
         EventBus.Subscribe(GameEvent.PAUSE, OnGamePause);
         EventBus.Subscribe(GameEvent.STOP, OnGameStop);
     }
