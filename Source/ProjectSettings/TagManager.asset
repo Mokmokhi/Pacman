@@ -10,6 +10,7 @@ TagManager:
   - GhostHome
   - Undefined
   - Pellet
+  - Minimap
   layers:
   - Default
   - TransparentFX
