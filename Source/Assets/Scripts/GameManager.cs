@@ -76,6 +76,8 @@ public class GameManager : Singleton<GameManager> {
         EventBus.Publish(GameEvent.START);
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
         playercontroller.gameObject.SetActive(true);
+        AudioManager.Instance.StopMusic();
+        AudioManager.Instance.PlayMusic("Demented-Nightmare-MP3");
     }
 
     public void ResetState()
@@ -141,6 +143,8 @@ public class GameManager : Singleton<GameManager> {
         EventBus.Unsubscribe(GameEvent.STOP, OnGameStop);
         EventBus.Unsubscribe(GameEvent.PAUSE, OnGamePause);
         playercontroller.gameObject.SetActive(false);
+        AudioManager.Instance.StopMusic();
+        AudioManager.Instance.PlayMusic("bgm1");
         Time.timeScale = 0;
         EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
