@@ -72,6 +72,7 @@ public class GameManager : Singleton<GameManager> {
         isLose = false;
         isPlaying = true;
         EventBus.Subscribe(GameEvent.START, OnGameStart);
+        pacman.WearSkin();
         
         foreach (Transform pellet in pellets) {
             pellet.gameObject.SetActive(true);
@@ -128,6 +129,7 @@ public class GameManager : Singleton<GameManager> {
         pelletsNum = GameObject.FindGameObjectsWithTag("Pellet").Length;
         SetLives(3);
         SetScore(0);
+        highScore = DataBaseManager.Instance.GetComponent<DataBaseManager>().profile.HighestScore;
         UIManager.Instance.ResetInGameUI();
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlayMusic("Demented-Nightmare-MP3");

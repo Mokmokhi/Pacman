@@ -13,6 +13,8 @@ public class Pacman : MonoBehaviour {
     public Movement movement { get; private set; }
     
     public AnimationState animationState { get; private set; }
+
+    public GameObject[] PacSkin;
     
     public bool isEaten = false;
 
@@ -25,15 +27,14 @@ public class Pacman : MonoBehaviour {
     private void Start() {
         EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
-
-    private void Update() {
-        if (animationState == AnimationState.WALK) {
-            BiteAnimation();
-        }
-    }
     
-    private void BiteAnimation() {
+    public void WearSkin() {
         // to be continue
+        for (int i = 0; i < PacSkin.Length; i++) {
+            if (i == DataBaseManager.Instance.profile.UsingSkin) {
+                PacSkin[i].gameObject.SetActive(true);
+            } else PacSkin[i].gameObject.SetActive(false);
+        }
     }
 
     private void OnGameStart() {
@@ -70,10 +71,10 @@ public class Pacman : MonoBehaviour {
     public void EatPellet(Pellet pellet ) {
         GameManager.Instance.AddScore(pellet.points);
     }
-    
     public void EatPowerPellet(PowerPellet powerPellet ) {
         Debug.Log("Pacman Eaten Power Pellet!");
-        Ghost.GhostList.ForEach(ghost => ghost.frightened.Enable(powerPellet.duration));
+        float amp = DataBaseManager.Instance.profile.PowerLevel * 0.05f;
+        Ghost.GhostList.ForEach(ghost => ghost.frightened.Enable(powerPellet.duration * amp));
         // EatPellet(powerPellet);
     }
     
