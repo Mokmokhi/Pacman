@@ -76,8 +76,6 @@ public class GameManager : Singleton<GameManager> {
         EventBus.Publish(GameEvent.START);
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
         playercontroller.gameObject.SetActive(true);
-        AudioManager.Instance.StopMusic();
-        AudioManager.Instance.PlayMusic("Demented-Nightmare-MP3");
     }
 
     public void ResetState()
@@ -123,6 +121,8 @@ public class GameManager : Singleton<GameManager> {
         SetLives(3);
         SetScore(0);
         UIManager.Instance.ResetInGameUI();
+        AudioManager.Instance.StopMusic();
+        AudioManager.Instance.PlayMusic("Demented-Nightmare-MP3");
         EventBus.Subscribe(GameEvent.PAUSE, OnGamePause);
         EventBus.Subscribe(GameEvent.STOP, OnGameStop);
     }
@@ -160,6 +160,7 @@ public class GameManager : Singleton<GameManager> {
     public void GameOver() {
         isLose = true;
         isFinish = true;
+        AudioManager.Instance.PlaySfx("screamSFX");
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.2-GameOver");
         EventBus.Publish(GameEvent.STOP);
     }
