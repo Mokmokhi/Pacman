@@ -19,7 +19,7 @@ public class ShopUI : MonoBehaviour
         NumOfSkin = displaySkin.Length;
     }
 
-    void FixedUpdate() {
+    void LateUpdate() {
         foreach (GameObject skin in displaySkin) {
             skin.transform.Rotate(0, 5f * Time.deltaTime, 0);
         }
@@ -47,7 +47,7 @@ public class ShopUI : MonoBehaviour
     public void CheckBuyable() {
         if (!DataBaseManager.Instance.GetComponent<ShopManager>().CheckHasSkin(selected)) {
             buyButton.GetComponentInChildren<TextMeshProUGUI>().text = 
-                "Buy\n" + DataBaseManager.Instance.GetComponent<ShopManager>().shop.skinCost[selected].ToString();
+                "Buy\n" + DataBaseManager.Instance.GetComponent<ShopManager>().shop.skinCost[selected];
         } else {
             buyButton.GetComponentInChildren<TextMeshProUGUI>().text  = "Select";
         }

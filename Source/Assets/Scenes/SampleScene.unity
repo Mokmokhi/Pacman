@@ -13506,7 +13506,7 @@ GameObject:
   - component: {fileID: 410781066}
   - component: {fileID: 410781065}
   m_Layer: 5
-  m_Name: Text-LogOut
+  m_Name: Text-Buy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13552,7 +13552,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back to menu
+  m_text: 'Buy
+
+    Cost'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 311ebed86335dec4385aef22ddde6bc4, type: 2}
   m_sharedMaterial: {fileID: -8669437078593128820, guid: 311ebed86335dec4385aef22ddde6bc4, type: 2}
@@ -69005,7 +69007,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 990090635}
         m_TargetAssemblyTypeName: ShopUI, Assembly-CSharp
-        m_MethodName: ClickBuy
+        m_MethodName: SwitchLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
