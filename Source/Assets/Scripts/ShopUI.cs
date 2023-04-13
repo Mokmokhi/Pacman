@@ -33,7 +33,7 @@ public class ShopUI : MonoBehaviour
         if (selected < 0) {
             selected = NumOfSkin - 1;
         }
-        print("selected: " + selected);
+        print("selected " + selected);
         CheckBuyable();
     }
 
@@ -43,7 +43,7 @@ public class ShopUI : MonoBehaviour
         if (selected > NumOfSkin - 1) {
             selected = 0;
         }
-        print("selected: " + selected);
+        print("selected " + selected);
         CheckBuyable();
     }
 

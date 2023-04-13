@@ -11,6 +11,7 @@ TagManager:
   - Undefined
   - Pellet
   - Minimap
+  - MapCamera
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Wall
   - Pellet
   - 
-  - 
+  - TopDirLight
   - 
   - 
   - 

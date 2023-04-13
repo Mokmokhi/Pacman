@@ -66,6 +66,19 @@ public class Pacman : MonoBehaviour {
         movement.enabled = false;
         //ResetState();
         animationState = AnimationState.DIE;
+        // Diminish the size of the Pacman in 3 seconds using IEnumerator
+        StartCoroutine(ScaleTo(gameObject, Vector3.zero, 3f));
+    }
+    
+    private System.Collections.IEnumerator ScaleTo(GameObject obj, Vector3 targetScale, float duration) {
+        Vector3 originalScale = obj.transform.localScale;
+        float counter = 0f;
+        while (counter < duration) {
+            counter += Time.deltaTime;
+            obj.transform.localScale = Vector3.Lerp(originalScale, targetScale, counter / duration);
+            obj.transform.eulerAngles = new Vector3(0, 0, obj.transform.eulerAngles.z + 360 * Time.deltaTime);
+            yield return null;
+        }
     }
 
     public void EatPellet(Pellet pellet ) {

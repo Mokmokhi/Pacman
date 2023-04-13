@@ -95,13 +95,14 @@ public class Ghost : MonoBehaviour {
     }
     
     public void Eaten() {
+        
         int points = this.points * GameManager.Instance.ghostMultiplier;
         
         GameManager.Instance.AddScore(points);
 
         GameManager.Instance.SetGhostMultiplier(GameManager.Instance.ghostMultiplier + 1);
 
-        AudioManager.Instance.PlaySfx("eatSFX");
+        AudioManager.Instance.PlaySfx("eatGhostSFX");
     }
 
 }

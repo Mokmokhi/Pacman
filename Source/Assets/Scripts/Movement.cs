@@ -9,16 +9,21 @@ public class Movement : MonoBehaviour
     public Vector3 initialDirection;
 
     public new Rigidbody rigidbody { get; private set; }
+    public new Animator animator { get; private set; }
     public Vector3 direction { get; private set; }
     public Vector3 nextDirection { get; private set; }
     public Vector3 rotation { get; private set; }
     public Vector3 startingPosition { get; private set; }
     public Vector3 startingRotation { get; private set; }
+    public Vector3 startingScale { get; private set; }
 
     private void Awake() {
         rigidbody = GetComponent<Rigidbody>();
+        try {animator = transform.GetChild(0).GetChild(0).GetComponent<Animator>();}
+        catch (Exception e) { Debug.Log(e);}
         startingPosition = transform.position;
         startingRotation = transform.eulerAngles;
+        startingScale = transform.localScale;
     }
 
     private void Start() {
@@ -36,6 +41,7 @@ public class Movement : MonoBehaviour
     public void ResetState() {
         transform.position = startingPosition;
         transform.rotation = Quaternion.Euler(startingRotation);
+        transform.localScale = startingScale;
         speedMultiplier = 1f;
         SetDirection(initialDirection, true);
         nextDirection = Vector3.zero;
@@ -47,12 +53,19 @@ public class Movement : MonoBehaviour
         if (nextDirection != Vector3.zero) {
             SetDirection(nextDirection);
         }
+
+        if (isBlocked(direction) && gameObject.CompareTag("Pacman")) {
+            if (animator != null) animator.enabled = false;
+        }
+        else if (gameObject.CompareTag("Pacman")) {
+            if (animator != null) animator.enabled = true;
+        }
     }
     private void FixedUpdate() {
         Vector3 position = rigidbody.position;
         Vector3 translation = direction * speed * speedMultiplier * Time.fixedDeltaTime;
         // vibrate position.y linearly slowly irregularly
-        translation.y += Mathf.Sin(Time.time * 4) * 0.005f;
+        if (!isBlocked(direction) && gameObject.CompareTag("Pacman")) translation.y += Mathf.Sin(Time.time * 4) * 0.005f;
         //Vector3 translation = transform.forward.normalized * (speed * speedMultiplier * Time.deltaTime);
         rigidbody.MovePosition(position + translation);
         // rigidbody.MoveRotation(Quaternion.Euler(rotation));
@@ -71,7 +84,6 @@ public class Movement : MonoBehaviour
     
 
     public void SetDirection(Vector3 targetDir, bool forced = false) {
-        
         if (isBlocked(targetDir) && !forced) {
             nextDirection = targetDir;
         }

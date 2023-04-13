@@ -13,6 +13,7 @@ public class PowerPellet : Pellet {
 
     protected override void Eaten() {
         base.Eaten();
+        AudioManager.Instance.PlaySfx("eatPowerPelletSFX");
         GameObject.FindWithTag("Pacman").GetComponent<Movement>().speedMultiplier=1f+level*0.1f;
         GameObject.FindWithTag("Pacman").GetComponent<Pacman>().EatPowerPellet(this);
         GameObject.FindWithTag("Pacman").GetComponent<Movement>().speedMultiplier=1f;

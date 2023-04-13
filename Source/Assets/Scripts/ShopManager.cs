@@ -67,7 +67,7 @@ public class ShopManager : MonoBehaviour
     public bool CheckHasSkin(int item) {
         int val = DataBaseManager.Instance.profile.HasSkin >> (int)item;
         val = val & 1;
-        print("checkhasSkin: " + val.ToString());
+        print("checkhasSkin " + val.ToString());
         if (val == 1)
             return true;
         else return false;
@@ -77,7 +77,7 @@ public class ShopManager : MonoBehaviour
             DataBaseManager.Instance.profile.Coins -= shop.skinCost[item];
             DataBaseManager.Instance.profile.HasSkin += 1 << item;
             DataBaseManager.Instance.SaveData();
-        } else print("Not enough Coins! :" + DataBaseManager.Instance.profile.Coins);
+        } else print("Not enough Coins! " + DataBaseManager.Instance.profile.Coins);
     }
 
     public int GetPowerCost() {
