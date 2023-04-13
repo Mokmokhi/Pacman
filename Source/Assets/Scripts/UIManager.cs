@@ -80,6 +80,14 @@ public class UIManager : Singleton<UIManager> {
         foreach (var button in Resources.FindObjectsOfTypeAll<Button>()) {
             button.onClick.AddListener(() => AudioManager.Instance.PlaySfx("button1SFX"));
         }
-    }   
+    }
+
+    public void FinishSetting() {
+        if (GameManager.Instance.isPlaying) {
+            panelSwitcher.SwitchActivePanelByName("2.1-PauseMenu");
+        } else {
+            panelSwitcher.SwitchActivePanelByName("1-Main");
+        }
+    }
 
 }

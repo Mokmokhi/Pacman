@@ -23,7 +23,7 @@ public class GameManager : Singleton<GameManager> {
     public Difficulty currentDifficulty = Difficulty.NORMAL;
 
     public bool isLose = false;
-    public bool isFinish = false;
+    public bool isPlaying = false;
 
     public GameObject[] Maps;
     public int currentMapIndex = 0;
@@ -44,7 +44,7 @@ public class GameManager : Singleton<GameManager> {
     }
 
     private void Update() {
-        if (pelletsNum <= 0 && !isFinish) {
+        if (pelletsNum <= 0 && isPlaying) {
             GameSuccess();
         }
         if (score >= highScore) {
@@ -70,7 +70,7 @@ public class GameManager : Singleton<GameManager> {
         SetLives(3);
         SetScore(0);
         isLose = false;
-        isFinish = false;
+        isPlaying = true;
         EventBus.Subscribe(GameEvent.START, OnGameStart);
         
         foreach (Transform pellet in pellets) {
@@ -159,7 +159,7 @@ public class GameManager : Singleton<GameManager> {
 
     private void GameSuccess() {
         isLose = false;
-        isFinish = true;
+        isPlaying = false;
         SaveScoreAndCoins();
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.3-GameSuccess");
         EventBus.Publish(GameEvent.STOP);
@@ -167,7 +167,7 @@ public class GameManager : Singleton<GameManager> {
 
     public void GameOver() {
         isLose = true;
-        isFinish = true;
+        isPlaying = false;
         AudioManager.Instance.PlaySfx("screamSFX");
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.2-GameOver");
         EventBus.Publish(GameEvent.STOP);
