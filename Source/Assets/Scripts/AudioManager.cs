@@ -42,10 +42,10 @@ public class AudioManager : Singleton<AudioManager>
 		musicSource.Stop();
 	}
 
-	private void SetMusicVolume(float value) {
+	public void SetMusicVolume(float value) {
 		musicVolume = value;
     }
-    private void SetSfxVolume(float value) {
+    public void SetSfxVolume(float value) {
         sfxVolume = value;
     }
 }
