@@ -19,8 +19,6 @@ public class ShopUI : MonoBehaviour
 
     void Start() {
         NumOfSkin = displaySkin.Length;
-        CheckBuyable();
-        PrintPowerCost();
     }
 
     void Update() {
