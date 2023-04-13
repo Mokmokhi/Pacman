@@ -25,8 +25,8 @@ public class UIManager : Singleton<UIManager> {
     }
 
     private void Update() {
-        powerText.text = "Powerlevel: " + DataBaseManager.Instance.profile.PowerLevel;
-        coinText.text = "Coin: " + DataBaseManager.Instance.profile.Coins;
+        powerText.text = "Powerlevel: " + DataBaseManager.Instance.profile.PowerLevel.ToString();;
+        coinText.text = "Coin: " + DataBaseManager.Instance.profile.Coins.ToString();
         scoreText.text = "" + GameManager.Instance.score.ToString();
         // livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
         highScoreText.text = "Record " + GameManager.Instance.highScore.ToString();

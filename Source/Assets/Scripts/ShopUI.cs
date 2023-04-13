@@ -23,9 +23,9 @@ public class ShopUI : MonoBehaviour
         PrintPowerCost();
     }
 
-    void FixedUpdate() {
+    void Update() {
         foreach (GameObject skin in displaySkin) {
-            skin.transform.Rotate(new Vector3(0f, 5f * Time.deltaTime, 0f), Space.Self);
+            skin.transform.Rotate(new Vector3(0f, 0.1f, 0f), Space.Self);
         }
     }
 
