@@ -25,7 +25,7 @@ public class UIManager : Singleton<UIManager> {
     private void Update() {
         scoreText.text = "" + GameManager.Instance.score.ToString();
         // livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
-        highScoreText.text = "Record: " + GameManager.Instance.highScore.ToString();
+        highScoreText.text = "Record " + GameManager.Instance.highScore.ToString();
         if (GameManager.Instance.lives == 2) livesHearts.transform.GetChild(2).GetComponent<Image>().enabled = false;
         if (GameManager.Instance.lives == 1) livesHearts.transform.GetChild(1).GetComponent<Image>().enabled = false;
         if (GameManager.Instance.lives == 0) livesHearts.transform.GetChild(0).GetComponent<Image>().enabled = false;
