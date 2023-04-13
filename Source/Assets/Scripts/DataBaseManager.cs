@@ -91,6 +91,22 @@ public class DataBaseManager : Singleton<DataBaseManager>
             print("Save Failure.");
         }
     }
+    public void SaveAndQuit() {
+        if (user != null) {
+            var record = JsonUtility.ToJson(profile);
+            GetReference().Child(user.UserId).SetRawJsonValueAsync(record).ContinueWithOnMainThread(task => {
+                if (task.IsCompletedSuccessfully) {
+                    print("Save Success.");
+                    #if UNITY_EDITOR
+                    UnityEditor.EditorApplication.isPlaying = false;
+                    #endif
+                    Application.Quit();
+                }
+            });
+        } else {
+            print("Save Failure.");
+        }
+    }
 
     public void LoadData() {
         if (user != null) {

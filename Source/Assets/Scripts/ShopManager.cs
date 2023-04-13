@@ -36,18 +36,15 @@ public class ShopManager : MonoBehaviour
         shop = new SkinShop(skinlist);
         LoadSkinShop();
     }
-
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.P)) {
-            LoadSkinShop();
-            print("printed");
-        } 
-        if (Input.GetKeyDown(KeyCode.S)) {
-            SaveSkinShop();
-            print("printed");
-        } 
+    public int CalCoins(int score, int lives, int param) {
+        //TODO:
+        // Score calculating Formula.
+        return (int)(score * lives * param);
     }
-
+    public void SaveCoins(int coin) {
+        firebasemanager.profile.Coins = coin;
+        firebasemanager.SaveData();
+    }
     public void SaveSkinShop() {
         var shopjson = JsonUtility.ToJson(shop);
         print(shopjson.ToString());

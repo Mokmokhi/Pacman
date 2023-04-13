@@ -93,10 +93,10 @@ public class LeaderBoardManager : MonoBehaviour
             AddScoreToLeaders(score);
         }
     }
-    public int CalScore(int score, int lives, int param) {
-        //TODO:
-        // Score calculating Formula.
-        return score * lives * param;
+
+    public void ClearScore() {
+        firebasemanager.profile.HighestScore = 0;
+        firebasemanager.SaveData();
     }
 
     public void AddScoreToLeaders(int score) {
