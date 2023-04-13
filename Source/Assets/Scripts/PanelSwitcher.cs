@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,16 @@ public class PanelSwitcher : MonoBehaviour {
 
     private List<GameObject> FindPanels() {
         return FindObjectsByPrefix("panel", 5);
+    }
+
+    public GameObject GetPanelByName(string targetName) {
+        List<GameObject> panels = FindPanels();
+        for (int i = 0; i < panels.Count; i++) {
+            if (panels[i].name.ToLower() == "panel-" + targetName.ToLower() || panels[i].name.ToLower() == targetName.ToLower()) {
+                return panels[i].gameObject;
+            } 
+        }
+        throw new ArgumentNullException();
     }
     
     public List<GameObject> FindObjectsByPrefix(string p_prefix, int length, bool isCaseSensity = false) {

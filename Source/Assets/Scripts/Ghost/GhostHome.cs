@@ -16,7 +16,7 @@ public class GhostHome : GhostBehavior
     private void OnEnable()
     {
         StopAllCoroutines();
-        ghost.movement.speed = 2f;
+        ghost.movement.speedMultiplier = 2f;
     }
 
     private void OnDisable()
@@ -67,7 +67,7 @@ public class GhostHome : GhostBehavior
         }
 
         // Pick a random direction left or right and re-enable movement
-        ghost.movement.speed = 1f;
+        ghost.movement.speedMultiplier = 1f;
         ghost.GetComponent<Collider>().enabled = true;
         ghost.movement.SetDirection(new Vector3(Random.value < 0.5f ? -1f : 1f, 0f, 0), true);
         ghost.movement.rigidbody.isKinematic = false;

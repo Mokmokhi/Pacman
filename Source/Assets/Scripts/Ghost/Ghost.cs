@@ -33,14 +33,14 @@ public class Ghost : MonoBehaviour {
     
     private void OnGameStart() {
         EventBus.Unsubscribe(GameEvent.START, OnGameStart);
-        EventBus.Subscribe(GameEvent.STOP, OnGameStop);
         ResetState();
+        EventBus.Subscribe(GameEvent.STOP, OnGameStop);
     }
     
     private void OnGameStop() {
         EventBus.Unsubscribe(GameEvent.STOP, OnGameStop);
-        EventBus.Subscribe(GameEvent.START, OnGameStart);
         ResetState();
+        EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
 
     public void ResetState() {
@@ -57,6 +57,20 @@ public class Ghost : MonoBehaviour {
 
         if (initialBehavior != null) {
             initialBehavior.Enable();
+        }
+        
+        if (GameManager.Instance.currentDifficulty == Difficulty.EASY) {
+            movement.speed = 0.8f;
+            if (this.gameObject.name == "Ghost-Pinky") {
+                this.gameObject.SetActive(false);
+            }
+            else if (this.gameObject.name == "Ghost-Clyde") {
+                this.gameObject.SetActive(false);
+            }
+        } else if (GameManager.Instance.currentDifficulty == Difficulty.NORMAL) {
+            movement.speed = 1f;
+        } else {
+            movement.speed = 2f;
         }
     }
 

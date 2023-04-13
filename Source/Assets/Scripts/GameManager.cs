@@ -1,6 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum Difficulty {
+    EASY,
+    NORMAL,
+    HARD
+}
+
 public class GameManager : Singleton<GameManager> {
     public Ghost[] ghosts;
     public Pacman pacman;
@@ -14,6 +20,8 @@ public class GameManager : Singleton<GameManager> {
     
     private Level[] levels;
     public Level currentLevel;
+
+    public Difficulty currentDifficulty = Difficulty.NORMAL;
 
     public bool isLose = false;
     public bool isFinish = false;
@@ -90,13 +98,17 @@ public class GameManager : Singleton<GameManager> {
     public void AddScore(int p_score) {
         this.score += p_score;
     }
+    
+    public void SetDifficulty(Difficulty difficulty) {
+        Debug.Log("set difficulty: " + difficulty);
+        currentDifficulty = difficulty;
+    }
 
     private void OnGameStart() {
         EventBus.Unsubscribe(GameEvent.START, OnGameStart);
         Time.timeScale = 1;
         // Find number of pellets given that pellets have the tag "Pellet"
         pelletsNum = GameObject.FindGameObjectsWithTag("Pellet").Length;
-
         SetLives(3);
         SetScore(0);
         EventBus.Subscribe(GameEvent.PAUSE, OnGamePause);
@@ -148,6 +160,11 @@ public class GameManager : Singleton<GameManager> {
     public void ResumeGame(){
         EventBus.Publish(GameEvent.RESUME);
         FindObjectOfType<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
+    }
+    
+    public void GoToMenu(){
+        EventBus.Publish(GameEvent.STOP);
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("1-Main");
     }
 
     public void QuitApp(){

@@ -13,6 +13,8 @@ public class Pacman : MonoBehaviour {
     public Movement movement { get; private set; }
     
     public AnimationState animationState { get; private set; }
+    
+    private bool isEaten = false;
 
     private void Awake() {
         collider = GetComponent<Collider>();
@@ -42,7 +44,17 @@ public class Pacman : MonoBehaviour {
     public void ResetState() {
         enabled = true;
         collider.enabled = true;
+        movement.enabled = true;
+        isEaten = false;
         movement.ResetState();
+        switch (GameManager.Instance.currentDifficulty) {
+            case Difficulty.EASY:
+                movement.speed = 2f;
+                break;
+            default:
+                movement.speed = 2f;
+                break;
+        }
         gameObject.SetActive(true);
         animationState = AnimationState.WALK;
     }
@@ -73,9 +85,12 @@ public class Pacman : MonoBehaviour {
     }
     */
 
-    public void Eaten()
-    {
+    public void Eaten() {
+        if (isEaten) {
+            return;
+        }
         Debug.Log("Pacman Eaten!");
+        isEaten = true;
 
         this.DeathSequence();
 
@@ -83,6 +98,7 @@ public class Pacman : MonoBehaviour {
 
         if (GameManager.Instance.lives > 0) {
             Invoke(nameof(GameManager.Instance.ResetState), 3f);
+            UIManager.Instance.ShowRespawning();
         } else {
             GameManager.Instance.GameOver();
         }

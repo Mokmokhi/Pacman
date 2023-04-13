@@ -10,9 +10,6 @@ public class MainCamera : MonoBehaviour {
         pacman = GameObject.FindWithTag("Pacman").transform;
         pacmanInitPosition = pacman.position;
         offset = pacman.position - pacmanInitPosition;
-        Debug.Log("pacmanInitPosition: " + pacmanInitPosition + "");
-        Debug.Log("pacman.position: " + pacman.position + "");
-        Debug.Log("offset = " + (pacman.position - pacmanInitPosition));
     }
 
     void Update() {
