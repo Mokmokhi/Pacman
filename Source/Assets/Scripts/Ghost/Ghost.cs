@@ -101,7 +101,7 @@ public class Ghost : MonoBehaviour {
 
         GameManager.Instance.SetGhostMultiplier(GameManager.Instance.ghostMultiplier + 1);
 
-        AudioManager.instance.PlaySfx("eatSFX");
+        AudioManager.Instance.PlaySfx("eatSFX");
     }
 
 }
