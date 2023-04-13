@@ -48,8 +48,6 @@ public class AudioManager : Singleton<AudioManager>
 		musicSource.Play();
     }
     public void SetSfxVolume(float value) {
-		sfxSource.Pause();
-        sfxSource.volume = value*1.0f;
-		sfxSource.Play();
+        sfxVolume = value*1.0f;
     }
 }
