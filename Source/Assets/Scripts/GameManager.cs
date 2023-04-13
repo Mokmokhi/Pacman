@@ -19,18 +19,17 @@ public class GameManager : Singleton<GameManager> {
     public int score { get; private set; } = 0;
     public int highScore = 0;
     public int lives { get; private set; } = 3;
-    
-    private Level[] levels;
-    public Level currentLevel;
 
     public Difficulty currentDifficulty = Difficulty.NORMAL;
 
     public bool isLose = false;
     public bool isFinish = false;
 
+    public GameObject[] Maps;
+    public int currentMapIndex = 0;
+
     public override void Awake() {
         base.Awake();
-        levels = FindObjectsOfType<Level>();
     }
 
     private void Start() {
@@ -53,9 +52,18 @@ public class GameManager : Singleton<GameManager> {
         }
     }
 
-    public void StartLevel(int level) {
-        currentLevel = levels[level];
-
+    public void StartLevel(int mapIndex) {
+        
+        // Change Map
+        currentMapIndex = mapIndex;
+        if (mapIndex == 0) {
+            Maps[1].SetActive(false);
+            Maps[0].SetActive(true);
+        }
+        else if (mapIndex == 1) {
+            Maps[0].SetActive(false);
+            Maps[1].SetActive(true);
+        }
         // Find number of pellets given that pellets have the tag "Pellet"
         pelletsNum = GameObject.FindGameObjectsWithTag("Pellet").Length;
 
@@ -167,7 +175,7 @@ public class GameManager : Singleton<GameManager> {
 
     public void RestartGame(){
         EventBus.Publish(GameEvent.STOP);
-        StartLevel(0);  //To be modified
+        StartLevel(currentMapIndex);
     }
 
     public void SaveScoreAndCoins() {
