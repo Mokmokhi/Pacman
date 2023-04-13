@@ -100,6 +100,8 @@ public class Ghost : MonoBehaviour {
         GameManager.Instance.AddScore(points);
 
         GameManager.Instance.SetGhostMultiplier(GameManager.Instance.ghostMultiplier + 1);
+
+        AudioManager.instance.PlaySfx("eatSFX");
     }
 
 }
