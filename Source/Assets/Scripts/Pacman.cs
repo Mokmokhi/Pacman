@@ -73,7 +73,7 @@ public class Pacman : MonoBehaviour {
     }
     public void EatPowerPellet(PowerPellet powerPellet ) {
         Debug.Log("Pacman Eaten Power Pellet!");
-        float amp = DataBaseManager.Instance.profile.PowerLevel * 0.05f;
+        float amp = 1 + DataBaseManager.Instance.profile.PowerLevel * 0.05f;
         Ghost.GhostList.ForEach(ghost => ghost.frightened.Enable(powerPellet.duration * amp));
         // EatPellet(powerPellet);
     }
