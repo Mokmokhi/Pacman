@@ -9,8 +9,8 @@ public class AudioManager : Singleton<AudioManager>
 	[SerializeField] private AudioSource musicSource;
 	[SerializeField] private AudioSource sfxSource;
 	
-	private float musicVolume = 1.0f;
-	private float sfxVolume = 1.0f;
+	private float musicVolume=1.0f;
+	private float sfxVolume=1.0f;
 
 	public void PlayMusic(string clipName, bool loop=true) {
 		musicSource.clip = Resources.Load<AudioClip>("Audio/"+clipName);
@@ -43,9 +43,13 @@ public class AudioManager : Singleton<AudioManager>
 	}
 
 	public void SetMusicVolume(float value) {
-		musicVolume = value;
+		musicSource.Pause();
+		musicSource.volume = value*1.0f;
+		musicSource.Play();
     }
     public void SetSfxVolume(float value) {
-        sfxVolume = value;
+		sfxSource.Pause();
+        sfxSource.volume = value*1.0f;
+		sfxSource.Play();
     }
 }
