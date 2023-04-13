@@ -152,7 +152,7 @@ public class GameManager : Singleton<GameManager> {
     private void GameSuccess() {
         isLose = false;
         isFinish = true;
-        SaveHighScore();
+        SaveScoreAndCoins();
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.3-GameSuccess");
         EventBus.Publish(GameEvent.STOP);
     }
@@ -169,8 +169,10 @@ public class GameManager : Singleton<GameManager> {
         StartLevel(0);  //To be modified
     }
 
-    public void SaveHighScore() {
+    public void SaveScoreAndCoins() {
         DataBaseManager.Instance.GetComponent<LeaderBoardManager>().UpdateScore(score);
+        DataBaseManager.Instance.GetComponent<ShopManager>().SaveCoins(
+            DataBaseManager.Instance.GetComponent<ShopManager>().CalCoins(score, lives));
     }
 
     public void ResumeGame(){

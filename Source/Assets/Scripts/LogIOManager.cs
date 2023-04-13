@@ -9,6 +9,8 @@ public class LogIOManager : MonoBehaviour
     TMP_InputField inputEmail;
     [SerializeField]
     TMP_InputField inputPassword;
+    [SerializeField]
+    TMP_InputField inputChangeName;
 
 
 
@@ -23,14 +25,9 @@ public class LogIOManager : MonoBehaviour
         DataBaseManager.Instance.profile.resetProfile();
     }
 
-     private void authStateChanged(object sender, System.EventArgs e) {
-        if (DataBaseManager.Instance.user == null) {
-            //Todo: Switch panel to login panel
-        } else {
-            //Todo: Switch panel to Main menu
+    public void ChangeName() {
+        if (inputChangeName.text.Length > 0) {
+            DataBaseManager.Instance.ChangeName(inputChangeName.text);
         }
-    }
-    private void onDestroy() {
-        DataBaseManager.Instance.auth.StateChanged -= authStateChanged;
     }
 }

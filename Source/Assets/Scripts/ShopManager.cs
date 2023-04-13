@@ -29,13 +29,14 @@ public class ShopManager : MonoBehaviour
         shop = new SkinShop(skinlist);
         LoadSkinShop();
     }
-    public int CalCoins(int score, int lives, int param) {
+    public int CalCoins(int score, int lives) {
         //TODO:
         // Score calculating Formula.
-        return (int)(score * lives * param);
+        float param = 1 + 0.5f * (lives - 1);
+        return (int)(score * lives);
     }
     public void SaveCoins(int coin) {
-        DataBaseManager.Instance.profile.Coins = coin;
+        DataBaseManager.Instance.profile.Coins += coin;
         DataBaseManager.Instance.SaveData();
     }
     public void SaveSkinShop() {
