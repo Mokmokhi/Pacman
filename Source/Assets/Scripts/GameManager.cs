@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class GameManager : Singleton<GameManager> {
     public Ghost[] ghosts;
     public Pacman pacman;
     public Transform pellets;
+    public PlayerController playercontroller;
     public int pelletsNum = 1;
 
     public int ghostMultiplier { get; private set; } = 1;
@@ -34,6 +36,7 @@ public class GameManager : Singleton<GameManager> {
     private void Start() {
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
         highScore = DataBaseManager.Instance.GetComponent<DataBaseManager>().profile.HighestScore;
+        playercontroller.gameObject.SetActive(false);
         Time.timeScale = 0;
     }
 
@@ -68,6 +71,7 @@ public class GameManager : Singleton<GameManager> {
 
         EventBus.Publish(GameEvent.START);
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
+        playercontroller.gameObject.SetActive(true);
     }
 
     public void ResetState()
@@ -130,6 +134,8 @@ public class GameManager : Singleton<GameManager> {
 
     private void OnGameStop() {
         EventBus.Unsubscribe(GameEvent.STOP, OnGameStop);
+        EventBus.Unsubscribe(GameEvent.PAUSE, OnGamePause);
+        playercontroller.gameObject.SetActive(false);
         Time.timeScale = 0;
         EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
@@ -169,8 +175,7 @@ public class GameManager : Singleton<GameManager> {
     }
 
     public void QuitApp(){
-        DataBaseManager.Instance.GetComponent<DataBaseManager>().SaveData();
-        Application.Quit();
+        DataBaseManager.Instance.GetComponent<DataBaseManager>().SaveAndQuit();
     }
 
 }
