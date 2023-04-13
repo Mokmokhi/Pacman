@@ -22,6 +22,7 @@ public class AudioManager : Singleton<AudioManager>
     public void PlayMusic(string clipName) {
 	    musicSource.clip = Resources.Load<AudioClip>("Audio/"+clipName);
 	    musicSource.volume = musicVolume;
+	    Debug.Log("musicVolume = " + musicVolume);
 	    musicSource.loop = true;
 	    musicSource.Play();
     }
@@ -46,8 +47,9 @@ public class AudioManager : Singleton<AudioManager>
 	public void SetMusicVolume(float value) {
 		musicSource.Pause();
 		musicSource.volume = value*1.0f;
+		musicVolume = value*1.0f;
 		musicSource.Play();
-    }
+	}
     public void SetSfxVolume(float value) {
         sfxVolume = value*1.0f;
     }

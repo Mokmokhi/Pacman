@@ -24,14 +24,16 @@ public class Pellet : MonoBehaviour
     }
     
     public void ResetState() {
-        gameObject.GetComponent<MeshRenderer>().enabled = true;
+        if (gameObject.GetComponent<MeshRenderer>() != null) gameObject.GetComponent<MeshRenderer>().enabled = true;
+        else gameObject.GetComponent<ParticleSystem>().Play();
         gameObject.GetComponent<Collider>().enabled = true;
         isEaten = false;
     }
 
     protected virtual void Eaten() {
         GameObject.FindWithTag("Pacman").GetComponent<Pacman>().EatPellet(this);
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        if (gameObject.GetComponent<MeshRenderer>() != null) gameObject.GetComponent<MeshRenderer>().enabled = false;
+        else gameObject.GetComponent<ParticleSystem>().Stop();
         gameObject.GetComponent<Collider>().enabled = false;
         isEaten = true;
         

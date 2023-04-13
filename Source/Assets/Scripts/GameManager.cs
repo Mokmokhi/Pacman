@@ -152,6 +152,7 @@ public class GameManager : Singleton<GameManager> {
     private void OnGameStop() {
         EventBus.Unsubscribe(GameEvent.STOP, OnGameStop);
         EventBus.Unsubscribe(GameEvent.PAUSE, OnGamePause);
+        isPlaying = false;
         playercontroller.gameObject.SetActive(false);
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlayMusic("bgm1");
