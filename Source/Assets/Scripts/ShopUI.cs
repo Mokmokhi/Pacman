@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using Firebase.Database;
+using Unity.VisualScripting;
 
 public class ShopUI : MonoBehaviour
 {
@@ -10,20 +11,24 @@ public class ShopUI : MonoBehaviour
     [SerializeField]
     public GameObject[] displaySkin;
     [SerializeField]
-    public Button buyButton;
+    public Button ButtonSkin;
+    public Button ButtonPower;
     private int NumOfSkin = 0;
     private int selected = 0;
     private Transform targetRot;
 
-    void Awake() {
+    void Start() {
         NumOfSkin = displaySkin.Length;
+        CheckBuyable();
+        PrintPowerCost();
     }
 
-    void LateUpdate() {
+    void FixedUpdate() {
         foreach (GameObject skin in displaySkin) {
-            skin.transform.Rotate(0, 5f * Time.deltaTime, 0);
+            skin.transform.Rotate(new Vector3(0f, 5f * Time.deltaTime, 0f), Space.Self);
         }
     }
+
     public void SwitchLeft() {
         displayRotate.transform.Rotate(0, -360f / NumOfSkin, 0);
         selected--;
@@ -44,12 +49,22 @@ public class ShopUI : MonoBehaviour
         CheckBuyable();
     }
 
+    public void PrintPowerCost() {
+        ButtonPower.GetComponentInChildren<TextMeshProUGUI>().text = "Upgrade Power Pellet\n" + 
+                            DataBaseManager.Instance.GetComponent<ShopManager>().GetPowerCost().ToString();
+    }
+
+    public void UpgradePower() {
+        DataBaseManager.Instance.GetComponent<ShopManager>().BuyPower();
+        PrintPowerCost();
+    }
+
     public void CheckBuyable() {
         if (!DataBaseManager.Instance.GetComponent<ShopManager>().CheckHasSkin(selected)) {
-            buyButton.GetComponentInChildren<TextMeshProUGUI>().text = 
+            ButtonSkin.GetComponentInChildren<TextMeshProUGUI>().text = 
                 "Buy\n" + DataBaseManager.Instance.GetComponent<ShopManager>().shop.skinCost[selected];
         } else {
-            buyButton.GetComponentInChildren<TextMeshProUGUI>().text  = "Select";
+            ButtonSkin.GetComponentInChildren<TextMeshProUGUI>().text  = "Select";
         }
     }
 

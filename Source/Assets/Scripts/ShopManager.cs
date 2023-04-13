@@ -79,8 +79,12 @@ public class ShopManager : MonoBehaviour
         } else print("Not enough Coins! :" + DataBaseManager.Instance.profile.Coins);
     }
 
+    public int GetPowerCost() {
+        int cost = (int)Math.Round(Math.Pow(1.1, DataBaseManager.Instance.profile.PowerLevel) * 1000);
+        return cost;
+    }
     public void BuyPower() {
-        int cost = (int)Math.Round(DataBaseManager.Instance.profile.PowerLevel * 1.1 * 100);
+        int cost = GetPowerCost();
         if (DataBaseManager.Instance.profile.Coins >= cost) {
             DataBaseManager.Instance.profile.Coins -= cost;
             DataBaseManager.Instance.profile.PowerLevel++;

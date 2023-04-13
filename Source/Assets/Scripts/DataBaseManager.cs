@@ -9,8 +9,6 @@ public class DataBaseManager : Singleton<DataBaseManager>
     public Firebase.Auth.FirebaseAuth auth;
     public Firebase.Auth.FirebaseUser user;
     public PlayerProfile profile;
-    [SerializeField]
-    public UIManager uiManager;
 
     public class PlayerProfile {
     public string UserName;
@@ -18,14 +16,14 @@ public class DataBaseManager : Singleton<DataBaseManager>
     public int Coins;
     public int HasSkin;
     public int UsingSkin;
-    public uint PowerLevel;
+    public int PowerLevel;
     public PlayerProfile() {
         UserName = "User";
         HighestScore = 0;
         Coins = 0;
         HasSkin = 1;
         UsingSkin = 0;
-        PowerLevel = 0;
+        PowerLevel = 1;
     }
     public PlayerProfile(string name) {
         UserName = name;
@@ -33,7 +31,7 @@ public class DataBaseManager : Singleton<DataBaseManager>
         Coins = 0;
         HasSkin = 1;
         UsingSkin = 0;
-        PowerLevel = 0;
+        PowerLevel = 1;
     }
     public void resetProfile() {
         UserName = "User";
@@ -41,7 +39,7 @@ public class DataBaseManager : Singleton<DataBaseManager>
         Coins = 0;
         HasSkin = 1;
         UsingSkin = 0;
-        PowerLevel = 0;
+        PowerLevel = 1;
     }
 }
     void Start()
@@ -136,6 +134,14 @@ public class DataBaseManager : Singleton<DataBaseManager>
     public void printInfo() {
         print("User: " + profile.UserName);
     }
+
+    public void ChangeName(string name) {
+        if (name != "") {
+            profile.UserName = name;
+            SaveData();
+        }
+        else print ("User name cannot be null.");
+    }
     public DatabaseReference GetReference() {
         DatabaseReference reference = FirebaseDatabase.GetInstance("https://unitypacman-b8e1d-default-rtdb.asia-southeast1.firebasedatabase.app/").RootReference;
         return reference;
@@ -145,11 +151,11 @@ public class DataBaseManager : Singleton<DataBaseManager>
         if (auth.CurrentUser != user) {
             user = auth.CurrentUser;
             if (user != null) {
-                uiManager.GetComponent<PanelSwitcher>().SwitchActivePanelByName("1-Main");
+                UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("1-Main");
                 print("Current User: " + user.Email);
                 LoadData();
             } else {
-                uiManager.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
+                UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
             }
         }
     }

@@ -10,6 +10,8 @@ public class UIManager : Singleton<UIManager> {
     private PanelSwitcher panelSwitcher;
     public TMP_Text scoreText;
     // public TMP_Text livesText;
+    public TMP_Text coinText;
+    public TMP_Text powerText;
     public GameObject livesHearts;
     public TMP_Text highScoreText;
     public Toggle[] difficultyToggles;
@@ -23,6 +25,8 @@ public class UIManager : Singleton<UIManager> {
     }
 
     private void Update() {
+        powerText.text = "Powerlevel: " + DataBaseManager.Instance.profile.PowerLevel;
+        coinText.text = "Coin: " + DataBaseManager.Instance.profile.Coins;
         scoreText.text = "" + GameManager.Instance.score.ToString();
         // livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
         highScoreText.text = "Record " + GameManager.Instance.highScore.ToString();
