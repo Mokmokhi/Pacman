@@ -34,6 +34,8 @@ public class Pellet : MonoBehaviour
         gameObject.GetComponent<MeshRenderer>().enabled = false;
         gameObject.GetComponent<Collider>().enabled = false;
         isEaten = true;
+        
+        AudioManager.Instance.PlaySfx("eatSFX");
         GameManager.Instance.pelletsNum--;
     }
 
