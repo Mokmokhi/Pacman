@@ -7,7 +7,7 @@ public class RegisterManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public DataBaseManager firebasemanager;
+
     [SerializeField]
     public TMP_InputField inputUserName;
     [SerializeField]
@@ -16,15 +16,11 @@ public class RegisterManager : MonoBehaviour
     public TMP_InputField inputPassword;
     [SerializeField]
     public TMP_InputField inputConfirmPassword;
-    void Start()
-    {
-        firebasemanager = DataBaseManager.Instance.GetComponent<DataBaseManager>();
-    }
 
     public void Register() {
 
         if (checkPasswordConfirmation() && VerificationRegister()) {
-            firebasemanager.Register(inputUserName.text, inputEmail.text, inputPassword.text);
+            DataBaseManager.Instance.Register(inputUserName.text, inputEmail.text, inputPassword.text);
             inputUserName.text = "";
             inputEmail.text = "";
             inputPassword.text = "";
@@ -50,13 +46,13 @@ public class RegisterManager : MonoBehaviour
     }
 
      private void authStateChanged(object sender, System.EventArgs e) {
-        if (firebasemanager.user == null) {
+        if (DataBaseManager.Instance.user == null) {
             //Todo: Switch panel to login panel
         } else {
             //Todo: Switch panel to Main menu
         }
     }
     private void onDestroy() {
-        firebasemanager.auth.StateChanged -= authStateChanged;
+        DataBaseManager.Instance.auth.StateChanged -= authStateChanged;
     }
 }

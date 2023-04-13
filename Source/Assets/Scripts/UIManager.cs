@@ -77,4 +77,5 @@ public class UIManager : Singleton<UIManager> {
             button.onClick.AddListener(() => AudioManager.Instance.PlaySfx("button1SFX"));
         }
     }   
+
 }

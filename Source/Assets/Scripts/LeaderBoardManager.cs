@@ -9,9 +9,6 @@ using UnityEngine.SocialPlatforms.Impl;
 public class LeaderBoardManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    
-
-    public DataBaseManager firebasemanager;
     public Board leaderBoard;
     [SerializeField]
     public const int BOARDLENGTH = 5;
@@ -48,8 +45,6 @@ public class LeaderBoardManager : MonoBehaviour
     }
 
     void Start() {
-
-        firebasemanager = DataBaseManager.Instance.GetComponent<DataBaseManager>();
         leaderBoard = new Board();
     }
 
@@ -61,12 +56,12 @@ public class LeaderBoardManager : MonoBehaviour
             outputName.text += leaderBoard.entries[i].UserName + "\n";
             outputScore.text += leaderBoard.entries[i].score.ToString() + "\n";
         }
-        outputName.text += firebasemanager.profile.UserName;
-        outputScore.text += firebasemanager.profile.HighestScore.ToString();
+        outputName.text += DataBaseManager.Instance.profile.UserName;
+        outputScore.text += DataBaseManager.Instance.profile.HighestScore.ToString();
     }
 
     public void StoreBoard() {
-        firebasemanager.GetReference().Child("LeaderBoard").OrderByChild("score").LimitToFirst(BOARDLENGTH).GetValueAsync().ContinueWithOnMainThread(task => {
+        DataBaseManager.Instance.GetReference().Child("LeaderBoard").OrderByChild("score").LimitToFirst(BOARDLENGTH).GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsCompletedSuccessfully) {
                     DataSnapshot val = task.Result;
                     print(val.ChildrenCount.ToString());
@@ -87,21 +82,21 @@ public class LeaderBoardManager : MonoBehaviour
         leaderBoard.printEntires();
     }
     public void UpdateScore(int score) {
-        if (score > firebasemanager.profile.HighestScore) {
-            firebasemanager.profile.HighestScore = score;
-            firebasemanager.SaveData();
+        if (score > DataBaseManager.Instance.profile.HighestScore) {
+            DataBaseManager.Instance.profile.HighestScore = score;
+            DataBaseManager.Instance.SaveData();
             AddScoreToLeaders(score);
         }
     }
 
     public void ClearScore() {
-        firebasemanager.profile.HighestScore = 0;
-        firebasemanager.SaveData();
+        DataBaseManager.Instance.profile.HighestScore = 0;
+        DataBaseManager.Instance.SaveData();
     }
 
     public void AddScoreToLeaders(int score) {
 
-    firebasemanager.GetReference().Child("LeaderBoard").RunTransaction(mutableData => {
+    DataBaseManager.Instance.GetReference().Child("LeaderBoard").RunTransaction(mutableData => {
         List<object> leaders = mutableData.Value as List<object>;
 
         if (leaders == null) {
@@ -129,7 +124,7 @@ public class LeaderBoardManager : MonoBehaviour
         Dictionary<string, object> newScoreMap =
                         new Dictionary<string, object>();
         newScoreMap["score"] = score;
-        newScoreMap["UserName"] = firebasemanager.profile.UserName;
+        newScoreMap["UserName"] = DataBaseManager.Instance.profile.UserName;
         leaders.Add(newScoreMap);
         mutableData.Value = leaders;
         return TransactionResult.Success(mutableData);

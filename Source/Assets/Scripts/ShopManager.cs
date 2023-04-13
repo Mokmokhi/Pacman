@@ -9,16 +9,10 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
-    DataBaseManager firebasemanager;
+
     // Start is called before the first frame update
     public const int SKINCOUNT = 3;
 
-    public enum SKIN {
-        DEFAULT,
-        SKULL,
-        UGLY
-    }
-    
     [Serializable]
     public class SkinShop {
         public int[] skinCost;
@@ -31,7 +25,6 @@ public class ShopManager : MonoBehaviour
 
     void Start()
     {   
-        firebasemanager = DataBaseManager.Instance.GetComponent<DataBaseManager>();
         int[] skinlist = new int[SKINCOUNT];
         shop = new SkinShop(skinlist);
         LoadSkinShop();
@@ -42,20 +35,20 @@ public class ShopManager : MonoBehaviour
         return (int)(score * lives * param);
     }
     public void SaveCoins(int coin) {
-        firebasemanager.profile.Coins = coin;
-        firebasemanager.SaveData();
+        DataBaseManager.Instance.profile.Coins = coin;
+        DataBaseManager.Instance.SaveData();
     }
     public void SaveSkinShop() {
         var shopjson = JsonUtility.ToJson(shop);
         print(shopjson.ToString());
-        firebasemanager.GetReference().Child("SkinShop").SetRawJsonValueAsync(shopjson).ContinueWithOnMainThread(task => {
+        DataBaseManager.Instance.GetReference().Child("SkinShop").SetRawJsonValueAsync(shopjson).ContinueWithOnMainThread(task => {
             if (task.IsCompletedSuccessfully) {
                 print("List stored.");
             } else print("List store failed.");
         });
     }
     public void LoadSkinShop() {
-        firebasemanager.GetReference().Child("SkinShop").GetValueAsync().ContinueWithOnMainThread(task => {
+        DataBaseManager.Instance.GetReference().Child("SkinShop").GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsCompletedSuccessfully) {
                 var val = task.Result.GetRawJsonValue();
                 print(val);
@@ -70,28 +63,28 @@ public class ShopManager : MonoBehaviour
     public void PrintDict() {
         print(shop.skinCost);
     }
-    public bool CheckHasSkin(SKIN item) {
-        uint val = firebasemanager.profile.HasSkin >> (int)item;
-        val = val | (uint)1;
-        print(val);
+    public bool CheckHasSkin(int item) {
+        int val = DataBaseManager.Instance.profile.HasSkin >> (int)item;
+        val = val & 1;
+        print("checkhasSkin: " + val.ToString());
         if (val == 1)
             return true;
         else return false;
     }
-    public void BuySkin(SKIN item) {
-        if (firebasemanager.profile.Coins >= shop.skinCost[(int)item]) {
-            firebasemanager.profile.Coins -= shop.skinCost[(int)item];
-            firebasemanager.profile.HasSkin += (uint)1 << (int)item;
-            firebasemanager.SaveData();
-        }
+    public void BuySkin(int item) {
+        if (DataBaseManager.Instance.profile.Coins >= shop.skinCost[item]) {
+            DataBaseManager.Instance.profile.Coins -= shop.skinCost[item];
+            DataBaseManager.Instance.profile.HasSkin += 1 << item;
+            DataBaseManager.Instance.SaveData();
+        } else print("Not enough Coins! :" + DataBaseManager.Instance.profile.Coins);
     }
 
     public void BuyPower() {
-        int cost = (int)Math.Round(firebasemanager.profile.PowerLevel * 1.1 * 100);
-        if (firebasemanager.profile.Coins >= cost) {
-            firebasemanager.profile.Coins -= cost;
-            firebasemanager.profile.PowerLevel++;
-            firebasemanager.SaveData();
+        int cost = (int)Math.Round(DataBaseManager.Instance.profile.PowerLevel * 1.1 * 100);
+        if (DataBaseManager.Instance.profile.Coins >= cost) {
+            DataBaseManager.Instance.profile.Coins -= cost;
+            DataBaseManager.Instance.profile.PowerLevel++;
+            DataBaseManager.Instance.SaveData();
         }
     }
 }

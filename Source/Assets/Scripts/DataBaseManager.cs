@@ -16,7 +16,7 @@ public class DataBaseManager : Singleton<DataBaseManager>
     public string UserName;
     public int HighestScore;
     public int Coins;
-    public uint HasSkin;
+    public int HasSkin;
     public int UsingSkin;
     public uint PowerLevel;
     public PlayerProfile() {
