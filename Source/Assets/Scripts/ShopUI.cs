@@ -62,7 +62,10 @@ public class ShopUI : MonoBehaviour
             ButtonSkin.GetComponentInChildren<TextMeshProUGUI>().text = 
                 "Buy\n" + DataBaseManager.Instance.GetComponent<ShopManager>().shop.skinCost[selected];
         } else {
-            ButtonSkin.GetComponentInChildren<TextMeshProUGUI>().text  = "Select";
+            if (selected != DataBaseManager.Instance.profile.UsingSkin)
+                ButtonSkin.GetComponentInChildren<TextMeshProUGUI>().text  = "Select";
+            else
+            ButtonSkin.GetComponentInChildren<TextMeshProUGUI>().text  = "Selected";
         }
     }
 
