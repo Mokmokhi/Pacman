@@ -105,12 +105,12 @@ public class Pacman : MonoBehaviour {
         }
         Debug.Log("Pacman Eaten!");
         isEaten = true;
-
-        this.DeathSequence();
+        
 
         GameManager.Instance.AddLives(-1);
 
         if (GameManager.Instance.lives > 0) {
+            this.DeathSequence();
             Invoke(nameof(GameManager.Instance.ResetState), 3f);
             UIManager.Instance.ShowRespawning();
         } else {
