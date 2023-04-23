@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage{ctex}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{ {../Pictures/UML/} }
+
+\pagestyle{plain}
+\fancyhf[CF]{\thepage}
+
+\title{Testing Document\\PacMan\\version: 1}
+\author{Group F8\\1155127434 HO Chun Lung Terrance\\
+Department of Philosophy, The Chinese University of Hong Kong\\1155143519 WOO Pok\\
+Department of Physics, The Chinese University of Hong Kong\\1155157839 NG Yu Chun Thomas\\
+Department of Computer Science and Engineering, The Chinese University of Hong Kong\\1155157719 LEUNG Kit Lun Jay\\
+Department of Computer Science and Engineering, The Chinese University of Hong Kong\\1155143569 MOK Owen\\
+Department of Mathematics, The Chinese University of Hong Kong}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{TEST PLAN}
+    In order to test the software properly, we will apply a bigbang approach of software testing. We consider for each functionality of the software, there will be pure approaches (black- or white-box testing) or mixed approach (black- and white-box testing). To be specific, for complicated functionalities (mostly inter-module functionals and implementational functionals), we choose to imply black-box testing; for simple functionalities (mostly mono-module functionals and object reactions), we choose to imply mixed-box testing. Afterall, we will integrate the modules and test the whole function directly.
+
+    The testing will be under following environment:
+    \begin{itemize}
+        \item Software: Unity (version 2021.3.17f1),
+        \item Hardware: 
+    \end{itemize}
+
+    We list out the functionalities to be tested:
+
+    \subsection*{Database}
+    We test the integrity of the Firebase with Unity using white-box testing, as we should see how Firebase respond to user actions.
+
+    \subsection*{User Management}
+    We test the Signup function, Login function and Logout function using mixed-box testing, as we should see how the Login function and Signup function integrate with database.
+
+    \subsection*{Application}
+    \subsubsection*{Non-gameplay items}
+    The main window should be displayed, and we test menu items' functionality, title screen's functionality, Gameover screen and level choosing, including every buttons in the screen. Every button will be tested using black-box testing.
+
+    \subsubsection*{Image \& arithmetic}
+    We test the rendering of images, text and game status using mixed-box testing, as we wish to see the rendering works well with these functionalities.
+
+    \subsubsection*{Player control}
+    We test the keyboard control, basic movement of pacman and enemies, and enemies' AI by mixed-box testing, as we wish to see different implementations yields different results to the gameplay experience.
+    \section{TEST CASES}
+
+\end{document}
