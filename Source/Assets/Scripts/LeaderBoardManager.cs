@@ -8,7 +8,6 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class LeaderBoardManager : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Board leaderBoard;
     [SerializeField]
     public const int BOARDLENGTH = 5;
@@ -18,36 +17,38 @@ public class LeaderBoardManager : MonoBehaviour
     public TMP_Text outputName;
     [SerializeField]
     public TMP_Text outputRank;
+    // Entries is a class to store the username and the highest score of a player.
     public class Entries {
         public string UserName;
         public int score;
         public Entries() {
             UserName = "User";
             score = 0;
-            //Debug.Log("Entries");
         }
     }
+    // Board is a class to store the leaderboard information.
     public class Board {
         public Entries[] entries;
         public Board() {
+            // Initialize the entries according to the board length.
             entries = new Entries[BOARDLENGTH];
             for (int i = 0; i < entries.Length; i++) {
                 entries[i] = new Entries();
             }
 
         }
+    // function printEntries to print all the entries.
         public void printEntires() {
-
             foreach (Entries entry in entries) {
                 print(entry.UserName + " " + entry.score);
             }
         }
     }
-
+    // initialize the leaderboard before the first frame.
     void Start() {
         leaderBoard = new Board();
     }
-
+    // function PrintBoard to display the board in the application.
     public void PrintBoard() {
         outputRank.text = "Rank\n1\n2\n3\n4\n5\nYou";
         outputName.text = "Name\n";
@@ -60,6 +61,7 @@ public class LeaderBoardManager : MonoBehaviour
         outputScore.text += DataBaseManager.Instance.profile.HighestScore.ToString();
     }
 
+    // function StoreBoard to store the leaderboard data from database to the local leaderboard.
     public void StoreBoard() {
         DataBaseManager.Instance.GetReference().Child("LeaderBoard").OrderByChild("score").LimitToFirst(BOARDLENGTH).GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsCompletedSuccessfully) {
@@ -68,11 +70,8 @@ public class LeaderBoardManager : MonoBehaviour
                     int i = 4;
                     Debug.Log("start reading entry.");
                     foreach (var entry in val.Children) {
-                        //Debug.Log("entry: " + i.ToString());
                         var json = entry.GetRawJsonValue();
-                        //Debug.Log("Transfered to json");
                         leaderBoard.entries[i] = JsonUtility.FromJson<Entries>(json);
-                        //Debug.Log("added to borad.");
                         i--;
                     }
                     PrintBoard();
@@ -81,6 +80,8 @@ public class LeaderBoardManager : MonoBehaviour
 
         leaderBoard.printEntires();
     }
+
+    // function UpdateScore to update the highest score of the player.
     public void UpdateScore(int score) {
         if (score > DataBaseManager.Instance.profile.HighestScore) {
             DataBaseManager.Instance.profile.HighestScore = score;
@@ -88,14 +89,13 @@ public class LeaderBoardManager : MonoBehaviour
             AddScoreToLeaders(score);
         }
     }
-
+    // function ClearScore to clear the highest score of the player.
     public void ClearScore() {
         DataBaseManager.Instance.profile.HighestScore = 0;
         DataBaseManager.Instance.SaveData();
     }
-
+    // function AddScoreToLeaders to try to add the highest score of the current player to the leaderboard.
     public void AddScoreToLeaders(int score) {
-
     DataBaseManager.Instance.GetReference().Child("LeaderBoard").RunTransaction(mutableData => {
         List<object> leaders = mutableData.Value as List<object>;
 

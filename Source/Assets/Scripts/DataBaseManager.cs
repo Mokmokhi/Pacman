@@ -97,7 +97,6 @@ public class DataBaseManager : Singleton<DataBaseManager>
             if (task.IsCompletedSuccessfully) {
                 print("Login success");
             }
-            password = "";
         });
     }
     // SaveData function to save the local player profile to the realtime database on Firebase.
@@ -182,9 +181,12 @@ public class DataBaseManager : Singleton<DataBaseManager>
         if (auth.CurrentUser != user) {
             user = auth.CurrentUser;
             if (user != null) {
+                UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("1-Main");
                 printInfo();
                 print(user.Email);
                 LoadData();
+            } else {
+                UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
             }
         }
     }

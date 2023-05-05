@@ -10,10 +10,9 @@ using UnityEngine;
 public class ShopManager : MonoBehaviour
 {
 
-    // Start is called before the first frame update
+    
     public const int SKINCOUNT = 3;
-
-    [Serializable]
+    // SkinShop is a class to 
     public class SkinShop {
         public int[] skinCost;
         public SkinShop(int[] skinlist) {
@@ -30,8 +29,6 @@ public class ShopManager : MonoBehaviour
         LoadSkinShop();
     }
     public int CalCoins(int score, int lives) {
-        //TODO:
-        // Score calculating Formula.
         float param = 1 + 0.5f * (lives - 1);
         return (int)(score * lives);
     }

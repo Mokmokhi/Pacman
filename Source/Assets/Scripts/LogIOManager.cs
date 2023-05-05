@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LogIOManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // inputEmail, inputPassword and inputChangeName are used to pass the user input to the database.
     [SerializeField]
     TMP_InputField inputEmail;
     [SerializeField]
@@ -14,19 +14,20 @@ public class LogIOManager : MonoBehaviour
 
 
 
-    // Update is called once per frame
+    // function Login to login the authentication.
     public void Login() {
             DataBaseManager.Instance.Login(inputEmail.text, inputPassword.text);
             inputEmail.text = "";
             inputPassword.text = "";
     }
+    // function Logout to logout the authentication and save the data.
     public void Logout()
     {
         DataBaseManager.Instance.SaveData();
         DataBaseManager.Instance.Logout();
         DataBaseManager.Instance.profile.resetProfile();
     }
-
+    // function ChangeName to change the name of the player profile.
     public void ChangeName() {
         if (inputChangeName.text.Length > 0) {
             DataBaseManager.Instance.ChangeName(inputChangeName.text);

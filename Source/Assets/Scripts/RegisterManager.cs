@@ -32,12 +32,14 @@ public class RegisterManager : MonoBehaviour
             Debug.Log("Passwords do not match");
         }
     }
+    // function VerficationRegister to chech if the username is not null and the password has at least 8 character.
     private bool VerificationRegister() {
         if (inputUserName.text.Length > 0 && inputPassword.text.Length >= 8) {
             return true;
         }
         else return false;
     }
+    // function checkPasswordConfirmation to check if the password and the confirm password are the same.
     private bool checkPasswordConfirmation() {
         if (string.IsNullOrEmpty(inputPassword.text) || string.IsNullOrEmpty(inputConfirmPassword.text))
             return false;
