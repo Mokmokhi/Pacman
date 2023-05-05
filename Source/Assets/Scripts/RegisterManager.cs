@@ -29,7 +29,7 @@ public class RegisterManager : MonoBehaviour
 
         } else {
             inputConfirmPassword.text = "";
-            Debug.Log("Passwords do not match");
+            
         }
     }
     // function VerficationRegister to chech if the username is not null and the password has at least 8 character.
@@ -37,14 +37,27 @@ public class RegisterManager : MonoBehaviour
         if (inputUserName.text.Length > 0 && inputPassword.text.Length >= 8) {
             return true;
         }
-        else return false;
+        else {
+            if (inputPassword.text.Length < 8) {
+                Debug.Log("Password needs at least 8 character.");
+            }
+            if (inputUserName.text.Length == 0) {
+                Debug.Log("Username is empty.");
+            }
+            return false;
+        }
     }
     // function checkPasswordConfirmation to check if the password and the confirm password are the same.
     private bool checkPasswordConfirmation() {
-        if (string.IsNullOrEmpty(inputPassword.text) || string.IsNullOrEmpty(inputConfirmPassword.text))
+        if (string.IsNullOrEmpty(inputPassword.text) || string.IsNullOrEmpty(inputConfirmPassword.text)) {
+            Debug.Log("Password and confirm password cannot be empty.");
             return false;
-        if (inputPassword.text != inputConfirmPassword.text)
+        }  
+        if (inputPassword.text != inputConfirmPassword.text) {
+            Debug.Log("Passwords do not match.");
             return false;
+        }
+            
         return true;
     }
 

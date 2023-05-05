@@ -114,6 +114,7 @@ public class LeaderBoardManager : MonoBehaviour
             }
             if (minScore > score) {
             // The new score is lower than the existing 5 scores, abort.
+            Debug.LogWarning("The new score is lower than the existing 5 scores, abort.");
             return TransactionResult.Abort();
             }
 
@@ -121,6 +122,7 @@ public class LeaderBoardManager : MonoBehaviour
             leaders.Remove(minVal);
         }
         // Add the new high score.
+        Debug.Log("Add the new high score.");
         Dictionary<string, object> newScoreMap =
                         new Dictionary<string, object>();
         newScoreMap["score"] = score;
