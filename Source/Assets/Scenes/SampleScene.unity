@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589245, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276774, g: 0.21589115, b: 0.2978246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6985,8 +6985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db858fdeb91144d1d87ada01eedbd4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shop:
-    skinCost: 
 --- !u!4 &202431033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8208301799333658283, guid: fc3c657bc4f73884a8b6c107db8afc52, type: 3}
@@ -34230,7 +34228,6 @@ MonoBehaviour:
   pelletsNum: 1
   highScore: 0
   currentDifficulty: 1
-  isLose: 1
   isPlaying: 0
   Maps:
   - {fileID: 1708157443}
@@ -48959,7 +48956,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Score Board
+  m_text: LeaderBoard
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 311ebed86335dec4385aef22ddde6bc4, type: 2}
   m_sharedMaterial: {fileID: -8669437078593128820, guid: 311ebed86335dec4385aef22ddde6bc4, type: 2}
