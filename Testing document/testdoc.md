@@ -35,9 +35,11 @@
 -- Remove PLayer's highest score
 
 # 2. Test case
-
 ## 2.1 User Management
+### 2.1.1 Login
+#### i. Case 1
 > 
+
 
 > Big-bang approach
 > Each module needs to do the following:
