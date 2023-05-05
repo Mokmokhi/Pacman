@@ -20,13 +20,13 @@ public class ShopUI : MonoBehaviour
     void Start() {
         NumOfSkin = displaySkin.Length;
     }
-
+    // Keeps the displaying model spinning.
     void Update() {
         foreach (GameObject skin in displaySkin) {
             skin.transform.Rotate(new Vector3(0f, 0.1f, 0f), Space.Self);
         }
     }
-
+    // function SwitchLeft to switch to the left item.
     public void SwitchLeft() {
         displayRotate.transform.Rotate(0, -360f / NumOfSkin, 0);
         selected--;
@@ -36,6 +36,7 @@ public class ShopUI : MonoBehaviour
         print("selected " + selected);
         CheckBuyable();
     }
+    // function SwitchRight to switch to the right item.
 
     public void SwitchRight() {
         displayRotate.transform.Rotate(0, 360f / NumOfSkin, 0);
@@ -46,17 +47,17 @@ public class ShopUI : MonoBehaviour
         print("selected " + selected);
         CheckBuyable();
     }
-
+    // function PrintPowerCost to print the cost of upgrading the powerpellet.
     public void PrintPowerCost() {
         ButtonPower.GetComponentInChildren<TextMeshProUGUI>().text = "Upgrade Power Pellet\n" + 
                             DataBaseManager.Instance.GetComponent<ShopManager>().GetPowerCost().ToString();
     }
-
+    // function UpgradePower to upgrade the powerpellet.
     public void UpgradePower() {
         DataBaseManager.Instance.GetComponent<ShopManager>().BuyPower();
         PrintPowerCost();
     }
-
+    // function CheckBuyable to check if the skin has been bought or not.
     public void CheckBuyable() {
         if (!DataBaseManager.Instance.GetComponent<ShopManager>().CheckHasSkin(selected)) {
             ButtonSkin.GetComponentInChildren<TextMeshProUGUI>().text = 
@@ -68,7 +69,7 @@ public class ShopUI : MonoBehaviour
             ButtonSkin.GetComponentInChildren<TextMeshProUGUI>().text  = "Selected";
         }
     }
-
+    // function ClickBuy to buy the selected skin or use the selected skin if player has it.
     public void ClickBuy() {
         print("Clicked");
         if (!DataBaseManager.Instance.GetComponent<ShopManager>().CheckHasSkin(selected)) {

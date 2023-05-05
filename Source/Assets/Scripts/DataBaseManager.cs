@@ -180,12 +180,14 @@ public class DataBaseManager : Singleton<DataBaseManager>
     private void authStateChanged(object sender, System.EventArgs e) {
         if (auth.CurrentUser != user) {
             user = auth.CurrentUser;
+            //whenver there is a user logged in, switch to the main menu and load the player profile.
             if (user != null) {
                 UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("1-Main");
                 printInfo();
                 print(user.Email);
                 LoadData();
-            } else {
+            } // If there is not user, switch to the login panel.
+            else {
                 UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
             }
         }
