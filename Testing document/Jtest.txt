@@ -1,0 +1,106 @@
+UserManagement
+
+For UserManagement, we will focus on the black box testing on Login, Logout and SignUp.
+On the Login panel, there are 2 input fields: EMAIL and PASSWORDS for user input.
+With correct inputs, clicking The 'LOGIN' button should direct the user to the main menu. Else it should stay at the login panel.
+
+On the SignUp panel, there are 4 input fields: USER NAME, EMAIL, PASSWORDS, CONFIRM PASSWORDS for user input.
+Where USER NAME should not be empty, EMAIL should with format of email, and PASSWORD should be the same as the CONFIRM PASSWORD.
+With valid inputs, clicking The 'SignUp' button should direct the user to the main menu. Else it should stay at the signUp panel.
+
+On the main menu, the LOG OUT button should direct the user to the login panel and save the user data to the database.
+Assume the following accounts is stored in the database:
+    email: j5@j.com password: 55555555
+    email: test@gmail.com password: J1234567
+
+1. Test Case 1: Login with correct email and password.
+    (a) Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555555"
+    (b) Expected output: Login Successfully with UserName Jest5 and switch to main menu.
+
+2. Test Case 2: Login with correct email and incorrect password.
+    (a) Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555554"
+    (b) Expected output: error occured with error message.
+
+3. Test Case 3: Login with both incorrect email and password.
+    (a) Input: fill EMAIL with "tes@gmail.com" and PASSWORD with "J1234567"
+    (b) Expected output: error occured with error message.
+
+4. Test Case 4: Login with correct email and other user's password.
+    (a) Input: fill EMAIL with "test@gmail.com" and PASSWORD with "55555555"
+    (b) Expected output: error occured with error message.
+
+5. Test Case 5: Sign up with all valid input.
+    (a) Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD "J5555555"
+    (b) Expected output: Sign up Successfully and login with UserName t1 and switch to main menu.
+
+6. Test Case 6: Sign up with invalid username.
+    (a) Input: fill USER NAME with "", EMAIL with "test5@gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD "J5555555"
+    (b) Expected output: error occured with error message.
+
+7.  Test Case 7: Sign up with invalid email.
+    (a) Input: fill USER NAME with "t1", EMAIL with "test5gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD "J5555555"
+    (b) Expected output: error occured with error message.
+
+8.  Test Case 8: Sign up with invalid password.
+    (a) Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J555555" and CONFIRM PASSWORD "J5555555"
+    (b) Expected output: error occured with error message.
+
+9.  Test Case 9: Sign up with empty password.
+    (a) Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "" and CONFIRM PASSWORD "J5555555"
+    (b) Expected output: error occured with error message.
+
+9.  Test Case 9: Sign up with empty confirm password.
+    (a) Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD ""
+    (b) Expected output: error occured with error message.
+
+10. Test Case 10: Logout.
+    (a) Input: click LOG OUT button
+    (b) Expected output: logged out and switch to login panel.
+
+Results: 
+
+The abouve Results to be Successful under the assumption of black box testing.
+
+LeaderBoard
+
+For LeaderBoard, we will focus on the white box testing on AddScoreToLeaders function in the class LeaderBoardManager.
+
+==================================================================================
+public void AddScoreToLeaders(int score) {
+    DataBaseManager.Instance.GetReference().Child("LeaderBoard").RunTransaction(mutableData => {
+        List<object> leaders = mutableData.Value as List<object>;
+
+        if (leaders == null) {
+            leaders = new List<object>();
+        } else if (mutableData.ChildrenCount >= BOARDLENGTH) {
+            long minScore = long.MaxValue;
+            object minVal = null;
+            foreach (var child in leaders) {
+            if (!(child is Dictionary<string, object>)) continue;
+            long childScore = (long)((Dictionary<string, object>)child)["score"];
+            if (childScore < minScore) {
+                minScore = childScore;
+                minVal = child;
+            }
+            }
+            if (minScore > score) {
+            // The new score is lower than the existing 5 scores, abort.
+            return TransactionResult.Abort();
+            }
+
+            // Remove the lowest score.
+            leaders.Remove(minVal);
+        }
+        // Add the new high score.
+        Dictionary<string, object> newScoreMap =
+                        new Dictionary<string, object>();
+        newScoreMap["score"] = score;
+        newScoreMap["UserName"] = DataBaseManager.Instance.profile.UserName;
+        leaders.Add(newScoreMap);
+        mutableData.Value = leaders;
+        return TransactionResult.Success(mutableData);
+        });
+    }
+==================================================================================
+
+Test Case 1: 
