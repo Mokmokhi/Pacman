@@ -82,22 +82,31 @@ public class Movement : MonoBehaviour
         rigidbody.MoveRotation(Quaternion.Euler(rotation));
     }
     
-
     public void SetDirection(Vector3 targetDir, bool forced = false) {
+        Debug.Log("SetDirection() called with target direction: " + targetDir.ToString() + " and forced: " + forced.ToString());
+
         if (isBlocked(targetDir) && !forced) {
             nextDirection = targetDir;
+            Debug.Log("Path is blocked. Setting nextDirection to: " + nextDirection.ToString());
         }
         else {
             nextDirection = targetDir;
             direction = targetDir;
             nextDirection = targetDir;
+            Debug.Log("Path is not blocked. Setting direction and nextDirection to: " + direction.ToString());
+
             rotation = new Vector3(0, Mathf.Atan2(direction.z, -1 * direction.x) * Mathf.Rad2Deg - 90, 0);
             if (rotation.y < 0) rotation += new Vector3(0, 360, 0);
             if (rotation.y >= 360) rotation -= new Vector3(0, 360, 0);
-            // Force rotation.y to becomes 0 or 90 or 180 or 270
+            // Force rotation.y to become 0 or 90 or 180 or 270
             rotation = new Vector3(0, Mathf.Round(rotation.y / 90) * 90, 0);
+            Debug.Log("Calculated rotation: " + rotation.ToString());
         }
+
+        // Add this debug line to log the current direction, nextDirection, and rotation
+        Debug.Log("Current direction: " + direction.ToString() + ", nextDirection: " + nextDirection.ToString() + ", rotation: " + rotation.ToString());
     }
+
 
     private float rayOffset = 0.45f;
     public bool isBlocked(Vector3 testDirection) {
