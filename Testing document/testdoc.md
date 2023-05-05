@@ -1,11 +1,15 @@
-# Test plan MD
+# 1. Test plan MD
 
 - Software: Unity (version 2021.3.17f1), WINDOWS-7
 
 - Hardware: i5-8300(CPU), NVIDIA-GTX960M(GPU), 8GB-2400MHZ(RAM)
 
 ## User Management
-- White Box (Jay)
+- Black Box (Jay)
+- Features to be tested:
+-- Login
+-- Logout
+-- Register
 
 ## Menu IU
 - Black Box (Terrence)
@@ -25,10 +29,15 @@
 ## Ghost AI & Status
 - Black Box (Terrence)
 
-## Player Data
-- White Box (Jay)
+## LeaderBoard
+- Black Box (Jay)
+-- Add score to leaderboard
+-- Remove PLayer's highest score
 
-# Test case
+# 2. Test case
+
+## 2.1 User Management
+> 
 
 > Big-bang approach
 > Each module needs to do the following:
