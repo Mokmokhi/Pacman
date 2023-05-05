@@ -189,11 +189,11 @@ Department of Mathematics, The Chinese University of Hong Kong}
     If the score of the current player is higher than the minScore on the leaderboard, the leaderboard will update.
     Assume the current leaderboard is:
     \begin{enumerate}
-        \item 1. Cheater5 25380
-        \item 2. Cheater6 25370
-        \item 3. Cheater69 6969
-        \item 4. Thomas D  6789
-        \item 5. Min       1000
+        \item Cheater5 25380
+        \item Cheater6 25370
+        \item Cheater69 6969
+        \item Thomas D  6789
+        \item Min       1000
     \end{enumerate}
     And the current username is "TEST".
 
@@ -211,11 +211,13 @@ Department of Mathematics, The Chinese University of Hong Kong}
         \begin{enumerate}
             \item  Input: click LEADERBOARD with score 7000
             \item  Expected output: the last 3 places become: 
-            \begin{enumerate}
-                \item 3. Min       7000
-                \item 4. Cheater69 6969
-                \item 5. Thomas D  6789
-            \end{enumerate}
+    
+                3. Min       7000
+
+                4. Cheater69 6969
+
+                5. Thomas D  6789
+            
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}
@@ -223,13 +225,17 @@ Department of Mathematics, The Chinese University of Hong Kong}
         \begin{enumerate}
             \item  Input: click LEADERBOARD with score 99999
             \item   Expected output: the leaderboard becomes:
-            \begin{enumerate}
-                \item 1. TEST     99999
-                \item 2. Cheater5 25380
-                \item 3. Cheater6 25370
-                \item 4. Cheater69 6969
-                \item 5. Thomas D  6789
-            \end{enumerate}
+         
+                1. TEST     99999
+
+                2. Cheater5 25380
+
+                3. Cheater6 25370
+
+                4. Cheater69 6969
+                
+                5. Thomas D  6789
+       
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}

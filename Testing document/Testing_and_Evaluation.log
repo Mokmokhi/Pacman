@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.6)  6 MAY 2023 01:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.6)  6 MAY 2023 01:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -644,19 +644,19 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 <../Pictures/Test//Shop.png, id=16, 998.22937pt x 517.43312pt>
 File: ../Pictures/Test//Shop.png Graphic file (type png)
 <use ../Pictures/Test//Shop.png>
-Package pdftex.def Info: ../Pictures/Test//Shop.png  used on input line 251.
+Package pdftex.def Info: ../Pictures/Test//Shop.png  used on input line 257.
 (pdftex.def)             Requested size: 399.28467pt x 206.96957pt.
  [5] [6 <../Pictures/Test//Shop.png>]
 <../Pictures/Test//Setting.png, id=27, 995.72pt x 509.40312pt>
 File: ../Pictures/Test//Setting.png Graphic file (type png)
 <use ../Pictures/Test//Setting.png>
-Package pdftex.def Info: ../Pictures/Test//Setting.png  used on input line 298.
+Package pdftex.def Info: ../Pictures/Test//Setting.png  used on input line 304.
 (pdftex.def)             Requested size: 398.28094pt x 203.75763pt.
  [7 <../Pictures/Test//Setting.png>]
 <../Pictures/Test//Pause.png, id=35, 996.22188pt x 518.43687pt>
 File: ../Pictures/Test//Pause.png Graphic file (type png)
 <use ../Pictures/Test//Pause.png>
-Package pdftex.def Info: ../Pictures/Test//Pause.png  used on input line 362.
+Package pdftex.def Info: ../Pictures/Test//Pause.png  used on input line 368.
 (pdftex.def)             Requested size: 398.48169pt x 207.37106pt.
  [8] [9 <../Pictures/Test//Pause.png>] [10] [11] [12] [13] (Testing_and_Evaluation.aux) ) 
 Here is how much of TeX's memory you used:
@@ -668,7 +668,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  78i,7n,80p,791b,1746s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Testing_and_Evaluation.pdf (13 pages, 1928156 bytes).
+Output written on Testing_and_Evaluation.pdf (13 pages, 1928164 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
