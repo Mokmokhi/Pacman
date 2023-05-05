@@ -42,20 +42,26 @@ Department of Mathematics, The Chinese University of Hong Kong}
     We list out the functionalities to be tested:
 
     \subsection*{Database}
-    We test the integrity of the Firebase with Unity using white-box testing, as we should see how Firebase respond to user actions.
+    We test the integrity of the Firebase with Unity using white-box testing, as we should see how Firebase responds to user actions.
 
     \subsection*{User Management}
-    We test the Signup function, Login function and Logout function using mixed-box testing, as we should see how the Login function and Signup function integrate with database.
+    We test the Signup function, Login function, and Logout function using mixed-box testing, as we should see how the Login function and Signup function integrate with the database.
 
     \subsection*{Application}
     \subsubsection*{Non-gameplay items}
-    The main window should be displayed, and we test menu items' functionality, title screen's functionality, Gameover screen and level choosing, including every buttons in the screen. Every button will be tested using black-box testing.
+    The main window should be displayed, and we test the menu items' functionality, the title screen's functionality, the Gameover screen, and level choosing, including every button on the screen. Every button will be tested using black-box testing.
 
     \subsubsection*{Image \& arithmetic}
-    We test the rendering of images, text and game status using mixed-box testing, as we wish to see the rendering works well with these functionalities.
+    We test the rendering of images, text, and game status using mixed-box testing, as we wish to see if the rendering works well with these functionalities.
 
-    \subsubsection*{Player control}
-    We test the keyboard control, basic movement of pacman and enemies, and enemies' AI by mixed-box testing, as we wish to see different implementations yields different results to the gameplay experience.
+    \subsubsection*{Character's Movement and control}
+    We test the keyboard control, basic movement of Pacman and enemies, and enemies' AI by mixed-box testing. We wish to see different implementations yield different results to the gameplay experience.
+    
     \section{TEST CASES}
+    \subsection*{Player control and Movement}
+    For player control, the main module of interest is the movement.cs module controlling the player's action. Here we add debug message and check the validity of the output direction sequence.
+    \subsubsection*{Purpose}
+    
+    \subsubsection*{Inputs and expected outputs}
 
 \end{document}

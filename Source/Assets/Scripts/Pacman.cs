@@ -88,16 +88,7 @@ public class Pacman : MonoBehaviour {
         Debug.Log("Pacman Eaten Power Pellet!");
         float amp = 1 + DataBaseManager.Instance.profile.PowerLevel * 0.05f;
         Ghost.GhostList.ForEach(ghost => ghost.frightened.Enable(powerPellet.duration * amp));
-        // EatPellet(powerPellet);
     }
-    
-    /*
-    public void Eaten() {
-        Debug.Log("Pacman Eaten!");
-        this.DeathSequence();
-        GameManager.Instance.AddLives(-1);
-    }
-    */
 
     public void Eaten() {
         if (isEaten) {
