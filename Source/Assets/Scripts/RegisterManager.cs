@@ -45,14 +45,4 @@ public class RegisterManager : MonoBehaviour
         return true;
     }
 
-     private void authStateChanged(object sender, System.EventArgs e) {
-        if (DataBaseManager.Instance.user == null) {
-            //Todo: Switch panel to login panel
-        } else {
-            //Todo: Switch panel to Main menu
-        }
-    }
-    private void onDestroy() {
-        DataBaseManager.Instance.auth.StateChanged -= authStateChanged;
-    }
 }

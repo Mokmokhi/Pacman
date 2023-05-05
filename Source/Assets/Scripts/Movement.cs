@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     public Vector3 initialDirection;
 
     public new Rigidbody rigidbody { get; private set; }
-    public new Animator animator { get; private set; }
+    public Animator animator { get; private set; }
     public Vector3 direction { get; private set; }
     public Vector3 nextDirection { get; private set; }
     public Vector3 rotation { get; private set; }
