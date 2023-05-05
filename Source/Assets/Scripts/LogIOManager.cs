@@ -17,6 +17,8 @@ public class LogIOManager : MonoBehaviour
     // Update is called once per frame
     public void Login() {
             DataBaseManager.Instance.Login(inputEmail.text, inputPassword.text);
+            inputEmail.text = "";
+            inputPassword.text = "";
     }
     public void Logout()
     {
@@ -28,6 +30,7 @@ public class LogIOManager : MonoBehaviour
     public void ChangeName() {
         if (inputChangeName.text.Length > 0) {
             DataBaseManager.Instance.ChangeName(inputChangeName.text);
+            inputChangeName.text = "";
         }
     }
 }

@@ -17,8 +17,9 @@ public class RegisterManager : MonoBehaviour
     [SerializeField]
     public TMP_InputField inputConfirmPassword;
 
+    // Regester function to receive the input from the user and pass it to the databaseManager.
     public void Register() {
-
+        // Check if the password and confirm password are matached, and the condition or username and password are valid.
         if (checkPasswordConfirmation() && VerificationRegister()) {
             DataBaseManager.Instance.Register(inputUserName.text, inputEmail.text, inputPassword.text);
             inputUserName.text = "";
