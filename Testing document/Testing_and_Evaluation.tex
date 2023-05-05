@@ -69,12 +69,11 @@ Department of Mathematics, The Chinese University of Hong Kong}
     We list out the functionalities to be tested:
 
     \begin{enumerate}
-        \item White box testing:\begin{enumerate}
-            \item User Management
-            \item Player Data
         \end{enumerate}
         \item Black box testing:\begin{enumerate}
-            \item Menu IU
+            \item User Management
+            \item Menu UI
+            \item LeaderBoard
             \item Shop system
             \item Setting
             \item Game Status
@@ -83,6 +82,166 @@ Department of Mathematics, The Chinese University of Hong Kong}
         \end{enumerate}
     \end{enumerate}
     \section{TEST CASES}
+    \subsection{User Management}
+
+    For UserManagement, we will focus on the black box testing on Login, Logout and SignUp.
+    On the Login panel, there are 2 input fields: EMAIL and PASSWORDS for user input.
+    With correct inputs, clicking The 'LOGIN' button should direct the user to the main menu. Else it should stay at the login panel.
+
+    On the SignUp panel, there are 4 input fields: USER NAME, EMAIL, PASSWORDS, CONFIRM PASSWORDS for user input.
+    Where USER NAME should not be empty, EMAIL should with format of email, and PASSWORD should be the same as the CONFIRM PASSWORD.
+    With valid inputs, clicking The 'SignUp' button should direct the user to the main menu. Else it should stay at the signUp panel.
+
+    On the main menu, the LOG OUT button should direct the user to the login panel and save the user data to the database.
+    Assume the following accounts is stored in the database:
+    \begin{enumerate}
+        \item email: j5@j.com password: 55555555
+        \item email: test@gmail.com password: J1234567
+    \end{enumerate}
+    \subsubsection*{Inputs and expected outputs}
+    \begin{enumerate}
+        \item Test Case 1: Login with correct email and password.
+        \begin{enumerate}
+            \item (a) Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555555"
+            \item (b) Expected output: Login Successfully with UserName Jest5 and switch to main menu.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 2: Login with correct email and incorrect password.
+        \begin{enumerate}
+            \item (a) Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555554"
+            \item (b) Expected output: error occured with error message.
+
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 3: Login with both incorrect email and password.
+        \begin{enumerate}
+            \item (a) Input: fill EMAIL with "tes@gmail.com" and PASSWORD with "J1234567"
+            \item Expected output: error occured with error message.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 2: Login with correct email and incorrect password.
+        \begin{enumerate}
+            \item (a) Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555554"
+            \item (b) Expected output: error occured with error message.
+
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 3: Login with both incorrect email and password.
+        \begin{enumerate}
+            \item (a) Input: fill EMAIL with "tes@gmail.com" and PASSWORD with "J1234567"
+            \item (b) Expected output: error occured with error message.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 4: Login with correct email and other user's password.
+        \begin{enumerate}
+            \item (a) Input: fill EMAIL with "test@gmail.com" and PASSWORD with "55555555"
+            \item (b) Expected output: error occured with error message.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 5: Sign up with all valid input.
+        \begin{enumerate}
+            \item (a) Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD "J5555555"
+            \item (b) Expected output: error occured with error message.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 6: Sign up with invalid username.
+        \begin{enumerate}
+            \item (a) Input: fill USER NAME with "", EMAIL with "test5@gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD "J5555555"
+            \item (b) Expected output: error occured with error message.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 8: Sign up with invalid password.
+        \begin{enumerate}
+            \item (a) Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J555555" and CONFIRM PASSWORD "J5555555"
+            \item (b) Expected output: error occured with error message.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 9: Sign up with empty confirm password.
+        \begin{enumerate}
+            \item (a) Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD ""
+            \item (b) Expected output: error occured with error message.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 10: Logout.
+        \begin{enumerate}
+            \item (a) Input: click LOG OUT button
+            \item (b) Expected output: logged out and switch to login panel.
+        \end{enumerate}
+    \end{enumerate}
+    
+    \subsubsection*{Results}
+
+    The above results to be successful under the assumption of black box testing.
+
+    \subsection{LeaderBoard}
+    For LeaderBoard, we will focus on the black box testing on attempting adding the score to the leaderboard.
+    If the score of the current player is higher than the minScore on the leaderboard, the leaderboard will update.
+    Assume the current leaderboard is:
+    \begin{enumerate}
+        \item 1. Cheater5 25380
+        \item 2. Cheater6 25370
+        \item 3. Cheater69 6969
+        \item 4. Thomas D  6789
+        \item 5. Min       1000
+    \end{enumerate}
+    And the current username is "TEST".
+
+    \subsubsection*{Inputs and expected outputs}
+
+    \begin{enumerate}
+        \item Test Case 1: Go to the leaderboard with score 1500
+        \begin{enumerate}
+            \item (a) Input: click LEADERBOARD with score 1500
+            \item (b) Expected output: replaces "5. Min 1000" with "5. TEST 1500"
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 2: Go to the leaderboard with score 7000
+        \begin{enumerate}
+            \item (a) Input: click LEADERBOARD with score 7000
+            \item (b) Expected output: the last 3 places become: 
+            \begin{enumerate}
+                \item 3. Min       7000
+                \item 4. Cheater69 6969
+                \item 5. Thomas D  6789
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 3: Go to the leaderboard with score 99999
+        \begin{enumerate}
+            \item (a) Input: click LEADERBOARD with score 99999
+            \item (b) (b) Expected output: the leaderboard becomes:
+            \begin{enumerate}
+                \item 1. TEST     99999
+                \item 2. Cheater5 25380
+                \item 3. Cheater6 25370
+                \item 4. Cheater69 6969
+                \item 5. Thomas D  6789
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 4: Go to the leaderboard with score 87
+        \begin{enumerate}
+            \item (a) Input: click LEADERBOARD with score 87
+            \item (b) Expected output: No update.
+        \end{enumerate}
+    \end{enumerate}
+
+    \subsubsection*{Results}
+
+    The above results to be successful under the assumption of black box testing.
 
     \subsection{Shop System}
 
@@ -232,7 +391,7 @@ Department of Mathematics, The Chinese University of Hong Kong}
             \item Expected Output: Game continued.
         \end{enumerate}
 
-        \item Test Case 4: Clickiong restart button
+        \item Test Case 4: Clicking restart button
         \begin{enumerate}
             \item Input: restart button
             \item Expected Output: Game restart

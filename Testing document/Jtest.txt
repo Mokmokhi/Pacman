@@ -13,6 +13,8 @@ Assume the following accounts is stored in the database:
     email: j5@j.com password: 55555555
     email: test@gmail.com password: J1234567
 
+Inputs and expected outputs
+
 1. Test Case 1: Login with correct email and password.
     (a) Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555555"
     (b) Expected output: Login Successfully with UserName Jest5 and switch to main menu.
@@ -59,48 +61,39 @@ Assume the following accounts is stored in the database:
 
 Results: 
 
-The abouve Results to be Successful under the assumption of black box testing.
+The above Results to be Successful under the assumption of black box testing.
 
 LeaderBoard
 
-For LeaderBoard, we will focus on the white box testing on AddScoreToLeaders function in the class LeaderBoardManager.
+For LeaderBoard, we will focus on the black box testing on attempting adding the score to the leaderboard.
+If the score of the current player is higher than the minScore on the leaderboard, the leaderboard will update.
+Assume the current leaderboard is:
+1. Cheater5 25380
+2. Cheater6 25370
+3. Cheater69 6969
+4. Thomas D  6789
+5. Min       1000
 
-==================================================================================
-public void AddScoreToLeaders(int score) {
-    DataBaseManager.Instance.GetReference().Child("LeaderBoard").RunTransaction(mutableData => {
-        List<object> leaders = mutableData.Value as List<object>;
+And the current username is "TEST".
 
-        if (leaders == null) {
-            leaders = new List<object>();
-        } else if (mutableData.ChildrenCount >= BOARDLENGTH) {
-            long minScore = long.MaxValue;
-            object minVal = null;
-            foreach (var child in leaders) {
-            if (!(child is Dictionary<string, object>)) continue;
-            long childScore = (long)((Dictionary<string, object>)child)["score"];
-            if (childScore < minScore) {
-                minScore = childScore;
-                minVal = child;
-            }
-            }
-            if (minScore > score) {
-            // The new score is lower than the existing 5 scores, abort.
-            return TransactionResult.Abort();
-            }
+Inputs and expected outputs
 
-            // Remove the lowest score.
-            leaders.Remove(minVal);
-        }
-        // Add the new high score.
-        Dictionary<string, object> newScoreMap =
-                        new Dictionary<string, object>();
-        newScoreMap["score"] = score;
-        newScoreMap["UserName"] = DataBaseManager.Instance.profile.UserName;
-        leaders.Add(newScoreMap);
-        mutableData.Value = leaders;
-        return TransactionResult.Success(mutableData);
-        });
-    }
-==================================================================================
+1.  Test Case 1: Go to the leaderboard with score 1500
+    (a) Input: click LEADERBOARD with score 1500
+    (b) Expected output: replaces "5. Min 1000" with "5. TEST 1500"
 
-Test Case 1: 
+2.  Test Case 2: Go to the leaderboard with score 7000
+    (a) Input: click LEADERBOARD with score 7000
+    (b) Expected output: the last 3 places become: "3. Min 7000", "4. Cheater69 6969", "5. Thomas D 6789"
+
+3.  Test Case 3: Go to the leaderboard with score 99999
+    (a) Input: click LEADERBOARD with score 99999
+    (b) Expected output: the leaderboard becomes: "1. TEST 99999", "2. Cheater5 25380", "3. Cheater6 25370", "4. Cheater69 6969", "5. Thomas D 6789"
+
+4.  Test Case 4: Go to the leaderboard with score 87
+    (a) Input: click LEADERBOARD with score 87
+    (b) Expected output: No update.
+
+Results
+
+The above Results to be Successful under the assumption of black box testing.
