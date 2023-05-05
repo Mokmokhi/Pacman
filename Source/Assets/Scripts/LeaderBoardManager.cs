@@ -112,9 +112,9 @@ public class LeaderBoardManager : MonoBehaviour
                 minVal = child;
             }
             }
-            if (minScore > score) {
-            // The new score is lower than the existing 5 scores, abort.
-            Debug.LogWarning("The new score is lower than the existing 5 scores, abort.");
+            if (minScore >= score) {
+            // The new score is lower than or equal to the existing 5 scores, abort.
+            Debug.LogWarning("The new score is lower than or equal to the existing 5 scores, abort.");
             return TransactionResult.Abort();
             }
 
