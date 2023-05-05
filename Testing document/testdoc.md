@@ -7,9 +7,9 @@
 ## User Management
 - Black Box (Jay)
 - Features to be tested:
--- Login
--- Logout
--- Register
+> Login
+> Logout
+> Register
 
 ## Menu IU
 - Black Box (Terrence)
@@ -31,8 +31,8 @@
 
 ## LeaderBoard
 - Black Box (Jay)
--- Add score to leaderboard
--- Remove PLayer's highest score
+> Add score to leaderboard
+> Remove PLayer's highest score
 
 # 2. Test case
 ## 2.1 User Management
