@@ -1,9 +1,16 @@
 using UnityEngine;
 
+/*
+ * Singleton class
+ *
+ * used for creating a singleton
+ */
+
 public class  Singleton<T> : MonoBehaviour where T : Component {
     private static T _instance;
     
     public static T Instance {
+        // make sure there is only one instance
         get {
             if (_instance == null) {
                 _instance = FindObjectOfType<T>();

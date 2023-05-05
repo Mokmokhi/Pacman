@@ -1,6 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Node class
+ *
+ * used for storing node information
+ * a node is used for pathfinding
+ */
+
 public class Node : MonoBehaviour {
     public List<Vector3> availableDirections { get; private set; }
 
@@ -21,7 +28,7 @@ public class Node : MonoBehaviour {
         Ray ray = new Ray(transform.position, direction);
         if (Physics.Raycast(ray, out hit, 1f)) {
             if (hit.collider.CompareTag("Wall")) {
-                return;
+                return; // early return if we hit a wall
             }
         }
         availableDirections.Add(direction);

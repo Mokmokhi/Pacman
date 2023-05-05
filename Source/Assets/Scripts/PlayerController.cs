@@ -1,12 +1,18 @@
 using System;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
-    public float turnCD = 0.1f;
-    [SerializeField]
-    private GameObject pacman;
+/*
+ * PlayerController class
+ *
+ * used for controlling the pacman and handling input
+ */
 
-    private Movement movement;
+public class PlayerController : MonoBehaviour {
+    public float turnCD = 0.1f; // turn cooldown (not using)
+    [SerializeField]
+    private GameObject pacman; // pacman game object
+
+    private Movement movement; // pacman movement script
     private void Awake() {
         movement = pacman.GetComponent<Movement>();
     }
@@ -32,7 +38,7 @@ public class PlayerController : MonoBehaviour {
             FindObjectOfType<PanelSwitcher>().SwitchActivePanelByName("2.1-PauseMenu");
         }
 
-
+        // turn cooldown
         if (timer > turnCD) timer = 0f;
         timer += Time.deltaTime;
     }

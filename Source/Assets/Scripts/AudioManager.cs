@@ -5,6 +5,16 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/*
+ * AudioManager.cs
+ *
+ * used for playing music and sound effects
+ *
+ * the music and sfx are stored in Resources/Audio
+ *
+ * audio setting is set here instead of GameManager
+ */
+
 public class AudioManager : Singleton<AudioManager>
 {
 	[SerializeField] private AudioSource musicSource;
@@ -22,7 +32,7 @@ public class AudioManager : Singleton<AudioManager>
     public void PlayMusic(string clipName) {
 	    musicSource.clip = Resources.Load<AudioClip>("Audio/"+clipName);
 	    musicSource.volume = musicVolume;
-	    Debug.Log("musicVolume = " + musicVolume);
+	    // Debug.Log("musicVolume = " + musicVolume);
 	    musicSource.loop = true;
 	    musicSource.Play();
     }

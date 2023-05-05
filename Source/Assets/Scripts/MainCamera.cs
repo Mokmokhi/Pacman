@@ -1,10 +1,16 @@
 using UnityEngine;
 
+/*
+ * MainCamera class
+ *
+ * used for controlling the main render camera
+ */
+
 public class MainCamera : MonoBehaviour {
     
-    private Vector3 pacmanInitPosition;
-    private Transform pacman;
-    private Vector3 offset;
+    private Vector3 pacmanInitPosition; // pacman's initial position
+    private Transform pacman; // pacman transform (e.g. position, rotation, scale)
+    private Vector3 offset; // offset between pacman and pacman initial position
 
     void Start() {
         pacman = GameObject.FindWithTag("Pacman").transform;
@@ -14,7 +20,7 @@ public class MainCamera : MonoBehaviour {
 
     private float timer;
     void Update() {
-        transform.position = pacman.position - offset + new Vector3(1,1.5f,-1);
+        transform.position = pacman.position - offset + new Vector3(1,1.5f,-1); // the last vector is the offset between pacman and camera
         
         // vibrate position.y linearly slowly irregularly
         timer += Time.deltaTime;

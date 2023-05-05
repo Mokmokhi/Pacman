@@ -1,7 +1,13 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
+/*
+ * Game Manager
+ * This class inherits from Singleton and is mainly used for handling
+ * 1. In-Game Logic Management
+ * 2. Application control
+ */
+
+// Difficulty is limited to 3 levels
 public enum Difficulty {
     EASY,
     NORMAL,
@@ -9,44 +15,40 @@ public enum Difficulty {
 }
 
 public class GameManager : Singleton<GameManager> {
-    public Ghost[] ghosts;
-    public Pacman pacman;
-    public Transform pellets;
-    public PlayerController playercontroller;
-    public int pelletsNum = 1;
+    public Ghost[] ghosts; // an array of all ghosts
+    public Pacman pacman; // player pacman
+    public Transform pellets; // pellet prefab
+    public PlayerController playercontroller; // handles player input
+    public int pelletsNum = 1; // number of pellets in the map
 
-    public int ghostMultiplier { get; private set; } = 1;
-    public int score { get; private set; } = 0;
-    public int highScore = 0;
-    public int lives { get; private set; } = 3;
-
-    public Difficulty currentDifficulty = Difficulty.NORMAL;
-
-    public bool isLose = false;
-    public bool isPlaying = false;
-
-    public GameObject[] Maps;
+    public int ghostMultiplier { get; private set; } = 1; // ghost speed multiplier
+    public int score { get; private set; } = 0; // player score
+    public int highScore = 0; // player history highest score
+    public int lives { get; private set; } = 3; // player lives
+    public Difficulty currentDifficulty = Difficulty.NORMAL; // current difficulty
+    public bool isPlaying = false; // is the game playing or is pausing
+    public GameObject[] Maps; // an array of all maps
     public int currentMapIndex = 0;
 
-    public override void Awake() {
-        base.Awake();
-    }
-
     private void Start() {
-        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login");
-        highScore = DataBaseManager.Instance.GetComponent<DataBaseManager>().profile.HighestScore;
-        playercontroller.gameObject.SetActive(false);
-        Time.timeScale = 0;
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("0-Login"); // Switch UI to Login Panel
+        highScore = DataBaseManager.Instance.GetComponent<DataBaseManager>().profile.HighestScore; // Get highest score from database
+        playercontroller.gameObject.SetActive(false); // Disable player input
+        Time.timeScale = 0; // Pause the game
         
-        AudioManager.Instance.PlayMusic("bgm1");
+        AudioManager.Instance.PlayMusic("bgm1"); 
         var audioClip = Resources.Load<AudioClip>("Audio/bgm1");
-        Debug.Log("LOAD TEST" + audioClip.name);
+        // Debug.Log("LOAD TEST" + audioClip.name);
     }
 
     private void Update() {
+        
+        // keep track of the number of pellets
         if (pelletsNum <= 0 && isPlaying) {
             GameSuccess();
         }
+        
+        // update history high score
         if (score >= highScore) {
             highScore = score;
         }
@@ -66,25 +68,28 @@ public class GameManager : Singleton<GameManager> {
         }
         // Find number of pellets given that pellets have the tag "Pellet"
         pelletsNum = GameObject.FindGameObjectsWithTag("Pellet").Length;
-
+    
+        // reset data
         SetLives(3);
         SetScore(0);
-        isLose = false;
         isPlaying = true;
-        EventBus.Subscribe(GameEvent.START, OnGameStart);
+        EventBus.Subscribe(GameEvent.START, OnGameStart); // subscribe event "START"
         pacman.WearSkin();
         
+        // activate all pellets
         foreach (Transform pellet in pellets) {
             pellet.gameObject.SetActive(true);
         }
-
+        
+        // reset pacman and ghosts
         ResetState();
         
+        // reset time scale
         Time.timeScale = 1;
 
-        EventBus.Publish(GameEvent.START);
-        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2-InGame");
-        playercontroller.gameObject.SetActive(true);
+        EventBus.Publish(GameEvent.START); // publish event "START"
+        UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2-InGame"); // Switch UI to InGame Panel
+        playercontroller.gameObject.SetActive(true); // Enable player input
     }
 
     public void ResetState()
@@ -123,16 +128,20 @@ public class GameManager : Singleton<GameManager> {
     }
 
     private void OnGameStart() {
-        EventBus.Unsubscribe(GameEvent.START, OnGameStart);
+        EventBus.Unsubscribe(GameEvent.START, OnGameStart); // When Game is started, unsubscribe event "START"
         Time.timeScale = 1;
+        
         // Find number of pellets given that pellets have the tag "Pellet"
         pelletsNum = GameObject.FindGameObjectsWithTag("Pellet").Length;
+        
         SetLives(3);
         SetScore(0);
         highScore = DataBaseManager.Instance.GetComponent<DataBaseManager>().profile.HighestScore;
         UIManager.Instance.ResetInGameUI();
         AudioManager.Instance.StopMusic();
-        AudioManager.Instance.PlayMusic("Demented-Nightmare-MP3");
+        AudioManager.Instance.PlayMusic("Demented-Nightmare-MP3"); // change bgm
+        
+        // Subscribe event "PAUSE" and "STOP"
         EventBus.Subscribe(GameEvent.PAUSE, OnGamePause);
         EventBus.Subscribe(GameEvent.STOP, OnGameStop);
     }
@@ -153,23 +162,21 @@ public class GameManager : Singleton<GameManager> {
         EventBus.Unsubscribe(GameEvent.STOP, OnGameStop);
         EventBus.Unsubscribe(GameEvent.PAUSE, OnGamePause);
         isPlaying = false;
-        playercontroller.gameObject.SetActive(false);
+        playercontroller.gameObject.SetActive(false); // Disable player input
         AudioManager.Instance.StopMusic();
-        AudioManager.Instance.PlayMusic("bgm1");
+        AudioManager.Instance.PlayMusic("bgm1"); // change bgm
         Time.timeScale = 0;
         EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
 
     private void GameSuccess() {
-        isLose = false;
         isPlaying = false;
-        SaveScoreAndCoins();
+        SaveScoreAndCoins(); // Save score and coins to database
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.3-GameSuccess");
         EventBus.Publish(GameEvent.STOP);
     }
 
     public void GameOver() {
-        isLose = true;
         isPlaying = false;
         AudioManager.Instance.PlaySfx("screamSFX");
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("2.2-GameOver");
@@ -193,7 +200,7 @@ public class GameManager : Singleton<GameManager> {
     }
     
     public void GoToMenu(){
-        EventBus.Publish(GameEvent.STOP);
+        EventBus.Publish(GameEvent.STOP); // publish event "STOP"
         UIManager.Instance.GetComponent<PanelSwitcher>().SwitchActivePanelByName("1-Main");
     }
 

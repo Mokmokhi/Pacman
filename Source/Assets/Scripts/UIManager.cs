@@ -1,10 +1,13 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+
+/*
+ * UIManager class
+ *
+ * used for managing UI elements and UI elements' events
+ */
 
 public class UIManager : Singleton<UIManager> {
     private PanelSwitcher panelSwitcher;
@@ -18,17 +21,19 @@ public class UIManager : Singleton<UIManager> {
 
     private void Start() {
         panelSwitcher = GetComponent<PanelSwitcher>();
+        
+        // listen to the difficulty buttons click event
         difficultyToggles[0].onValueChanged.AddListener(delegate { OnDifficultyToggleChanged(0); });
         difficultyToggles[1].onValueChanged.AddListener(delegate { OnDifficultyToggleChanged(1); });
         difficultyToggles[2].onValueChanged.AddListener(delegate { OnDifficultyToggleChanged(2); });
-        AddSFXToAllButtons();
+        
+        AddSFXToAllButtons(); // add sfx to all buttons when clicked
     }
 
     private void Update() {
         powerText.text = "Powerlevel " + DataBaseManager.Instance.profile.PowerLevel.ToString();;
         coinText.text = "Coin " + DataBaseManager.Instance.profile.Coins.ToString();
         scoreText.text = "" + GameManager.Instance.score.ToString();
-        // livesText.text = "Lives:" + GameManager.Instance.lives.ToString();
         highScoreText.text = "Record " + GameManager.Instance.highScore.ToString();
         if (GameManager.Instance.lives == 2) livesHearts.transform.GetChild(2).GetComponent<Image>().enabled = false;
         if (GameManager.Instance.lives == 1) livesHearts.transform.GetChild(1).GetComponent<Image>().enabled = false;
@@ -36,11 +41,13 @@ public class UIManager : Singleton<UIManager> {
     }
 
     public void ResetInGameUI() {
+        // reset lives
         for (int i = 0; i < livesHearts.transform.childCount; i++) {
             livesHearts.transform.GetChild(i).GetComponent<Image>().enabled = true;
         }
     }
     
+    // change the difficulty of the game
     public void OnDifficultyToggleChanged(int index) {
         if (difficultyToggles[index].isOn) {
             for (int i = 0; i < difficultyToggles.Length; i++) {
@@ -57,13 +64,15 @@ public class UIManager : Singleton<UIManager> {
             GameManager.Instance.SetDifficulty(Difficulty.HARD);
         }
     }
-
+    
+    // show the game over panel
     public void ShowRespawning() {
         panelSwitcher.SwitchActivePanelByName("2.4-Respawning");
         Invoke(nameof(AddDot), 1);
         Invoke(nameof(AddDot), 2);
         StartCoroutine(Wait3SecondsToReset());
     }
+    // wait 3 seconds to reset the UI panel to InGame panel
     IEnumerator Wait3SecondsToReset() {
         yield return new WaitForSeconds(3);
         string text =
@@ -72,6 +81,7 @@ public class UIManager : Singleton<UIManager> {
         panelSwitcher.SwitchActivePanelByName("2-InGame");
     }
 
+    // for the respawning panel, add a dot to the text
     private void AddDot() {
         panelSwitcher.GetPanelByName("2.4-Respawning").transform.GetChild(1).GetComponent<TMP_Text>().text += ".";
     }
@@ -81,7 +91,8 @@ public class UIManager : Singleton<UIManager> {
             button.onClick.AddListener(() => AudioManager.Instance.PlaySfx("button1SFX"));
         }
     }
-
+    
+    // determine to go to main menu or pause menu when setting is finished
     public void FinishSetting() {
         if (GameManager.Instance.isPlaying) {
             panelSwitcher.SwitchActivePanelByName("2.1-PauseMenu");

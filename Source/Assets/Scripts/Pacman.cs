@@ -1,6 +1,12 @@
 using System;
 using UnityEngine;
 
+/*
+ * Pacman class
+ *
+ * used for pacman behaviour
+ */
+
 public enum AnimationState {
     IDLE,
     WALK,
@@ -28,6 +34,7 @@ public class Pacman : MonoBehaviour {
         EventBus.Subscribe(GameEvent.START, OnGameStart);
     }
     
+    // chage the skin of pacman
     public void WearSkin() {
         // to be continue
         for (int i = 0; i < PacSkin.Length; i++) {
@@ -42,6 +49,7 @@ public class Pacman : MonoBehaviour {
         ResetState();
     }
 
+    // reset the state of pacman
     public void ResetState() {
         enabled = true;
         collider.enabled = true;
@@ -60,6 +68,7 @@ public class Pacman : MonoBehaviour {
         animationState = AnimationState.WALK;
     }
 
+    // death sequence of pacman
     private void DeathSequence() {
         enabled = false;
         collider.enabled = false;
@@ -70,6 +79,7 @@ public class Pacman : MonoBehaviour {
         StartCoroutine(ScaleTo(gameObject, Vector3.zero, 3f));
     }
     
+    // IEnumerator for diminishing the size of the Pacman and keep rotating when it dies
     private System.Collections.IEnumerator ScaleTo(GameObject obj, Vector3 targetScale, float duration) {
         Vector3 originalScale = obj.transform.localScale;
         float counter = 0f;
@@ -84,20 +94,21 @@ public class Pacman : MonoBehaviour {
     public void EatPellet(Pellet pellet ) {
         GameManager.Instance.AddScore(pellet.points);
     }
+    
     public void EatPowerPellet(PowerPellet powerPellet ) {
-        Debug.Log("Pacman Eaten Power Pellet!");
+        // Debug.Log("Pacman Eaten Power Pellet!");
         float amp = 1 + DataBaseManager.Instance.profile.PowerLevel * 0.05f;
         Ghost.GhostList.ForEach(ghost => ghost.frightened.Enable(powerPellet.duration * amp));
     }
 
+    // when pacman is eaten by ghost
     public void Eaten() {
         if (isEaten) {
             return;
         }
-        Debug.Log("Pacman Eaten!");
+        // Debug.Log("Pacman Eaten!");
         isEaten = true;
         
-
         GameManager.Instance.AddLives(-1);
 
         if (GameManager.Instance.lives > 0) {
