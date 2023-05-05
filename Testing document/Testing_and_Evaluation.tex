@@ -34,7 +34,7 @@
   tabsize=3
 }
 
-\graphicspath{ {../Pictures/UML/} }
+\graphicspath{ {../Pictures/Test/} }
 
 \pagestyle{plain}
 \fancyhf[CF]{\thepage}
@@ -58,30 +58,205 @@ Department of Mathematics, The Chinese University of Hong Kong}
 
     The testing will be under following environment:
     \begin{itemize}
-        \item Software: Unity (version 2021.3.17f1),
-        \item Hardware: 
+        \item Software: Unity (version 2021.3.17f1), Windows7
+        \item Hardware: \begin{itemize}
+            \item CPU: i5-8300
+            \item NVidia-GTX960M
+            \item 8GB-2400MHZ
+        \end{itemize}
     \end{itemize}
 
     We list out the functionalities to be tested:
 
-    \subsection*{Database}
-    We test the integrity of the Firebase with Unity using white-box testing, as we should see how Firebase responds to user actions.
-
-    \subsection*{User Management}
-    We test the Signup function, Login function, and Logout function using mixed-box testing, as we should see how the Login function and Signup function integrate with the database.
-
-    \subsection*{Application}
-    \subsubsection*{Non-gameplay items}
-    The main window should be displayed, and we test the menu items' functionality, the title screen's functionality, the Gameover screen, and level choosing, including every button on the screen. Every button will be tested using black-box testing.
-
-    \subsubsection*{Image \& arithmetic}
-    We test the rendering of images, text, and game status using mixed-box testing, as we wish to see if the rendering works well with these functionalities.
-
-    \subsubsection*{Character's Movement and controls}
-    We test the keyboard control and basic movement of the characters by mixed-box testing. We wish to see different implementations yield different results in the gameplay experience.
-    
+    \begin{enumerate}
+        \item White box testing:\begin{enumerate}
+            \item User Management
+            \item Player Data
+        \end{enumerate}
+        \item Black box testing:\begin{enumerate}
+            \item Menu IU
+            \item Shop system
+            \item Setting
+            \item Game Status
+            \item Player control
+            \item Ghost AI \& Status
+        \end{enumerate}
+    \end{enumerate}
     \section{TEST CASES}
-    \subsection*{Character's Movement and controls}
+
+    \subsection{Shop System}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[scale=0.4]{Shop.png}
+    \end{figure}
+
+    Under the assumption of black box testing, we focus on the functionalities of each button:
+
+    \begin{enumerate}
+        \item The `selected' button should be changed to `buy' or `select' when the character focus is changed, and should be clickable to select the character.
+        \item The upgrade button should be changing the power level and coins and the value inside the button.
+        \item the `back to menu' button should be able to direct player to the menu.
+        \item The left right button should beable to change the character shown.
+    \end{enumerate}
+
+    \subsubsection*{Inputs and expected outputs}
+    \begin{enumerate}
+        \item Test Case 1: upgrade power pellet
+        \begin{enumerate}
+            \item Input: Clicking the upgrade button
+            \item Expected Output: coin decreased, powerlevel and value on the button increased.
+        \end{enumerate}
+        
+        \item Test Case 2: Clicking the back to menu button
+        \begin{enumerate}
+            \item Input: click the button
+            \item Expected Output: Back to menu
+        \end{enumerate}
+        
+        \item Test Case 3: Change to other character, and buy it.
+        \begin{enumerate}
+            \item Input: click left right button and buy.
+            \item Expected Output: character changed, and it will be successfully bought if coins enough, coins decresed, and button becomes selected; unsuccesful purchase will remain everything unchanged.
+        \end{enumerate}
+        
+        \item Test Case 4: Clicking blank space
+        \begin{enumerate}
+            \item Input: Clicking on blank area.
+            \item Expected Output: No output.
+        \end{enumerate}
+    \end{enumerate}
+
+    \subsubsection*{Results}
+
+    The above results to be successful under the assumption of black box testing.
+
+    \subsection{Setting}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[scale=0.4]{Setting.png}
+    \end{figure}
+
+    Under the assumption of black box testing, we focus on the functionalities of each button:
+
+    \begin{enumerate}
+        \item Name can be changed in the change name field, by clicking the change button.
+        \item Music and Effect Volume can be adjusted.
+        \item Done button will direct user to previous page.
+    \end{enumerate}
+
+    \subsubsection*{Inputs and expected outputs}
+    \begin{enumerate}
+        \item Test Case 1: Directly clicking change button
+        \begin{enumerate}
+            \item Input: Clicking the change button
+            \item Expected Output: The name cannot be changed
+        \end{enumerate}
+        
+        \item Test Case 2: Input a new name and click the change button
+        \begin{enumerate}
+            \item Input: new name, change button
+            \item Expected Output: Name is changed.
+        \end{enumerate}
+        
+        \item Test Case 3: Adjust Music Volume to 0.
+        \begin{enumerate}
+            \item Input: adjust the slider of music volume
+            \item Expected Output: No music is played.
+        \end{enumerate}
+
+        \item Test Case 4: Adjust Effect Volume to 0.
+        \begin{enumerate}
+            \item Input: adjust the slider of effect volume
+            \item Expected Output: No sound effect is played.
+        \end{enumerate}
+        
+        \item Test Case 5: Adjust Music Volume to nonzero.
+        \begin{enumerate}
+            \item Input: adjust the slider of music volume
+            \item Expected Output: music volume varies with slider.
+        \end{enumerate}
+
+        \item Test Case 6: Adjust Effect Volume to nonzero.
+        \begin{enumerate}
+            \item Input: adjust the slider of effect volume
+            \item Expected Output: effect volume varies with slider.
+        \end{enumerate}
+
+        \item Test Case 7: Clicking done button with different entrance
+        \begin{enumerate}
+            \item Input: Go to setting from different entrance, and click the done button
+            \item Expected Output: Returning the previous page.
+        \end{enumerate}
+    \end{enumerate}
+
+    \subsubsection*{Results}
+
+    The above results to be successful under the assumption of black box testing.
+
+    \subsection{Game Status}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[scale=0.4]{Pause.png}
+    \end{figure}
+
+    Under the assumption of black box testing, we focus on the functionalities of each button:
+
+    \begin{enumerate}
+        \item By clcking spacebar, we can enter the pause section
+        \item Resume button allows player resume the game
+        \item Restart button allows player restart the game
+        \item Settings button allows player enter setting page
+        \item Quit to menu allows player to halt the game
+    \end{enumerate}
+
+    \subsubsection*{Inputs and expected outputs}
+    \begin{enumerate}
+        \item Test Case 1: Never pressing spacebar during the game
+        \begin{enumerate}
+            \item Input: Usual game control
+            \item Expected Output: The pause section is never been called.
+        \end{enumerate}
+        
+        \item Test Case 2: Pressing spacebar anytime during the game
+        \begin{enumerate}
+            \item Input: press the spacebar
+            \item Expected Output: Pause section is called
+        \end{enumerate}
+        
+        \item Test Case 3: Clicking resume button
+        \begin{enumerate}
+            \item Input: resume button
+            \item Expected Output: Game continued.
+        \end{enumerate}
+
+        \item Test Case 4: Clickiong restart button
+        \begin{enumerate}
+            \item Input: restart button
+            \item Expected Output: Game restart
+        \end{enumerate}
+        
+        \item Test Case 5: Clicking settings button
+        \begin{enumerate}
+            \item Input: settings button
+            \item Expected Output: entering settings
+        \end{enumerate}
+
+        \item Test Case 6: Clicking Quit to menu button
+        \begin{enumerate}
+            \item Input: quit to menu
+            \item Expected Output: diresting player to menu
+        \end{enumerate}
+
+        
+    \end{enumerate}
+
+    \subsubsection*{Results}
+
+    The above results to be successful under the assumption of black box testing.
+    \subsection{Character's Movement and controls}
     For character movement control (both the player and the enemies ), the main class of interest is the movement class controlling the player's action. We will be focusing on white box testing on the function SetDirection().
 
     
@@ -129,25 +304,25 @@ Department of Mathematics, The Chinese University of Hong Kong}
     
     \subsubsection*{Inputs and expected outputs}
     \begin{enumerate}
-        \item a. Test Case 1: Pacman moves in an open path
+        \item Test Case 1: Pacman moves in an open path
         \begin{enumerate}
             \item Input: targetDir = Vector3.forward (0, 0, 1)
             \item Expected Output: direction and nextDirection should be set to Vector3.forward, and the appropriate rotation should be calculated.
         \end{enumerate}
         
-        \item b. Test Case 2: Pacman moves in a blocked path without forced movement
+        \item Test Case 2: Pacman moves in a blocked path without forced movement
         \begin{enumerate}
             \item Input: targetDir = Vector3.left (1, 0, 0) and a wall in the left direction
             \item Expected Output: nextDirection should be set to Vector3.left, but direction should not change.
         \end{enumerate}
         
-        \item c. Test Case 3: Pacman moves in a blocked path with forced movement
+        \item Test Case 3: Pacman moves in a blocked path with forced movement
         \begin{enumerate}
             \item Input: targetDir = Vector3.left (1, 0, 0), a wall in the left direction, and forced = true
             \item Expected Output: direction and nextDirection should be set to Vector3.left, and the appropriate rotation should be calculated.
         \end{enumerate}
         
-        \item d. Test Case 4: Pacman changes direction when a previous blocked path becomes unblocked
+        \item Test Case 4: Pacman changes direction when a previous blocked path becomes unblocked
         \begin{enumerate}
             \item Input: Pacman is moving forward (0, 0, 1) and attempted to turn left (1, 0, 0) but it was blocked. The wall blocking the path is now removed.
             \item Expected Output: direction and nextDirection should be set to Vector3.left, and the appropriate rotation should be calculated.
@@ -156,38 +331,40 @@ Department of Mathematics, The Chinese University of Hong Kong}
 
     \subsubsection*{Outputs and analysis}
     Here are the output log messages:
-    
-    \item a. Test Case 1: Pacman moves in an open path
-    \begin{lstlisting}
-    SetDirection() called with target direction: (0, 0, 1) and forced: False
-    Path is not blocked. Setting direction and nextDirection to: (0, 0, 1)
-    Calculated rotation: (0, 0, 0)
-    Current direction: (0, 0, 1), nextDirection: (0, 0, 1), rotation: (0, 0, 0)
-    \end{lstlisting}
 
-    \item b. Test Case 2: Pacman moves in a blocked path without forced movement
-    \begin{lstlisting}
-    SetDirection() called with target direction: (1, 0, 0) and forced: False
-    Path is blocked. Setting nextDirection to: (1, 0, 0)
-    Current direction: (previous direction), nextDirection: (1, 0, 0), rotation: (previous rotation)
-    \end{lstlisting}
+    \begin{enumerate}
+        \item Test Case 1: Pacman moves in an open path
+        \begin{lstlisting}
+        SetDirection() called with target direction: (0, 0, 1) and forced: False
+        Path is not blocked. Setting direction and nextDirection to: (0, 0, 1)
+        Calculated rotation: (0, 0, 0)
+        Current direction: (0, 0, 1), nextDirection: (0, 0, 1), rotation: (0, 0, 0)
+        \end{lstlisting}
 
-    \item c. Test Case 3: Pacman moves in a blocked path with forced movement
-    \begin{lstlisting}
-    SetDirection() called with target direction: (1, 0, 0) and forced: True
-    Path is not blocked. Setting direction and nextDirection to: (1, 0, 0)
-    Calculated rotation: (0, 270, 0)
-    Current direction: (1, 0, 0), nextDirection: (1, 0, 0), rotation: (0, 270, 0)
-    \end{lstlisting}
+        \item Test Case 2: Pacman moves in a blocked path without forced movement
+        \begin{lstlisting}
+        SetDirection() called with target direction: (1, 0, 0) and forced: False
+        Path is blocked. Setting nextDirection to: (1, 0, 0)
+        Current direction: (previous direction), nextDirection: (1, 0, 0), rotation: (previous rotation)
+        \end{lstlisting}
 
-    \item d. Test Case 4: Pacman changes direction when a previous blocked path becomes unblocked
-    \begin{lstlisting}
-    Current nextDirection: (1, 0, 0)
-    SetDirection() called with target direction: (1, 0, 0) and forced: False
-    Path is not blocked. Setting direction and nextDirection to: (1, 0, 0)
-    Calculated rotation: (0, 270, 0)
-    Current direction: (1, 0, 0), nextDirection: (1, 0, 0), rotation: (0, 270, 0)
-    \end{lstlisting}
+        \item Test Case 3: Pacman moves in a blocked path with forced movement
+        \begin{lstlisting}
+        SetDirection() called with target direction: (1, 0, 0) and forced: True
+        Path is not blocked. Setting direction and nextDirection to: (1, 0, 0)
+        Calculated rotation: (0, 270, 0)
+        Current direction: (1, 0, 0), nextDirection: (1, 0, 0), rotation: (0, 270, 0)
+        \end{lstlisting}
+
+        \item Test Case 4: Pacman changes direction when a previous blocked path becomes unblocked
+        \begin{lstlisting}
+        Current nextDirection: (1, 0, 0)
+        SetDirection() called with target direction: (1, 0, 0) and forced: False
+        Path is not blocked. Setting direction and nextDirection to: (1, 0, 0)
+        Calculated rotation: (0, 270, 0)
+        Current direction: (1, 0, 0), nextDirection: (1, 0, 0), rotation: (0, 270, 0)
+        \end{lstlisting}
+    \end{enumerate}
 
     The test cases are successful. Furthermore, simple black box testing (on modules other than this one, or say the overall movement ability) was also done when testing this current module. We conclude that we did not discover significant faults on the character movement feature.
     

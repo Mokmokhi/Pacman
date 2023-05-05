@@ -1,3 +1,7 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}TEST PLAN}{2}{}%
 \contentsline {section}{\numberline {2}TEST CASES}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Shop System}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Setting}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Game Status}{6}{}%
+\contentsline {subsection}{\numberline {2.4}Character's Movement and controls}{7}{}%
