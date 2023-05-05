@@ -10,6 +10,29 @@
 \usepackage{graphicx,float}
 \usepackage{physics}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
 
 \graphicspath{ {../Pictures/UML/} }
 
@@ -54,14 +77,119 @@ Department of Mathematics, The Chinese University of Hong Kong}
     \subsubsection*{Image \& arithmetic}
     We test the rendering of images, text, and game status using mixed-box testing, as we wish to see if the rendering works well with these functionalities.
 
-    \subsubsection*{Character's Movement and control}
-    We test the keyboard control, basic movement of Pacman and enemies, and enemies' AI by mixed-box testing. We wish to see different implementations yield different results to the gameplay experience.
+    \subsubsection*{Character's Movement and controls}
+    We test the keyboard control and basic movement of the characters by mixed-box testing. We wish to see different implementations yield different results in the gameplay experience.
     
     \section{TEST CASES}
-    \subsection*{Player control and Movement}
-    For player control, the main module of interest is the movement.cs module controlling the player's action. Here we add debug message and check the validity of the output direction sequence.
-    \subsubsection*{Purpose}
+    \subsection*{Character's Movement and controls}
+    For character movement control (both the player and the enemies ), the main class of interest is the movement class controlling the player's action. We will be focusing on white box testing on the function SetDirection().
+
+    
+    \begin{lstlisting}
+    public void SetDirection(Vector3 targetDir, bool forced = false) {
+        Debug.Log("SetDirection() called with target direction: " + targetDir.ToString() + " and forced: " + forced.ToString());
+    
+        if (isBlocked(targetDir) && !forced) {
+            nextDirection = targetDir;
+            Debug.Log("Path is blocked. Setting nextDirection to: " + nextDirection.ToString());
+        }
+        else {
+            nextDirection = targetDir;
+            direction = targetDir;
+            nextDirection = targetDir;
+            Debug.Log("Path is not blocked. Setting direction and nextDirection to: " + direction.ToString());
+    
+            rotation = new Vector3(0, Mathf.Atan2(direction.z, -1 * direction.x) * Mathf.Rad2Deg - 90, 0);
+            if (rotation.y < 0) rotation += new Vector3(0, 360, 0);
+            if (rotation.y >= 360) rotation -= new Vector3(0, 360, 0);
+            // Force rotation.y to become 0 or 90 or 180 or 270
+            rotation = new Vector3(0, Mathf.Round(rotation.y / 90) * 90, 0);
+            Debug.Log("Calculated rotation: " + rotation.ToString());
+        }
+    
+        // Add this debug line to log the current direction, nextDirection, and rotation
+        Debug.Log("Current direction: " + direction.ToString() + ", nextDirection: " + nextDirection.ToString() + ", rotation: " + rotation.ToString());
+    }
+    \end{lstlisting}
+
+    And here is the function update() in movement.cs who take care of the variable NextDirection.
+
+    \begin{lstlisting}
+    private void Update() {
+        if (nextDirection != Vector3.zero) {
+            SetDirection(nextDirection);
+        }
+    
+        // Add this debug line to log the current nextDirection value
+        Debug.Log("Current nextDirection: " + nextDirection.ToString());
+    }
+    \end{lstlisting}
+    
+    Here we added debug message for checking the validity of the output direction sequence.
     
     \subsubsection*{Inputs and expected outputs}
+    \begin{enumerate}
+        \item a. Test Case 1: Pacman moves in an open path
+        \begin{enumerate}
+            \item Input: targetDir = Vector3.forward (0, 0, 1)
+            \item Expected Output: direction and nextDirection should be set to Vector3.forward, and the appropriate rotation should be calculated.
+        \end{enumerate}
+        
+        \item b. Test Case 2: Pacman moves in a blocked path without forced movement
+        \begin{enumerate}
+            \item Input: targetDir = Vector3.left (1, 0, 0) and a wall in the left direction
+            \item Expected Output: nextDirection should be set to Vector3.left, but direction should not change.
+        \end{enumerate}
+        
+        \item c. Test Case 3: Pacman moves in a blocked path with forced movement
+        \begin{enumerate}
+            \item Input: targetDir = Vector3.left (1, 0, 0), a wall in the left direction, and forced = true
+            \item Expected Output: direction and nextDirection should be set to Vector3.left, and the appropriate rotation should be calculated.
+        \end{enumerate}
+        
+        \item d. Test Case 4: Pacman changes direction when a previous blocked path becomes unblocked
+        \begin{enumerate}
+            \item Input: Pacman is moving forward (0, 0, 1) and attempted to turn left (1, 0, 0) but it was blocked. The wall blocking the path is now removed.
+            \item Expected Output: direction and nextDirection should be set to Vector3.left, and the appropriate rotation should be calculated.
+        \end{enumerate}
+    \end{enumerate}
+
+    \subsubsection*{Outputs and analysis}
+    Here are the output log messages:
+    
+    \item a. Test Case 1: Pacman moves in an open path
+    \begin{lstlisting}
+    SetDirection() called with target direction: (0, 0, 1) and forced: False
+    Path is not blocked. Setting direction and nextDirection to: (0, 0, 1)
+    Calculated rotation: (0, 0, 0)
+    Current direction: (0, 0, 1), nextDirection: (0, 0, 1), rotation: (0, 0, 0)
+    \end{lstlisting}
+
+    \item b. Test Case 2: Pacman moves in a blocked path without forced movement
+    \begin{lstlisting}
+    SetDirection() called with target direction: (1, 0, 0) and forced: False
+    Path is blocked. Setting nextDirection to: (1, 0, 0)
+    Current direction: (previous direction), nextDirection: (1, 0, 0), rotation: (previous rotation)
+    \end{lstlisting}
+
+    \item c. Test Case 3: Pacman moves in a blocked path with forced movement
+    \begin{lstlisting}
+    SetDirection() called with target direction: (1, 0, 0) and forced: True
+    Path is not blocked. Setting direction and nextDirection to: (1, 0, 0)
+    Calculated rotation: (0, 270, 0)
+    Current direction: (1, 0, 0), nextDirection: (1, 0, 0), rotation: (0, 270, 0)
+    \end{lstlisting}
+
+    \item d. Test Case 4: Pacman changes direction when a previous blocked path becomes unblocked
+    \begin{lstlisting}
+    Current nextDirection: (1, 0, 0)
+    SetDirection() called with target direction: (1, 0, 0) and forced: False
+    Path is not blocked. Setting direction and nextDirection to: (1, 0, 0)
+    Calculated rotation: (0, 270, 0)
+    Current direction: (1, 0, 0), nextDirection: (1, 0, 0), rotation: (0, 270, 0)
+    \end{lstlisting}
+
+    The test cases are successful. Furthermore, simple black box testing (on modules other than this one, or say the overall movement ability) was also done when testing this current module. We conclude that we did not discover significant faults on the character movement feature.
+    
 
 \end{document}
