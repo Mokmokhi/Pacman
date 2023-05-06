@@ -124,164 +124,116 @@ Department of Mathematics, The Chinese University of Hong Kong}
             \item  Input: Opening the application.
             \item  Expected output: Login page displayed upon application start.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 1.2: Login panel - Quiting application.
         \begin{enumerate}
             \item  Input: click the QUIT TO DESKTOP button in the Login panel.
             \item  Expected output: Application terminated.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 2.1: Sign up page - Access and qutting back to Login.
         \begin{enumerate}
             \item  Input: click the SIGN UP button in Login, then click the GO BACK button in Sign Up.
             \item  Expected output: UI panel be switched from Login to Sign Up, then back to Login again.
         \end{enumerate}
-    \end{enumerate}
-    
-    \begin{enumerate}
         \item Test Case 3.1: Main panel - Access by Login.
         \begin{enumerate}
             \item  Input: click LOGIN button after filling with verfied email and password ("j5@j.com" and "55555555") in the Login panel.
             \item  Expected output: UI panel be switched from the Sign up panel to the Main panel.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 3.2: Main panel - Quit application.
         \begin{enumerate}
             \item  Input: click the QUIT TO DESKTOP button in the Main panel.
             \item  Expected output: Application terminated.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 3.3: Main panel - Quit to Login by logging out.
         \begin{enumerate}
             \item  Input: click the LOG OUT button in the Main.
             \item  Expected output: UI panel be switched from Main to Sign Up .
         \end{enumerate}
-    \end{enumerate}
-
-    \begin{enumerate}
         \item Test case 4.1: Level Selection - Access from Main and quiting back to main.
         \begin{enumerate}
             \item  Input: click the START GAME button in Main, then click the BACK TO MENU button in Level Selection.
             \item  Expected output: UI panel be switched from Main to Level Selection, then back to Main again.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 5.1: Settings - Access from Main and quiting back to main.
         \begin{enumerate}
             \item  Input: click the SETTINGS button in Main; then clicking the DONE button in Settings.
             \item  Expected output: UI panel be switched from Main to Settings, then back to Main again.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 6.1: How To Play - Access from Main and quiting back to main.
         \begin{enumerate}
             \item  Input: click the HOW TO PLAY button in Main; then clicking the BACK TO MENU button in How To Play.
             \item  Expected output: UI panel be switched from Main to How To Play, then back to Main again.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 7.1: Leader Board - Access from Main and quiting back to main.
         \begin{enumerate}
             \item  Input: click the LEADERBOARD button in Main; then clicking the GO BACK button in Leader Board.
             \item  Expected output: UI panel be switched from Main to Leader Board, then back to Main again.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 8.1: Shop - Access from Main and quiting back to main.
         \begin{enumerate}
             \item  Input: click the SHOP button in Main; then clicking the GO BACK button in Shop.
             \item  Expected output: UI panel be switched from Main to Shop, then back to Main again.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 9.1: In Game - Access from Level Selection - Scene 1 "OLD FACTORY", different difficulties.
         \begin{enumerate}
             \item  Input: selecting 1 out of 3 difficulties but clicking EASY, NORMAL, or HARD, then click the OLD FACTORY button in Level Selection.
             \item  Expected output: UI panel be switched from Level Selection to In Game, starts the game with the game scene OLD FACTORY loaded, and cooresponding difficulty (number of ghosts and ghost AI intellegence).
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 9.2: In Game - Access from Level Selection - Scene 2 "ABANDONED MAZE", different difficulties.
         \begin{enumerate}
             \item  Input: selecting 1 out of 3 difficulties but clicking EASY, NORMAL, or HARD, then click the ABANDONED MAZE button in Level Selection.
             \item  Expected output: UI panel be switched from Level Selection to In Game, starts the game with the game scene ABANDONED MAZE loaded, and cooresponding difficulty (number of ghosts and ghost AI intellegence).
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 10.1: Pause - Access from In Game and resuming back to In Game.
         \begin{enumerate}
             \item  Input: pressing SPACE bar during a game, then click the RESUME button in Pause.
             \item  Expected output: UI panel be switched from In Game to Pause, game paused, then back to In Game again, with game resumed.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 10.2: Pause - Jump to In Game by restarting.
         \begin{enumerate}
             \item  Input: click the RESUME button in Pause.
             \item  Expected output: UI panel be switched from Pause to In Game, with the game restarted.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 10.3: Pause - Jump to Settings and back to Pause, and then resume to In Game.
         \begin{enumerate}
             \item  Input: click the SETTINGS button in Pause, toggle different settings, then click DONE in Settings, then click Resume in Pause.
             \item  Expected output: UI panel be switched from Pause to Settings, with the game shown to be remaining paused in the background. Then UI switched from Settings back to Pause again. The game resumes on the progress before pausing.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 10.4: Pause - Quit to Menu.
         \begin{enumerate}
             \item  Input: click the QUIT TO MENU button in Pause.
             \item  Expected output: UI panel be switched from Pause to Menu, with the game ended.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 11.1: Game Over - Access.
         \begin{enumerate}
             \item  Input: Play a started game until losing (the character lost all health).
             \item  Expected output: UI panel be switched from In Game to Game Over.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 11.2: Game Over - Back to Main.
         \begin{enumerate}
             \item  Input: click BACK TO MENU button in Game Over.
             \item  Expected output: UI panel be switched from Game Over to Main, with the game ended.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 11.3: Game Over - Restart.
         \begin{enumerate}
             \item  Input: click RESTART button in Game Over.
             \item  Expected output: UI panel be switched from Game Over to In Game, with a new game started.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 12.1: Game Success - Access.
         \begin{enumerate}
             \item  Input: Play a started game until victory (all pallets are eaten)
             \item  Expected output: UI panel be switched from In Game to Game Success.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 12.2: Game Success - Back to Main.
         \begin{enumerate}
             \item  Input: click BACK TO MENU button in Game Success.
             \item  Expected output: UI panel be switched from Game Success to Main, with the game ended.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 12.3: Game Success - Restart.
         \begin{enumerate}
             \item  Input: click RESTART button in Game Success.
             \item  Expected output: UI panel be switched from Game Success to In Game, with a new game started.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test case 13: Respawning - Access.
         \begin{enumerate}
             \item  Input: Play a game so that Pacman dies (touches a ghost) without losing all health.
@@ -313,35 +265,15 @@ Department of Mathematics, The Chinese University of Hong Kong}
             \item  Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555555"
             \item  Expected output: Login Successfully with UserName Jest5 and switch to main menu.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 2: Login with correct email and incorrect password.
         \begin{enumerate}
             \item  Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555554"
             \item  Expected output: error occured with error message.
-
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 3: Login with both incorrect email and password.
         \begin{enumerate}
             \item  Input: fill EMAIL with "tes@gmail.com" and PASSWORD with "J1234567"
             \item Expected output: error occured with error message.
-        \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
-        \item Test Case 2: Login with correct email and incorrect password.
-        \begin{enumerate}
-            \item  Input: fill EMAIL with "j5@j.com" and PASSWORD with "55555554"
-            \item  Expected output: error occured with error message.
-
-        \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
-        \item Test Case 3: Login with both incorrect email and password.
-        \begin{enumerate}
-            \item  Input: fill EMAIL with "tes@gmail.com" and PASSWORD with "J1234567"
-            \item  Expected output: error occured with error message.
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}
@@ -350,8 +282,6 @@ Department of Mathematics, The Chinese University of Hong Kong}
             \item  Input: fill EMAIL with "test@gmail.com" and PASSWORD with "55555555"
             \item  Expected output: error occured with error message.
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 5: Sign up with all valid input.
         \begin{enumerate}
             \item  Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD "J5555555"
@@ -366,21 +296,21 @@ Department of Mathematics, The Chinese University of Hong Kong}
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}
-        \item Test Case 8: Sign up with invalid password.
+        \item Test Case 7: Sign up with invalid password.
         \begin{enumerate}
             \item  Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J555555" and CONFIRM PASSWORD "J5555555"
             \item  Expected output: error occured with error message.
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}
-        \item Test Case 9: Sign up with empty confirm password.
+        \item Test Case 8: Sign up with empty confirm password.
         \begin{enumerate}
             \item  Input: fill USER NAME with "t1", EMAIL with "test5@gmail.com" and PASSWORD with "J5555555" and CONFIRM PASSWORD ""
             \item  Expected output: error occured with error message.
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}
-        \item Test Case 10: Logout.
+        \item Test Case 9: Logout.
         \begin{enumerate}
             \item  Input: click LOG OUT button
             \item  Expected output: logged out and switch to login panel.
@@ -412,8 +342,6 @@ Department of Mathematics, The Chinese University of Hong Kong}
             \item  Input: click LEADERBOARD with score 1500
             \item  Expected output: replaces "5. Min 1000" with "5. TEST 1500"
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 2: Go to the leaderboard with score 7000
         \begin{enumerate}
             \item  Input: click LEADERBOARD with score 7000
@@ -426,8 +354,6 @@ Department of Mathematics, The Chinese University of Hong Kong}
                 5. Thomas D  6789
             
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 3: Go to the leaderboard with score 99999
         \begin{enumerate}
             \item  Input: click LEADERBOARD with score 99999
@@ -444,8 +370,6 @@ Department of Mathematics, The Chinese University of Hong Kong}
                 5. Thomas D  6789
        
         \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
         \item Test Case 4: Go to the leaderboard with score 87
         \begin{enumerate}
             \item  Input: click LEADERBOARD with score 87

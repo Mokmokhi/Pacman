@@ -1,10 +1,11 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}TEST PLAN}{2}{}%
 \contentsline {section}{\numberline {2}TEST CASES}{2}{}%
-\contentsline {subsection}{\numberline {2.1}User Management}{2}{}%
-\contentsline {subsection}{\numberline {2.2}LeaderBoard}{4}{}%
-\contentsline {subsection}{\numberline {2.3}Shop System}{6}{}%
-\contentsline {subsection}{\numberline {2.4}Setting}{7}{}%
-\contentsline {subsection}{\numberline {2.5}Game Status}{9}{}%
-\contentsline {subsection}{\numberline {2.6}Character's Movement and controls}{10}{}%
-\contentsline {subsection}{\numberline {2.7}Big-bang}{13}{}%
+\contentsline {subsection}{\numberline {2.1}Menu UI}{2}{}%
+\contentsline {subsection}{\numberline {2.2}User Management}{7}{}%
+\contentsline {subsection}{\numberline {2.3}LeaderBoard}{9}{}%
+\contentsline {subsection}{\numberline {2.4}Shop System}{10}{}%
+\contentsline {subsection}{\numberline {2.5}Setting}{11}{}%
+\contentsline {subsection}{\numberline {2.6}Game Status}{13}{}%
+\contentsline {subsection}{\numberline {2.7}Character's Movement and controls}{14}{}%
+\contentsline {subsection}{\numberline {2.8}Big-bang}{17}{}%
