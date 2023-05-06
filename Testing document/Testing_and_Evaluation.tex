@@ -94,18 +94,18 @@ Department of Mathematics, The Chinese University of Hong Kong}
     The list of UI panels:
         \begin{enumerate}
             \item 1. Login
-            \item 2. Sign up page
+            \item 2. Sign Up
             \item 3. Main
             \item 4. Level Selection
             \item 5. Settings
             \item 6. Leader Board
-            \item 7. How to play
+            \item 7. How To Play
             \item 8. Shop
-            \item 9. In game menu
-            \item 10 Pause menu
-            \item 11. Game over screen
-            \item 12. Game success screen
-            \item 13. Respawn screen
+            \item 9. In Game
+            \item 10 Pause
+            \item 11. Game Over
+            \item 12. Game Success
+            \item 13. Respawn
         \end{enumerate}    
 
         \begin{enumerate}
@@ -133,17 +133,10 @@ Department of Mathematics, The Chinese University of Hong Kong}
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}
-        \item Test Case 2.1: Sign up page - Access.
+        \item Test Case 2.1: Sign up page - Access and qutting back to Login.
         \begin{enumerate}
-            \item  Input: click the SIGN UP button in the Login panel.
-            \item  Expected output: UI panel be switched from the Login panel to the Sign up panel.
-        \end{enumerate}
-    \end{enumerate}
-    \begin{enumerate}
-        \item Test Case 2.2: Sign up panel - Quiting.
-        \begin{enumerate}
-            \item  Input: click the GO BACK button in the Sign up panel.
-            \item  Expected output: UI panel be switched from the Sign up panel to the Login panel.
+            \item  Input: click the SIGN UP button in Login, then click the GO BACK button in Sign Up.
+            \item  Expected output: UI panel be switched from Login to Sign Up, then back to Login again.
         \end{enumerate}
     \end{enumerate}
     
@@ -162,10 +155,10 @@ Department of Mathematics, The Chinese University of Hong Kong}
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}
-        \item Test Case 3.3: Main panel - Quit panel by Log out.
+        \item Test Case 3.3: Main panel - Quit to Login by logging out.
         \begin{enumerate}
-            \item  Input: click the LOG OUT button in the Main panel.
-            \item  Expected output: UI panel be switched from the Main panel to the Sign up panel .
+            \item  Input: click the LOG OUT button in the Main.
+            \item  Expected output: UI panel be switched from Main to Sign Up .
         \end{enumerate}
     \end{enumerate}
 
@@ -249,15 +242,50 @@ Department of Mathematics, The Chinese University of Hong Kong}
     \begin{enumerate}
         \item Test case 11.1: Game Over - Access.
         \begin{enumerate}
-            \item  Input: Play the game until the character lost all health
+            \item  Input: Play a started game until losing (the character lost all health).
             \item  Expected output: UI panel be switched from In Game to Game Over.
         \end{enumerate}
     \end{enumerate}
     \begin{enumerate}
-        \item Test case 11.1: Game Over - Back to Menu.
+        \item Test case 11.2: Game Over - Back to Main.
         \begin{enumerate}
-            \item  Input: click BACK TO MENU button in Game Over panel.
-            \item  Expected output: UI panel be switched from In Game to Game Over.
+            \item  Input: click BACK TO MENU button in Game Over.
+            \item  Expected output: UI panel be switched from Game Over to Main, with the game ended.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 11.3: Game Over - Restart.
+        \begin{enumerate}
+            \item  Input: click RESTART button in Game Over.
+            \item  Expected output: UI panel be switched from Game Over to In Game, with a new game started.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 12.1: Game Success - Access.
+        \begin{enumerate}
+            \item  Input: Play a started game until victory (all pallets are eaten)
+            \item  Expected output: UI panel be switched from In Game to Game Success.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 12.2: Game Success - Back to Main.
+        \begin{enumerate}
+            \item  Input: click BACK TO MENU button in Game Success.
+            \item  Expected output: UI panel be switched from Game Success to Main, with the game ended.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 12.3: Game Success - Restart.
+        \begin{enumerate}
+            \item  Input: click RESTART button in Game Success.
+            \item  Expected output: UI panel be switched from Game Success to In Game, with a new game started.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 13: Respawning - Access.
+        \begin{enumerate}
+            \item  Input: Play a game so that Pacman dies (touches a ghost) without losing all health.
+            \item  Expected output: UI panel be switched from In Game to Respawning briefly, then back to In Game again with Pacman respawned, and game continues from last death.
         \end{enumerate}
     \end{enumerate}
     
