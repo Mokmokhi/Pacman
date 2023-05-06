@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {section}{\numberline {1}TEST PLAN}{2}{}%
 \contentsline {section}{\numberline {2}TEST CASES}{2}{}%
 \contentsline {subsection}{\numberline {2.1}User Management}{2}{}%
@@ -7,3 +7,4 @@
 \contentsline {subsection}{\numberline {2.4}Setting}{7}{}%
 \contentsline {subsection}{\numberline {2.5}Game Status}{9}{}%
 \contentsline {subsection}{\numberline {2.6}Character's Movement and controls}{10}{}%
+\contentsline {subsection}{\numberline {2.7}Big-bang}{13}{}%
