@@ -66,21 +66,7 @@ Department of Mathematics, The Chinese University of Hong Kong}
         \end{itemize}
     \end{itemize}
 
-    We list out the functionalities to be tested:
-
-        \begin{enumerate}
-            \item Black box testing:
-            \begin{enumerate}
-                \item Menu UI                
-                \item User Management
-                \item LeaderBoard
-                \item Shop system
-                \item Setting
-                \item Game Status
-                \item Player control
-                \item Ghost AI \& Status
-            \end{enumerate}
-        \end{enumerate}
+    Wewill use black box testing for: Menu UI, User Management, LeaderBoard, Shop system, Setting, Game Status, Player control, Ghost AI \& Status
 
     \section{TEST CASES}
     
@@ -91,30 +77,11 @@ Department of Mathematics, The Chinese University of Hong Kong}
     
     Testing of buttons relating to user management (sign in, sign out, sign up, etc) will not be the focus here, but in the next section.
     
-    The list of all 13 UI panels as follows:
+    All 13 UI panels according to accessibility includes:
         \begin{enumerate}
-            \item 1. Login
-            \item 2. Sign Up
-            \item 3. Main
-            \item 4. Level Selection
-            \item 5. Settings
-            \item 6. Leader Board
-            \item 7. How To Play
-            \item 8. Shop
-            \item 9. In Game
-            \item 10 Pause
-            \item 11. Game Over
-            \item 12. Game Success
-            \item 13. Respawn
-        \end{enumerate}    
-
-        \begin{enumerate}
-            \item Accessibility of different panels:
-            \begin{enumerate}
-                \item Freely accessable before starting a game: 1, 2, 3, 4, 5, 6, 7, 8
-                \item Freely accessable during a game (without ending a game): 5, 9, 10
-                \item Triggered only by gameplay status (death, victory): 11, 12, 13
-            \end{enumerate}
+            \item Freely accessable before starting a game: Login, Sign Up, Main,Level Selection, Settings, Leader Board, How To Play, Shop
+            \item Freely accessable during a game (without ending a game): Settings, In game and pause
+            \item Triggered only by gameplay status (death, victory): Game Over, Game Success and Respawn.
         \end{enumerate}
 
     \subsubsection*{Inputs and expected outputs}
@@ -194,10 +161,10 @@ Department of Mathematics, The Chinese University of Hong Kong}
             \item  Input: click the RESUME button in Pause.
             \item  Expected output: UI panel be switched from Pause to In Game, with the game restarted.
         \end{enumerate}
-        \item Test case 10.3: Pause - Jump to Settings and back to Pause, and then resume to In Game.
+        \item Test case 10.3: Pause - Jump to Settings and back to Pause.
         \begin{enumerate}
-            \item  Input: click the SETTINGS button in Pause, toggle different settings, then click DONE in Settings, then click Resume in Pause.
-            \item  Expected output: UI panel be switched from Pause to Settings, with the game shown to be remaining paused in the background. Then UI switched from Settings back to Pause again. The game resumes on the progress before pausing.
+            \item  Input: click the SETTINGS button in Pause, toggle different settings, then click DONE in Settings.
+            \item  Expected output: UI panel be switched from Pause to Settings, with the game shown to be remaining paused in the background. Then UI switched from Settings back to Pause again.
         \end{enumerate}
         \item Test case 10.4: Pause - Quit to Menu.
         \begin{enumerate}
@@ -670,27 +637,16 @@ Department of Mathematics, The Chinese University of Hong Kong}
     We integrate the modules and test the whole system once. The procedure will be as follows:
 
     \begin{enumerate}
-        \item Start the program.
-        \item Sign up a new account.
-        \item Logout once, and login.
-        \item Go to settings and adjust volumes.
-        \item Return main menu and enter shop.
-        \item checking the initial status of equipment.
-        \item Return main menu and start a game.
-        \item choose random level and venue.
-        \item during the gameplay, press spacebar to call the pause menu at least once.
-        \item Check all buttons in the pause menu.
-        \item When the current game is finished, go to ranking and shop to check the change of status.
-        \item Repeat 7-11 for several times.
+        \item Start the program. Sign up a new account and Logout once, and login and Go to settings and adjust volumes.
+        \item Return main menu and enter shop, checking the initial status of equipment.
+        \item Return main menu and start a new game, choose random level and venue.
+        \item During the gameplay, press spacebar to call the pause menu at least once to Check all buttons in the pause menu.
+        \item When the current game is finished, go to scoreboard and shop to check the change of status.
         \item Go to Setting and chenge a new name.
-        \item Repeat 7-11 for several times.
-        \item Logout the game.
-        \item Login the game after some time, and check all game status and settings.
-        \item Go to scoreboard and clear all records.
-        \item Quit the game directly from the main menu.
+        \item Repeat 3-6 for several times.
+        \item Logout the game and then Login the game after some time, and check all game status and settings.
+        \item Go to scoreboard to clear all records and Quit the game directly from the main menu.
     \end{enumerate}
 
-    \subsubsection*{Results}
-
-    No bugs have been detected. More functionalities will be added in the future.
+    Results: No bugs have been detected. More functionalities will be added in the future.
 \end{document}

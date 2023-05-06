@@ -17,6 +17,8 @@ public class Ghost : MonoBehaviour {
     public static List<Ghost> GhostList = new List<Ghost>();
     
     private void Awake() {
+        // Initialize the attributes fora ghost, including movement, home, scatter,
+        // chasing algorithm, frightened action and initial color.
         movement = GetComponent<Movement>();
         home = GetComponent<GhostHome>();
         scatter = GetComponent<GhostScatter>();
@@ -26,6 +28,7 @@ public class Ghost : MonoBehaviour {
     }
 
     private void Start() {
+        // Instantiate the ghost object
         GhostList.Add(this.GetComponent<Ghost>());
         ResetState();
         EventBus.Subscribe(GameEvent.START, OnGameStart);
