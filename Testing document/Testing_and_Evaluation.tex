@@ -83,6 +83,185 @@ Department of Mathematics, The Chinese University of Hong Kong}
         \end{enumerate}
 
     \section{TEST CASES}
+    
+    \subsection{Menu UI}
+    For Menu UI, we will focus on the navigation between each UI panels under black box testing. There are totally 13 UI Panels in the application, at each instance only one panel will be displayed, and each panel takes up the entire window for the application.
+
+    In each panel there are buttons that allows us to either access another channel, go back to a previous channel, or quit the application. Here we will focus on testing the function of such navigation buttons. 
+    
+    Testing of buttons relating to user management (sign in, sign out, sign up, etc) will not be the focus here, but in the next section.
+    
+    The list of UI panels:
+        \begin{enumerate}
+            \item 1. Login
+            \item 2. Sign up page
+            \item 3. Main
+            \item 4. Level Selection
+            \item 5. Settings
+            \item 6. Leader Board
+            \item 7. How to play
+            \item 8. Shop
+            \item 9. In game menu
+            \item 10 Pause menu
+            \item 11. Game over screen
+            \item 12. Game success screen
+            \item 13. Respawn screen
+        \end{enumerate}    
+
+        \begin{enumerate}
+            \item Accessibility of different panels:
+            \begin{enumerate}
+                \item Accessable before starting a game: 1, 2, 3, 4, 5, 6, 7, 8
+                \item Accessable during a game (without ending a game): 5, 9, 10
+                \item Accessable by gameplay status (death, victory): 11, 12, 13
+            \end{enumerate}
+        \end{enumerate}
+
+    \subsubsection*{Inputs and expected outputs}
+    \begin{enumerate}
+        \item Test Case 1.1: Login panel - Access.
+        \begin{enumerate}
+            \item  Input: Opening the application.
+            \item  Expected output: Login page displayed upon application start.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 1.2: Login panel - Quiting application.
+        \begin{enumerate}
+            \item  Input: click the QUIT TO DESKTOP button in the Login panel.
+            \item  Expected output: Application terminated.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 2.1: Sign up page - Access.
+        \begin{enumerate}
+            \item  Input: click the SIGN UP button in the Login panel.
+            \item  Expected output: UI panel be switched from the Login panel to the Sign up panel.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 2.2: Sign up panel - Quiting.
+        \begin{enumerate}
+            \item  Input: click the GO BACK button in the Sign up panel.
+            \item  Expected output: UI panel be switched from the Sign up panel to the Login panel.
+        \end{enumerate}
+    \end{enumerate}
+    
+    \begin{enumerate}
+        \item Test Case 3.1: Main panel - Access by Login.
+        \begin{enumerate}
+            \item  Input: click LOGIN button after filling with verfied email and password ("j5@j.com" and "55555555") in the Login panel.
+            \item  Expected output: UI panel be switched from the Sign up panel to the Main panel.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 3.2: Main panel - Quit application.
+        \begin{enumerate}
+            \item  Input: click the QUIT TO DESKTOP button in the Main panel.
+            \item  Expected output: Application terminated.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test Case 3.3: Main panel - Quit panel by Log out.
+        \begin{enumerate}
+            \item  Input: click the LOG OUT button in the Main panel.
+            \item  Expected output: UI panel be switched from the Main panel to the Sign up panel .
+        \end{enumerate}
+    \end{enumerate}
+
+    \begin{enumerate}
+        \item Test case 4.1: Level Selection - Access from Main and quiting back to main.
+        \begin{enumerate}
+            \item  Input: click the START GAME button in Main, then click the BACK TO MENU button in Level Selection.
+            \item  Expected output: UI panel be switched from Main to Level Selection, then back to Main again.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 5.1: Settings - Access from Main and quiting back to main.
+        \begin{enumerate}
+            \item  Input: click the SETTINGS button in Main; then clicking the DONE button in Settings.
+            \item  Expected output: UI panel be switched from Main to Settings, then back to Main again.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 6.1: How To Play - Access from Main and quiting back to main.
+        \begin{enumerate}
+            \item  Input: click the HOW TO PLAY button in Main; then clicking the BACK TO MENU button in How To Play.
+            \item  Expected output: UI panel be switched from Main to How To Play, then back to Main again.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 7.1: Leader Board - Access from Main and quiting back to main.
+        \begin{enumerate}
+            \item  Input: click the LEADERBOARD button in Main; then clicking the GO BACK button in Leader Board.
+            \item  Expected output: UI panel be switched from Main to Leader Board, then back to Main again.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 8.1: Shop - Access from Main and quiting back to main.
+        \begin{enumerate}
+            \item  Input: click the SHOP button in Main; then clicking the GO BACK button in Shop.
+            \item  Expected output: UI panel be switched from Main to Shop, then back to Main again.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 9.1: In Game - Access from Level Selection - Scene 1 "OLD FACTORY", different difficulties.
+        \begin{enumerate}
+            \item  Input: selecting 1 out of 3 difficulties but clicking EASY, NORMAL, or HARD, then click the OLD FACTORY button in Level Selection.
+            \item  Expected output: UI panel be switched from Level Selection to In Game, starts the game with the game scene OLD FACTORY loaded, and cooresponding difficulty (number of ghosts and ghost AI intellegence).
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 9.2: In Game - Access from Level Selection - Scene 2 "ABANDONED MAZE", different difficulties.
+        \begin{enumerate}
+            \item  Input: selecting 1 out of 3 difficulties but clicking EASY, NORMAL, or HARD, then click the ABANDONED MAZE button in Level Selection.
+            \item  Expected output: UI panel be switched from Level Selection to In Game, starts the game with the game scene ABANDONED MAZE loaded, and cooresponding difficulty (number of ghosts and ghost AI intellegence).
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 10.1: Pause - Access from In Game and resuming back to In Game.
+        \begin{enumerate}
+            \item  Input: pressing SPACE bar during a game, then click the RESUME button in Pause.
+            \item  Expected output: UI panel be switched from In Game to Pause, game paused, then back to In Game again, with game resumed.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 10.2: Pause - Jump to In Game by restarting.
+        \begin{enumerate}
+            \item  Input: click the RESUME button in Pause.
+            \item  Expected output: UI panel be switched from Pause to In Game, with the game restarted.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 10.3: Pause - Jump to Settings and back to Pause, and then resume to In Game.
+        \begin{enumerate}
+            \item  Input: click the SETTINGS button in Pause, toggle different settings, then click DONE in Settings, then click Resume in Pause.
+            \item  Expected output: UI panel be switched from Pause to Settings, with the game shown to be remaining paused in the background. Then UI switched from Settings back to Pause again. The game resumes on the progress before pausing.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 10.4: Pause - Quit to Menu.
+        \begin{enumerate}
+            \item  Input: click the QUIT TO MENU button in Pause.
+            \item  Expected output: UI panel be switched from Pause to Menu, with the game ended.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 11.1: Game Over - Access.
+        \begin{enumerate}
+            \item  Input: Play the game until the character lost all health
+            \item  Expected output: UI panel be switched from In Game to Game Over.
+        \end{enumerate}
+    \end{enumerate}
+    \begin{enumerate}
+        \item Test case 11.1: Game Over - Back to Menu.
+        \begin{enumerate}
+            \item  Input: click BACK TO MENU button in Game Over panel.
+            \item  Expected output: UI panel be switched from In Game to Game Over.
+        \end{enumerate}
+    \end{enumerate}
+    
+
     \subsection{User Management}
 
     For UserManagement, we will focus on the black box testing on Login, Logout and SignUp.
